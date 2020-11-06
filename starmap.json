@@ -3,816 +3,6020 @@
     "name": "CRETE",
     "orePrice": 7,
     "waterPrice": 7,
-    "enginepartsPrice": 7,
+    "enginePartsPrice": 7,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "CARL_CAMERON",
+        "weaponType": "TACHYON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "MELODY_HUGHES",
+        "weaponType": "TACHYON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "THEODOR_WHITFIELD",
+        "weaponType": "PLASMA",
+        "bounty": 49
+      },
+      {
+        "criminalName": "TYRESE_CONNER",
+        "weaponType": "LASER",
+        "bounty": 42
+      },
+      {
+        "criminalName": "ZACK_SIMS",
+        "weaponType": "PROTON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "ALBA_MCCORMICK",
+        "weaponType": "PHOTON",
+        "bounty": 48
+      },
+      {
+        "criminalName": "SHAE_LUCAS",
+        "weaponType": "PARTICLE",
+        "bounty": 41
+      },
+      {
+        "criminalName": "AYAAN_SPENCE",
+        "weaponType": "PARTICLE",
+        "bounty": 35
+      },
+      {
+        "criminalName": "WILLIAM_GARRETT",
+        "weaponType": "TACHYON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "TAHLIA_WEBSTER",
+        "weaponType": "PLASMA",
+        "bounty": 42
+      },
+      {
+        "criminalName": "RAFI_SOLOMON",
+        "weaponType": "LASER",
+        "bounty": 35
+      },
+      {
+        "criminalName": "AURORA_CALHOUN",
+        "weaponType": "LASER",
+        "bounty": 35
+      },
+      {
+        "criminalName": "BILAL_DONOVAN",
+        "weaponType": "PROTON",
+        "bounty": 45
+      }
+    ]
   },
   {
     "name": "BADEN_BADEN",
     "orePrice": 13,
     "waterPrice": 14,
-    "enginepartsPrice": 17,
+    "enginePartsPrice": 17,
     "contrabandPrice": 32,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "ALICIA_GARDNER",
+        "weaponType": "LASER",
+        "bounty": 39
+      },
+      {
+        "criminalName": "ABDULLAHI_SPEARS",
+        "weaponType": "TACHYON",
+        "bounty": 33
+      },
+      {
+        "criminalName": "AYDEN_SIMON",
+        "weaponType": "LASER",
+        "bounty": 45
+      },
+      {
+        "criminalName": "BETHANY_GIBBS",
+        "weaponType": "PROTON",
+        "bounty": 49
+      },
+      {
+        "criminalName": "ARTHUR_LARA",
+        "weaponType": "PLASMA",
+        "bounty": 36
+      },
+      {
+        "criminalName": "KLARA_HUFFMAN",
+        "weaponType": "LASER",
+        "bounty": 45
+      },
+      {
+        "criminalName": "LILLY_RIVERS",
+        "weaponType": "PARTICLE",
+        "bounty": 50
+      },
+      {
+        "criminalName": "RISHI_SALAS",
+        "weaponType": "LASER",
+        "bounty": 33
+      },
+      {
+        "criminalName": "IVIE_GILMORE",
+        "weaponType": "PROTON",
+        "bounty": 32
+      },
+      {
+        "criminalName": "TANISHA_BEST",
+        "weaponType": "TACHYON",
+        "bounty": 44
+      },
+      {
+        "criminalName": "CALLEN_HUTCHINSON",
+        "weaponType": "PLASMA",
+        "bounty": 39
+      },
+      {
+        "criminalName": "HARMONY_HILL",
+        "weaponType": "LASER",
+        "bounty": 32
+      },
+      {
+        "criminalName": "NANA_GRIMES",
+        "weaponType": "TACHYON",
+        "bounty": 46
+      }
+    ]
   },
   {
     "name": "PLANETOLD",
     "orePrice": 10,
     "waterPrice": 9,
-    "enginepartsPrice": 11,
+    "enginePartsPrice": 11,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "BONNIE_SAUNDERS",
+        "weaponType": "PHOTON",
+        "bounty": 31
+      },
+      {
+        "criminalName": "ISMAEEL_EVERETT",
+        "weaponType": "PARTICLE",
+        "bounty": 37
+      },
+      {
+        "criminalName": "FINNLEY_MCGEE",
+        "weaponType": "PARTICLE",
+        "bounty": 43
+      },
+      {
+        "criminalName": "HEIDI_RUTLEDGE",
+        "weaponType": "PHOTON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "MARWAH_AUSTIN",
+        "weaponType": "PARTICLE",
+        "bounty": 44
+      },
+      {
+        "criminalName": "JOHNNY_WORKMAN",
+        "weaponType": "LASER",
+        "bounty": 48
+      },
+      {
+        "criminalName": "HAFSA_MCLEOD",
+        "weaponType": "PROTON",
+        "bounty": 46
+      },
+      {
+        "criminalName": "EMA_BELL",
+        "weaponType": "PROTON",
+        "bounty": 30
+      }
+    ]
   },
   {
     "name": "CEREBUS",
     "orePrice": 19,
     "waterPrice": 16,
-    "enginepartsPrice": 18,
+    "enginePartsPrice": 18,
     "contrabandPrice": 8,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "SCARLETT_FRANKS",
+        "weaponType": "PROTON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "MINA_ROBERTS",
+        "weaponType": "PROTON",
+        "bounty": 32
+      },
+      {
+        "criminalName": "OLIVIER_DOMINGUEZ",
+        "weaponType": "PHOTON",
+        "bounty": 34
+      },
+      {
+        "criminalName": "AJAY_MARKS",
+        "weaponType": "PROTON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "ALFIE_LEE_NIXON",
+        "weaponType": "PLASMA",
+        "bounty": 40
+      },
+      {
+        "criminalName": "SOFIJA_BLAKE",
+        "weaponType": "LASER",
+        "bounty": 39
+      },
+      {
+        "criminalName": "HIBBA_GRIFFITH",
+        "weaponType": "LASER",
+        "bounty": 37
+      },
+      {
+        "criminalName": "FERN_BALLARD",
+        "weaponType": "TACHYON",
+        "bounty": 47
+      },
+      {
+        "criminalName": "NORA_KNIGHT",
+        "weaponType": "LASER",
+        "bounty": 36
+      },
+      {
+        "criminalName": "OMARI_ONEILL",
+        "weaponType": "PARTICLE",
+        "bounty": 49
+      },
+      {
+        "criminalName": "LIAM_BRADY",
+        "weaponType": "PARTICLE",
+        "bounty": 37
+      },
+      {
+        "criminalName": "ELVIS_SANDOVAL",
+        "weaponType": "PARTICLE",
+        "bounty": 45
+      }
+    ]
   },
   {
     "name": "FUJI",
     "orePrice": 3,
     "waterPrice": 17,
-    "enginepartsPrice": 17,
+    "enginePartsPrice": 17,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "ZAYAAN_PATEL",
+        "weaponType": "TACHYON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "LEXI_MAE_HESS",
+        "weaponType": "PHOTON",
+        "bounty": 38
+      },
+      {
+        "criminalName": "JAYDAN_STEELE",
+        "weaponType": "LASER",
+        "bounty": 48
+      },
+      {
+        "criminalName": "AMALIA_JIMENEZ",
+        "weaponType": "PARTICLE",
+        "bounty": 35
+      },
+      {
+        "criminalName": "ZUNAIRAH_COFFEY",
+        "weaponType": "PLASMA",
+        "bounty": 50
+      },
+      {
+        "criminalName": "COLIN_WILCOX",
+        "weaponType": "PARTICLE",
+        "bounty": 36
+      },
+      {
+        "criminalName": "MITCHELL_GARRISON",
+        "weaponType": "PARTICLE",
+        "bounty": 44
+      }
+    ]
   },
   {
     "name": "HOLSTEIN",
     "orePrice": 20,
     "waterPrice": 9,
-    "enginepartsPrice": 7,
+    "enginePartsPrice": 7,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "BELLE_BENDER",
+        "weaponType": "PLASMA",
+        "bounty": 46
+      },
+      {
+        "criminalName": "HARVEY_BOWERS",
+        "weaponType": "PHOTON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "ANISA_BOONE",
+        "weaponType": "PHOTON",
+        "bounty": 32
+      },
+      {
+        "criminalName": "LILLIA_FLOWERS",
+        "weaponType": "LASER",
+        "bounty": 36
+      },
+      {
+        "criminalName": "EZMAE_BUCK",
+        "weaponType": "PROTON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "MATTHIAS_HORTON",
+        "weaponType": "PLASMA",
+        "bounty": 38
+      }
+    ]
   },
   {
     "name": "HONSHU",
     "orePrice": 7,
     "waterPrice": 10,
-    "enginepartsPrice": 5,
+    "enginePartsPrice": 5,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "PATRIK_CALLAHAN",
+        "weaponType": "LASER",
+        "bounty": 30
+      },
+      {
+        "criminalName": "BOBBY_MICHAEL",
+        "weaponType": "LASER",
+        "bounty": 39
+      },
+      {
+        "criminalName": "ISABELLA_MCMAHON",
+        "weaponType": "TACHYON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "MARLIE_PADILLA",
+        "weaponType": "PLASMA",
+        "bounty": 49
+      },
+      {
+        "criminalName": "BENTLEY_BRYAN",
+        "weaponType": "PLASMA",
+        "bounty": 48
+      }
+    ]
   },
   {
     "name": "LEIDEN",
     "orePrice": 4,
     "waterPrice": 4,
-    "enginepartsPrice": 16,
+    "enginePartsPrice": 16,
     "contrabandPrice": 24,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "JAIDEN_SLOAN",
+        "weaponType": "PARTICLE",
+        "bounty": 30
+      },
+      {
+        "criminalName": "TRYSTAN_STOUT",
+        "weaponType": "LASER",
+        "bounty": 35
+      },
+      {
+        "criminalName": "AISHA_MALONE",
+        "weaponType": "PLASMA",
+        "bounty": 30
+      },
+      {
+        "criminalName": "KARINA_MERRITT",
+        "weaponType": "PARTICLE",
+        "bounty": 45
+      },
+      {
+        "criminalName": "NIKITA_HENSON",
+        "weaponType": "PARTICLE",
+        "bounty": 41
+      },
+      {
+        "criminalName": "MAIRA_BARTLETT",
+        "weaponType": "TACHYON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "AAMIR_OWEN",
+        "weaponType": "LASER",
+        "bounty": 50
+      },
+      {
+        "criminalName": "DENIZ_HOPPER",
+        "weaponType": "PARTICLE",
+        "bounty": 43
+      }
+    ]
   },
   {
     "name": "PITTSBURGH",
     "orePrice": 10,
     "waterPrice": 17,
-    "enginepartsPrice": 4,
+    "enginePartsPrice": 4,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "LILLIE_MAE_RUIZ",
+        "weaponType": "PARTICLE",
+        "bounty": 44
+      },
+      {
+        "criminalName": "LUKE_WHITE",
+        "weaponType": "PROTON",
+        "bounty": 48
+      },
+      {
+        "criminalName": "ZAARA_MIRANDA",
+        "weaponType": "PHOTON",
+        "bounty": 44
+      },
+      {
+        "criminalName": "TREY_MOSES",
+        "weaponType": "LASER",
+        "bounty": 34
+      },
+      {
+        "criminalName": "CERYS_VARGAS",
+        "weaponType": "PARTICLE",
+        "bounty": 37
+      },
+      {
+        "criminalName": "ALANNA_FERNANDEZ",
+        "weaponType": "PROTON",
+        "bounty": 46
+      },
+      {
+        "criminalName": "KANE_BULLOCK",
+        "weaponType": "LASER",
+        "bounty": 34
+      },
+      {
+        "criminalName": "ADA_MEDINA",
+        "weaponType": "PHOTON",
+        "bounty": 49
+      },
+      {
+        "criminalName": "CECILY_RICE",
+        "weaponType": "TACHYON",
+        "bounty": 42
+      },
+      {
+        "criminalName": "ENZO_CLEVELAND",
+        "weaponType": "PHOTON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "MARCIE_SANDERS",
+        "weaponType": "PROTON",
+        "bounty": 44
+      },
+      {
+        "criminalName": "ELLA_LOUISE_RASMUSSEN",
+        "weaponType": "LASER",
+        "bounty": 40
+      },
+      {
+        "criminalName": "ANIYAH_SHEPPARD",
+        "weaponType": "TACHYON",
+        "bounty": 42
+      },
+      {
+        "criminalName": "JAYLEN_POTTS",
+        "weaponType": "TACHYON",
+        "bounty": 31
+      },
+      {
+        "criminalName": "HAMZAH_CONRAD",
+        "weaponType": "PARTICLE",
+        "bounty": 42
+      },
+      {
+        "criminalName": "MIYAH_RUSSO",
+        "weaponType": "PROTON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "MARCUS_DUKE",
+        "weaponType": "TACHYON",
+        "bounty": 33
+      }
+    ]
   },
   {
     "name": "ATKA",
     "orePrice": 13,
     "waterPrice": 2,
-    "enginepartsPrice": 14,
+    "enginePartsPrice": 14,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "MYA_HOLMAN",
+        "weaponType": "PROTON",
+        "bounty": 46
+      },
+      {
+        "criminalName": "TIA_BLEVINS",
+        "weaponType": "TACHYON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "KALLUM_CASTRO",
+        "weaponType": "PLASMA",
+        "bounty": 44
+      },
+      {
+        "criminalName": "GEORGIA_SHIELDS",
+        "weaponType": "PHOTON",
+        "bounty": 32
+      }
+    ]
   },
   {
     "name": "KURILE",
     "orePrice": 1,
     "waterPrice": 12,
-    "enginepartsPrice": 6,
+    "enginePartsPrice": 6,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "TEGAN_JOHNSON",
+        "weaponType": "TACHYON",
+        "bounty": 42
+      },
+      {
+        "criminalName": "HETTIE_SHANNON",
+        "weaponType": "PARTICLE",
+        "bounty": 38
+      },
+      {
+        "criminalName": "NELL_CLARKE",
+        "weaponType": "PARTICLE",
+        "bounty": 49
+      },
+      {
+        "criminalName": "ELISSA_BENNETT",
+        "weaponType": "PROTON",
+        "bounty": 46
+      },
+      {
+        "criminalName": "GABRIEL_GOULD",
+        "weaponType": "PARTICLE",
+        "bounty": 35
+      },
+      {
+        "criminalName": "ELERI_DENNIS",
+        "weaponType": "PLASMA",
+        "bounty": 41
+      },
+      {
+        "criminalName": "RICHARD_CROSBY",
+        "weaponType": "PROTON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "SAOIRSE_WATERS",
+        "weaponType": "PLASMA",
+        "bounty": 48
+      },
+      {
+        "criminalName": "ETTA_SHEPHERD",
+        "weaponType": "TACHYON",
+        "bounty": 46
+      },
+      {
+        "criminalName": "HARRISON_NORRIS",
+        "weaponType": "PHOTON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "RAJA_RUSSELL",
+        "weaponType": "TACHYON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "MICHELLE_HORNE",
+        "weaponType": "PARTICLE",
+        "bounty": 33
+      }
+    ]
   },
   {
     "name": "STULINGEN",
     "orePrice": 9,
     "waterPrice": 15,
-    "enginepartsPrice": 10,
+    "enginePartsPrice": 10,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "MALAKAI_SNYDER",
+        "weaponType": "LASER",
+        "bounty": 37
+      },
+      {
+        "criminalName": "LYLA_BLACKBURN",
+        "weaponType": "PARTICLE",
+        "bounty": 37
+      },
+      {
+        "criminalName": "CONSTANCE_GATES",
+        "weaponType": "PROTON",
+        "bounty": 48
+      },
+      {
+        "criminalName": "KAROLINA_WILDER",
+        "weaponType": "PARTICLE",
+        "bounty": 46
+      },
+      {
+        "criminalName": "AFFAN_DORSEY",
+        "weaponType": "TACHYON",
+        "bounty": 50
+      },
+      {
+        "criminalName": "NEVE_CARLSON",
+        "weaponType": "PLASMA",
+        "bounty": 34
+      },
+      {
+        "criminalName": "MICAH_RICHARD",
+        "weaponType": "PARTICLE",
+        "bounty": 45
+      },
+      {
+        "criminalName": "QUINN_CRAFT",
+        "weaponType": "TACHYON",
+        "bounty": 42
+      },
+      {
+        "criminalName": "NATHANIEL_TOWNSEND",
+        "weaponType": "PROTON",
+        "bounty": 32
+      }
+    ]
   },
   {
     "name": "CALI",
     "orePrice": 13,
     "waterPrice": 10,
-    "enginepartsPrice": 6,
+    "enginePartsPrice": 6,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "OLIWIER_SUAREZ",
+        "weaponType": "PROTON",
+        "bounty": 33
+      },
+      {
+        "criminalName": "SERENITY_FISHER",
+        "weaponType": "PROTON",
+        "bounty": 46
+      },
+      {
+        "criminalName": "KLAUDIA_WYATT",
+        "weaponType": "PHOTON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "TESSA_CARRILLO",
+        "weaponType": "PARTICLE",
+        "bounty": 46
+      },
+      {
+        "criminalName": "ABDUL_NGUYEN",
+        "weaponType": "PARTICLE",
+        "bounty": 30
+      },
+      {
+        "criminalName": "BILLIE_WADE",
+        "weaponType": "TACHYON",
+        "bounty": 33
+      },
+      {
+        "criminalName": "SUMMER_OBRIEN",
+        "weaponType": "PROTON",
+        "bounty": 39
+      },
+      {
+        "criminalName": "LEA_BECK",
+        "weaponType": "PARTICLE",
+        "bounty": 37
+      },
+      {
+        "criminalName": "CASPER_BARNES",
+        "weaponType": "LASER",
+        "bounty": 37
+      },
+      {
+        "criminalName": "SIMEON_FLOYD",
+        "weaponType": "PARTICLE",
+        "bounty": 45
+      }
+    ]
   },
   {
     "name": "NOME",
     "orePrice": 9,
     "waterPrice": 9,
-    "enginepartsPrice": 4,
+    "enginePartsPrice": 4,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "EDWIN_VALENCIA",
+        "weaponType": "PROTON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "SONNY_AYERS",
+        "weaponType": "PHOTON",
+        "bounty": 44
+      },
+      {
+        "criminalName": "HUZAIFA_HOWARD",
+        "weaponType": "PLASMA",
+        "bounty": 40
+      },
+      {
+        "criminalName": "LEONARDO_GALLEGOS",
+        "weaponType": "PROTON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "NELLY_WALLER",
+        "weaponType": "PROTON",
+        "bounty": 44
+      },
+      {
+        "criminalName": "DALE_HENDRIX",
+        "weaponType": "PLASMA",
+        "bounty": 42
+      },
+      {
+        "criminalName": "GETHIN_SWANSON",
+        "weaponType": "PARTICLE",
+        "bounty": 35
+      },
+      {
+        "criminalName": "LEVI_HARVEY",
+        "weaponType": "TACHYON",
+        "bounty": 34
+      },
+      {
+        "criminalName": "OWAIS_MUNOZ",
+        "weaponType": "PHOTON",
+        "bounty": 50
+      }
+    ]
   },
   {
     "name": "VESPUS",
     "orePrice": 18,
     "waterPrice": 9,
-    "enginepartsPrice": 12,
+    "enginePartsPrice": 12,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "JEEVAN_CARPENTER",
+        "weaponType": "LASER",
+        "bounty": 43
+      },
+      {
+        "criminalName": "ISHAAN_SMITH",
+        "weaponType": "LASER",
+        "bounty": 38
+      },
+      {
+        "criminalName": "ADELINA_SHAFFER",
+        "weaponType": "LASER",
+        "bounty": 33
+      },
+      {
+        "criminalName": "MASON_MOON",
+        "weaponType": "LASER",
+        "bounty": 36
+      },
+      {
+        "criminalName": "VIVIENNE_VEGA",
+        "weaponType": "TACHYON",
+        "bounty": 34
+      },
+      {
+        "criminalName": "LEELA_COOLEY",
+        "weaponType": "LASER",
+        "bounty": 30
+      },
+      {
+        "criminalName": "JAC_HAYS",
+        "weaponType": "PHOTON",
+        "bounty": 46
+      },
+      {
+        "criminalName": "ISAIAH_KANE",
+        "weaponType": "PARTICLE",
+        "bounty": 43
+      }
+    ]
   },
   {
     "name": "AALEN",
     "orePrice": 9,
     "waterPrice": 15,
-    "enginepartsPrice": 20,
+    "enginePartsPrice": 20,
     "contrabandPrice": 8,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "MICHAELA_LYONS",
+        "weaponType": "TACHYON",
+        "bounty": 34
+      },
+      {
+        "criminalName": "SUMAYYA_HICKMAN",
+        "weaponType": "TACHYON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "SHANNON_GRANT",
+        "weaponType": "TACHYON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "SASHA_SNIDER",
+        "weaponType": "PARTICLE",
+        "bounty": 46
+      },
+      {
+        "criminalName": "MADDOX_BLACK",
+        "weaponType": "PROTON",
+        "bounty": 48
+      },
+      {
+        "criminalName": "ANTONI_HOLT",
+        "weaponType": "PHOTON",
+        "bounty": 48
+      },
+      {
+        "criminalName": "CAITLIN_WILLIAM",
+        "weaponType": "TACHYON",
+        "bounty": 33
+      },
+      {
+        "criminalName": "KRISTIAN_LANGLEY",
+        "weaponType": "PHOTON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "WALTER_HEBERT",
+        "weaponType": "LASER",
+        "bounty": 45
+      },
+      {
+        "criminalName": "MAE_ACEVEDO",
+        "weaponType": "PHOTON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "SILAS_MILES",
+        "weaponType": "LASER",
+        "bounty": 39
+      },
+      {
+        "criminalName": "IRIS_KERR",
+        "weaponType": "LASER",
+        "bounty": 31
+      },
+      {
+        "criminalName": "LAURA_LITTLE",
+        "weaponType": "PROTON",
+        "bounty": 34
+      },
+      {
+        "criminalName": "ADEN_WEISS",
+        "weaponType": "PARTICLE",
+        "bounty": 38
+      },
+      {
+        "criminalName": "YUVRAJ_MCKINNEY",
+        "weaponType": "PARTICLE",
+        "bounty": 48
+      }
+    ]
   },
   {
     "name": "HIRAN",
     "orePrice": 1,
     "waterPrice": 17,
-    "enginepartsPrice": 14,
+    "enginePartsPrice": 14,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "VINNIE_MILLER",
+        "weaponType": "PARTICLE",
+        "bounty": 49
+      },
+      {
+        "criminalName": "MADIHA_BUCKLEY",
+        "weaponType": "PLASMA",
+        "bounty": 47
+      },
+      {
+        "criminalName": "ZAYNAH_BRAY",
+        "weaponType": "LASER",
+        "bounty": 33
+      },
+      {
+        "criminalName": "JOANNA_MAYS",
+        "weaponType": "LASER",
+        "bounty": 42
+      },
+      {
+        "criminalName": "MARTHA_BERGER",
+        "weaponType": "LASER",
+        "bounty": 39
+      },
+      {
+        "criminalName": "ESHAAL_ALLEN",
+        "weaponType": "LASER",
+        "bounty": 48
+      }
+    ]
   },
   {
     "name": "CURACAO",
     "orePrice": 2,
     "waterPrice": 1,
-    "enginepartsPrice": 9,
+    "enginePartsPrice": 9,
     "contrabandPrice": 2,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "NOEL_MCMILLAN",
+        "weaponType": "PARTICLE",
+        "bounty": 33
+      },
+      {
+        "criminalName": "KEYAAN_MORIN",
+        "weaponType": "PARTICLE",
+        "bounty": 30
+      },
+      {
+        "criminalName": "MATYLDA_SKINNER",
+        "weaponType": "PROTON",
+        "bounty": 37
+      },
+      {
+        "criminalName": "GUY_HOLLAND",
+        "weaponType": "TACHYON",
+        "bounty": 38
+      },
+      {
+        "criminalName": "MARIELLA_WRIGHT",
+        "weaponType": "LASER",
+        "bounty": 33
+      },
+      {
+        "criminalName": "YAQUB_COHEN",
+        "weaponType": "PARTICLE",
+        "bounty": 33
+      },
+      {
+        "criminalName": "GIDEON_POWERS",
+        "weaponType": "LASER",
+        "bounty": 38
+      }
+    ]
   },
   {
     "name": "PRENTA",
     "orePrice": 10,
     "waterPrice": 12,
-    "enginepartsPrice": 13,
+    "enginePartsPrice": 13,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "SAXON_DILLARD",
+        "weaponType": "PLASMA",
+        "bounty": 38
+      },
+      {
+        "criminalName": "LAYLA_MAE_JENKINS",
+        "weaponType": "PROTON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "KYAN_PAUL",
+        "weaponType": "PLASMA",
+        "bounty": 32
+      },
+      {
+        "criminalName": "ELLE_RAMIREZ",
+        "weaponType": "PHOTON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "WIKTORIA_VILLARREAL",
+        "weaponType": "PLASMA",
+        "bounty": 32
+      },
+      {
+        "criminalName": "KEATON_VELEZ",
+        "weaponType": "TACHYON",
+        "bounty": 50
+      },
+      {
+        "criminalName": "NIHAL_MILLS",
+        "weaponType": "PROTON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "CAIN_MERCER",
+        "weaponType": "PLASMA",
+        "bounty": 41
+      },
+      {
+        "criminalName": "LUCA_PENNINGTON",
+        "weaponType": "PROTON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "NATAN_WHITAKER",
+        "weaponType": "LASER",
+        "bounty": 30
+      },
+      {
+        "criminalName": "MAISIE_TRAN",
+        "weaponType": "PLASMA",
+        "bounty": 31
+      },
+      {
+        "criminalName": "JAYDON_NICHOLSON",
+        "weaponType": "PROTON",
+        "bounty": 42
+      },
+      {
+        "criminalName": "TABITHA_HODGES",
+        "weaponType": "PARTICLE",
+        "bounty": 44
+      }
+    ]
   },
   {
     "name": "KYUSHU",
     "orePrice": 13,
     "waterPrice": 13,
-    "enginepartsPrice": 11,
+    "enginePartsPrice": 11,
     "contrabandPrice": 16,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "AUDREY_FOX",
+        "weaponType": "PHOTON",
+        "bounty": 32
+      },
+      {
+        "criminalName": "FARAH_MENDOZA",
+        "weaponType": "LASER",
+        "bounty": 31
+      },
+      {
+        "criminalName": "GABRIELLA_HURLEY",
+        "weaponType": "PLASMA",
+        "bounty": 31
+      },
+      {
+        "criminalName": "ABDIRAHMAN_WATKINS",
+        "weaponType": "TACHYON",
+        "bounty": 33
+      },
+      {
+        "criminalName": "ALISTAIR_DRAKE",
+        "weaponType": "TACHYON",
+        "bounty": 33
+      },
+      {
+        "criminalName": "INARA_HOWE",
+        "weaponType": "PROTON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "MICHAEL_MALDONADO",
+        "weaponType": "PHOTON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "ISLA_GRACE_DEAN",
+        "weaponType": "PARTICLE",
+        "bounty": 43
+      }
+    ]
   },
   {
     "name": "SARUM",
     "orePrice": 11,
     "waterPrice": 12,
-    "enginepartsPrice": 4,
+    "enginePartsPrice": 4,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "GEORGIANA_KEMP",
+        "weaponType": "PHOTON",
+        "bounty": 33
+      },
+      {
+        "criminalName": "NICOLAS_TAYLOR",
+        "weaponType": "TACHYON",
+        "bounty": 48
+      },
+      {
+        "criminalName": "MATTHEW_INGRAM",
+        "weaponType": "PLASMA",
+        "bounty": 30
+      },
+      {
+        "criminalName": "GRUFFYDD_TYSON",
+        "weaponType": "PLASMA",
+        "bounty": 49
+      },
+      {
+        "criminalName": "KAIRA_KEITH",
+        "weaponType": "LASER",
+        "bounty": 36
+      },
+      {
+        "criminalName": "ALINA_ABBOTT",
+        "weaponType": "PLASMA",
+        "bounty": 50
+      },
+      {
+        "criminalName": "ARI_PICKETT",
+        "weaponType": "PROTON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "ASMA_MEADOWS",
+        "weaponType": "PARTICLE",
+        "bounty": 44
+      },
+      {
+        "criminalName": "RALPH_KINNEY",
+        "weaponType": "TACHYON",
+        "bounty": 45
+      }
+    ]
   },
   {
     "name": "IZU",
     "orePrice": 4,
     "waterPrice": 10,
-    "enginepartsPrice": 19,
+    "enginePartsPrice": 19,
     "contrabandPrice": 32,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "PEDRO_HUBER",
+        "weaponType": "PHOTON",
+        "bounty": 46
+      },
+      {
+        "criminalName": "SAVANNAH_HOLDEN",
+        "weaponType": "TACHYON",
+        "bounty": 42
+      },
+      {
+        "criminalName": "NICOLE_BRENNAN",
+        "weaponType": "LASER",
+        "bounty": 48
+      },
+      {
+        "criminalName": "KAROL_GONZALEZ",
+        "weaponType": "LASER",
+        "bounty": 45
+      },
+      {
+        "criminalName": "LEENA_CORTEZ",
+        "weaponType": "PARTICLE",
+        "bounty": 46
+      },
+      {
+        "criminalName": "ABEL_BRYANT",
+        "weaponType": "PLASMA",
+        "bounty": 50
+      },
+      {
+        "criminalName": "KRYSTAL_BRANCH",
+        "weaponType": "PHOTON",
+        "bounty": 50
+      },
+      {
+        "criminalName": "AIYLA_MCCLURE",
+        "weaponType": "LASER",
+        "bounty": 47
+      },
+      {
+        "criminalName": "SELENA_DANIELS",
+        "weaponType": "LASER",
+        "bounty": 30
+      },
+      {
+        "criminalName": "ALBI_BUCHANAN",
+        "weaponType": "PROTON",
+        "bounty": 40
+      }
+    ]
   },
   {
     "name": "LEEDS",
     "orePrice": 1,
     "waterPrice": 7,
-    "enginepartsPrice": 10,
+    "enginePartsPrice": 10,
     "contrabandPrice": 22,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "REBEKAH_JOSEPH",
+        "weaponType": "TACHYON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "ALBY_LOWERY",
+        "weaponType": "PHOTON",
+        "bounty": 49
+      },
+      {
+        "criminalName": "PIPER_TRAVIS",
+        "weaponType": "LASER",
+        "bounty": 35
+      },
+      {
+        "criminalName": "LILIA_MARTINEZ",
+        "weaponType": "PARTICLE",
+        "bounty": 41
+      },
+      {
+        "criminalName": "EIRA_GREENE",
+        "weaponType": "PHOTON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "RAUL_SCHROEDER",
+        "weaponType": "PROTON",
+        "bounty": 32
+      },
+      {
+        "criminalName": "JULIUS_HARTMAN",
+        "weaponType": "LASER",
+        "bounty": 49
+      }
+    ]
   },
   {
     "name": "BREISGAU",
     "orePrice": 16,
     "waterPrice": 13,
-    "enginepartsPrice": 20,
+    "enginePartsPrice": 20,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "ZOFIA_OSBORNE",
+        "weaponType": "TACHYON",
+        "bounty": 37
+      },
+      {
+        "criminalName": "ALIYA_CABRERA",
+        "weaponType": "PARTICLE",
+        "bounty": 40
+      },
+      {
+        "criminalName": "ANDREI_BRADFORD",
+        "weaponType": "PARTICLE",
+        "bounty": 33
+      },
+      {
+        "criminalName": "STAR_LARSON",
+        "weaponType": "PHOTON",
+        "bounty": 39
+      },
+      {
+        "criminalName": "ELSIE_ROSE_RAYMOND",
+        "weaponType": "PLASMA",
+        "bounty": 34
+      },
+      {
+        "criminalName": "EVAN_COTE",
+        "weaponType": "PHOTON",
+        "bounty": 42
+      },
+      {
+        "criminalName": "ISLA_MAE_ROACH",
+        "weaponType": "PARTICLE",
+        "bounty": 47
+      },
+      {
+        "criminalName": "SUBHAN_MCBRIDE",
+        "weaponType": "PARTICLE",
+        "bounty": 42
+      },
+      {
+        "criminalName": "LILI_TILLMAN",
+        "weaponType": "PROTON",
+        "bounty": 33
+      },
+      {
+        "criminalName": "FLETCHER_STEPHENS",
+        "weaponType": "TACHYON",
+        "bounty": 37
+      },
+      {
+        "criminalName": "NEVAEH_ROGERS",
+        "weaponType": "PLASMA",
+        "bounty": 48
+      },
+      {
+        "criminalName": "CHANEL_BRIGHT",
+        "weaponType": "PLASMA",
+        "bounty": 36
+      },
+      {
+        "criminalName": "FREDDIE_WOOTEN",
+        "weaponType": "PLASMA",
+        "bounty": 30
+      }
+    ]
   },
   {
     "name": "JUNYO",
     "orePrice": 8,
     "waterPrice": 12,
-    "enginepartsPrice": 19,
+    "enginePartsPrice": 19,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "RIA_HAHN",
+        "weaponType": "TACHYON",
+        "bounty": 34
+      },
+      {
+        "criminalName": "DOUGIE_MUELLER",
+        "weaponType": "PROTON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "WILSON_COLEMAN",
+        "weaponType": "PARTICLE",
+        "bounty": 38
+      },
+      {
+        "criminalName": "MARWA_BROOKS",
+        "weaponType": "PROTON",
+        "bounty": 39
+      },
+      {
+        "criminalName": "KIRA_SILVA",
+        "weaponType": "PARTICLE",
+        "bounty": 33
+      },
+      {
+        "criminalName": "ZAHRA_DOYLE",
+        "weaponType": "LASER",
+        "bounty": 41
+      },
+      {
+        "criminalName": "RUAIRI_DODSON",
+        "weaponType": "LASER",
+        "bounty": 37
+      },
+      {
+        "criminalName": "HAREEM_RAMSEY",
+        "weaponType": "PLASMA",
+        "bounty": 32
+      },
+      {
+        "criminalName": "GRACE_JEFFERSON",
+        "weaponType": "PROTON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "ISABEL_PRUITT",
+        "weaponType": "PHOTON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "KOURTNEY_BURTON",
+        "weaponType": "TACHYON",
+        "bounty": 46
+      }
+    ]
   },
   {
     "name": "HARRIS",
     "orePrice": 2,
     "waterPrice": 13,
-    "enginepartsPrice": 19,
+    "enginePartsPrice": 19,
     "contrabandPrice": 32,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "WILBUR_CASE",
+        "weaponType": "PLASMA",
+        "bounty": 40
+      },
+      {
+        "criminalName": "SAFIYYAH_CUMMINGS",
+        "weaponType": "PLASMA",
+        "bounty": 35
+      },
+      {
+        "criminalName": "MADDIE_WOLFE",
+        "weaponType": "PARTICLE",
+        "bounty": 37
+      },
+      {
+        "criminalName": "AMINAH_ZAMORA",
+        "weaponType": "PHOTON",
+        "bounty": 47
+      },
+      {
+        "criminalName": "MIRA_MORENO",
+        "weaponType": "PHOTON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "ANA_CAIN",
+        "weaponType": "PHOTON",
+        "bounty": 49
+      },
+      {
+        "criminalName": "RAEES_SCHMIDT",
+        "weaponType": "LASER",
+        "bounty": 38
+      },
+      {
+        "criminalName": "STEPHEN_GIBSON",
+        "weaponType": "TACHYON",
+        "bounty": 50
+      },
+      {
+        "criminalName": "SYLVIE_HUFF",
+        "weaponType": "PLASMA",
+        "bounty": 37
+      },
+      {
+        "criminalName": "CLEMENTINE_SCHNEIDER",
+        "weaponType": "PLASMA",
+        "bounty": 32
+      },
+      {
+        "criminalName": "ANDREAS_HOPKINS",
+        "weaponType": "LASER",
+        "bounty": 47
+      }
+    ]
   },
   {
     "name": "ELYSIUM",
     "orePrice": 16,
     "waterPrice": 1,
-    "enginepartsPrice": 20,
+    "enginePartsPrice": 20,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "MARTIN_ORTEGA",
+        "weaponType": "TACHYON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "ZAID_OLIVER",
+        "weaponType": "PROTON",
+        "bounty": 39
+      },
+      {
+        "criminalName": "DARCIE_MAE_HATFIELD",
+        "weaponType": "PROTON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "HARLEY_FORBES",
+        "weaponType": "LASER",
+        "bounty": 45
+      },
+      {
+        "criminalName": "AAMINA_STRICKLAND",
+        "weaponType": "TACHYON",
+        "bounty": 48
+      },
+      {
+        "criminalName": "MARC_BOYD",
+        "weaponType": "LASER",
+        "bounty": 31
+      },
+      {
+        "criminalName": "EMMY_PHELPS",
+        "weaponType": "PHOTON",
+        "bounty": 34
+      },
+      {
+        "criminalName": "VINCENT_ACOSTA",
+        "weaponType": "PARTICLE",
+        "bounty": 42
+      },
+      {
+        "criminalName": "CLAY_HAWKINS",
+        "weaponType": "PROTON",
+        "bounty": 50
+      }
+    ]
   },
   {
     "name": "TEGAKIS",
     "orePrice": 12,
     "waterPrice": 16,
-    "enginepartsPrice": 14,
+    "enginePartsPrice": 14,
     "contrabandPrice": 14,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "ZACHARIAH_WOODS",
+        "weaponType": "LASER",
+        "bounty": 31
+      },
+      {
+        "criminalName": "POPPIE_RIVERA",
+        "weaponType": "PHOTON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "KAISON_VINCENT",
+        "weaponType": "PLASMA",
+        "bounty": 42
+      },
+      {
+        "criminalName": "PRESTON_HOUSE",
+        "weaponType": "PARTICLE",
+        "bounty": 48
+      }
+    ]
   },
   {
     "name": "PADUA",
     "orePrice": 10,
     "waterPrice": 12,
-    "enginepartsPrice": 8,
+    "enginePartsPrice": 8,
     "contrabandPrice": 22,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "ILYAS_BAUER",
+        "weaponType": "PARTICLE",
+        "bounty": 40
+      },
+      {
+        "criminalName": "ANABELLE_MONTOYA",
+        "weaponType": "PARTICLE",
+        "bounty": 45
+      },
+      {
+        "criminalName": "FAITH_ANDERSON",
+        "weaponType": "LASER",
+        "bounty": 46
+      },
+      {
+        "criminalName": "MARIYA_MCCONNELL",
+        "weaponType": "PHOTON",
+        "bounty": 44
+      },
+      {
+        "criminalName": "EMMELINE_GAMBLE",
+        "weaponType": "PROTON",
+        "bounty": 42
+      },
+      {
+        "criminalName": "EMRYS_WITT",
+        "weaponType": "PARTICLE",
+        "bounty": 47
+      },
+      {
+        "criminalName": "JAX_BARNETT",
+        "weaponType": "PROTON",
+        "bounty": 39
+      },
+      {
+        "criminalName": "BARTOSZ_PITTS",
+        "weaponType": "PHOTON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "EMANUEL_DAVID",
+        "weaponType": "PHOTON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "CORBEN_RIVAS",
+        "weaponType": "PROTON",
+        "bounty": 42
+      },
+      {
+        "criminalName": "RYLEY_MATTHEWS",
+        "weaponType": "PHOTON",
+        "bounty": 48
+      },
+      {
+        "criminalName": "ELLIOT_MURRAY",
+        "weaponType": "PROTON",
+        "bounty": 33
+      },
+      {
+        "criminalName": "SAIF_SCHWARTZ",
+        "weaponType": "PARTICLE",
+        "bounty": 38
+      }
+    ]
   },
   {
     "name": "KITADAKE",
     "orePrice": 5,
     "waterPrice": 15,
-    "enginepartsPrice": 4,
+    "enginePartsPrice": 4,
     "contrabandPrice": 20,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "ROGAN_BARR",
+        "weaponType": "PHOTON",
+        "bounty": 47
+      },
+      {
+        "criminalName": "HENRI_ENGLAND",
+        "weaponType": "PARTICLE",
+        "bounty": 31
+      },
+      {
+        "criminalName": "HARLEEN_GAY",
+        "weaponType": "LASER",
+        "bounty": 31
+      },
+      {
+        "criminalName": "JAYA_SANTANA",
+        "weaponType": "TACHYON",
+        "bounty": 34
+      },
+      {
+        "criminalName": "ZAYNE_HUBBARD",
+        "weaponType": "LASER",
+        "bounty": 33
+      },
+      {
+        "criminalName": "TALHA_SWEET",
+        "weaponType": "PHOTON",
+        "bounty": 50
+      }
+    ]
   },
   {
     "name": "PYGAR",
     "orePrice": 7,
     "waterPrice": 1,
-    "enginepartsPrice": 5,
+    "enginePartsPrice": 5,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "INDIGO_HICKS",
+        "weaponType": "PARTICLE",
+        "bounty": 43
+      },
+      {
+        "criminalName": "SHANAYA_SHEPARD",
+        "weaponType": "LASER",
+        "bounty": 40
+      },
+      {
+        "criminalName": "JULIET_MCNEIL",
+        "weaponType": "PHOTON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "OAKLEY_FROST",
+        "weaponType": "TACHYON",
+        "bounty": 39
+      },
+      {
+        "criminalName": "KAJETAN_CURRY",
+        "weaponType": "PROTON",
+        "bounty": 34
+      },
+      {
+        "criminalName": "SHAUN_CHURCH",
+        "weaponType": "TACHYON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "CORY_COOPER",
+        "weaponType": "PROTON",
+        "bounty": 37
+      },
+      {
+        "criminalName": "HANNA_BLAIR",
+        "weaponType": "PARTICLE",
+        "bounty": 41
+      },
+      {
+        "criminalName": "PERSEPHONE_STAFFORD",
+        "weaponType": "TACHYON",
+        "bounty": 42
+      },
+      {
+        "criminalName": "SAHIB_LANE",
+        "weaponType": "PLASMA",
+        "bounty": 39
+      },
+      {
+        "criminalName": "KAYLA_BERRY",
+        "weaponType": "PARTICLE",
+        "bounty": 30
+      },
+      {
+        "criminalName": "MAIYA_MERCADO",
+        "weaponType": "TACHYON",
+        "bounty": 30
+      }
+    ]
   },
   {
     "name": "MALLORCA",
     "orePrice": 8,
     "waterPrice": 19,
-    "enginepartsPrice": 5,
+    "enginePartsPrice": 5,
     "contrabandPrice": 8,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "IBRAHIM_COTTON",
+        "weaponType": "PLASMA",
+        "bounty": 41
+      },
+      {
+        "criminalName": "ARYAN_SPENCER",
+        "weaponType": "TACHYON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "LACEY_KLINE",
+        "weaponType": "PARTICLE",
+        "bounty": 48
+      },
+      {
+        "criminalName": "CECILIA_ESTES",
+        "weaponType": "LASER",
+        "bounty": 34
+      },
+      {
+        "criminalName": "MUHAMMED_BRUCE",
+        "weaponType": "LASER",
+        "bounty": 34
+      },
+      {
+        "criminalName": "ZOYA_DURHAM",
+        "weaponType": "PROTON",
+        "bounty": 46
+      }
+    ]
   },
   {
     "name": "KYOTO",
     "orePrice": 9,
     "waterPrice": 12,
-    "enginepartsPrice": 18,
+    "enginePartsPrice": 18,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "LILIAN_ROBBINS",
+        "weaponType": "PARTICLE",
+        "bounty": 43
+      },
+      {
+        "criminalName": "LILLIANA_SINGLETON",
+        "weaponType": "PLASMA",
+        "bounty": 35
+      },
+      {
+        "criminalName": "DAWID_ROBERSON",
+        "weaponType": "PARTICLE",
+        "bounty": 32
+      },
+      {
+        "criminalName": "SIDNEY_NORTON",
+        "weaponType": "PHOTON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "LEONIE_BEAN",
+        "weaponType": "TACHYON",
+        "bounty": 37
+      },
+      {
+        "criminalName": "BENJAMIN_YANG",
+        "weaponType": "PROTON",
+        "bounty": 33
+      },
+      {
+        "criminalName": "KEELAN_PITTMAN",
+        "weaponType": "LASER",
+        "bounty": 35
+      },
+      {
+        "criminalName": "SOLOMON_SLATER",
+        "weaponType": "LASER",
+        "bounty": 42
+      },
+      {
+        "criminalName": "CAOIMHE_GUY",
+        "weaponType": "PARTICLE",
+        "bounty": 41
+      },
+      {
+        "criminalName": "NIAM_THOMPSON",
+        "weaponType": "TACHYON",
+        "bounty": 42
+      },
+      {
+        "criminalName": "MILO_WISE",
+        "weaponType": "TACHYON",
+        "bounty": 36
+      }
+    ]
   },
   {
     "name": "RYUKU",
     "orePrice": 17,
     "waterPrice": 2,
-    "enginepartsPrice": 14,
+    "enginePartsPrice": 14,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "AMBER_MOSLEY",
+        "weaponType": "TACHYON",
+        "bounty": 42
+      },
+      {
+        "criminalName": "NAOMI_BEASLEY",
+        "weaponType": "PLASMA",
+        "bounty": 35
+      },
+      {
+        "criminalName": "OLIVIA_GRACE_SHORT",
+        "weaponType": "PARTICLE",
+        "bounty": 46
+      },
+      {
+        "criminalName": "AXL_MONROE",
+        "weaponType": "PHOTON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "RILEY_SHAW",
+        "weaponType": "LASER",
+        "bounty": 34
+      },
+      {
+        "criminalName": "MEREDITH_EMERSON",
+        "weaponType": "PROTON",
+        "bounty": 50
+      },
+      {
+        "criminalName": "HENDRIX_BENTON",
+        "weaponType": "PHOTON",
+        "bounty": 46
+      },
+      {
+        "criminalName": "SAMI_STEVENSON",
+        "weaponType": "PROTON",
+        "bounty": 38
+      },
+      {
+        "criminalName": "KAYLEIGH_BANKS",
+        "weaponType": "PHOTON",
+        "bounty": 32
+      },
+      {
+        "criminalName": "AMAL_PARK",
+        "weaponType": "LASER",
+        "bounty": 33
+      },
+      {
+        "criminalName": "HUW_BARKER",
+        "weaponType": "PROTON",
+        "bounty": 37
+      },
+      {
+        "criminalName": "EMELIA_HAYES",
+        "weaponType": "PLASMA",
+        "bounty": 40
+      },
+      {
+        "criminalName": "ANGELA_BURRIS",
+        "weaponType": "PLASMA",
+        "bounty": 35
+      },
+      {
+        "criminalName": "JEREMY_FLYNN",
+        "weaponType": "PHOTON",
+        "bounty": 34
+      },
+      {
+        "criminalName": "HAMISH_FOLEY",
+        "weaponType": "PROTON",
+        "bounty": 33
+      }
+    ]
   },
   {
     "name": "CAIRO",
     "orePrice": 8,
     "waterPrice": 13,
-    "enginepartsPrice": 18,
+    "enginePartsPrice": 18,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "YASH_KIDD",
+        "weaponType": "PLASMA",
+        "bounty": 38
+      },
+      {
+        "criminalName": "CILLIAN_KOCH",
+        "weaponType": "PLASMA",
+        "bounty": 30
+      },
+      {
+        "criminalName": "LIYA_SUMMERS",
+        "weaponType": "PLASMA",
+        "bounty": 43
+      },
+      {
+        "criminalName": "HANIYA_VINSON",
+        "weaponType": "PHOTON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "ARONAS_REESE",
+        "weaponType": "LASER",
+        "bounty": 47
+      },
+      {
+        "criminalName": "LUKAS_LEBLANC",
+        "weaponType": "TACHYON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "JONATHAN_SANCHEZ",
+        "weaponType": "TACHYON",
+        "bounty": 32
+      },
+      {
+        "criminalName": "CHELSEA_AYALA",
+        "weaponType": "PLASMA",
+        "bounty": 48
+      }
+    ]
   },
   {
     "name": "STUTTGART",
     "orePrice": 1,
     "waterPrice": 17,
-    "enginepartsPrice": 10,
+    "enginePartsPrice": 10,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "SHELBY_COMPTON",
+        "weaponType": "PARTICLE",
+        "bounty": 46
+      },
+      {
+        "criminalName": "GUS_FRANKLIN",
+        "weaponType": "PLASMA",
+        "bounty": 44
+      },
+      {
+        "criminalName": "ELISHA_FIGUEROA",
+        "weaponType": "PHOTON",
+        "bounty": 42
+      },
+      {
+        "criminalName": "HARRY_RICH",
+        "weaponType": "TACHYON",
+        "bounty": 47
+      },
+      {
+        "criminalName": "SKYE_DAVENPORT",
+        "weaponType": "PROTON",
+        "bounty": 47
+      },
+      {
+        "criminalName": "DAVID_MELENDEZ",
+        "weaponType": "TACHYON",
+        "bounty": 34
+      },
+      {
+        "criminalName": "HUNTER_ROWE",
+        "weaponType": "PARTICLE",
+        "bounty": 36
+      },
+      {
+        "criminalName": "FRANCO_LUNA",
+        "weaponType": "PHOTON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "UMAR_HERNANDEZ",
+        "weaponType": "PARTICLE",
+        "bounty": 36
+      }
+    ]
   },
   {
     "name": "ASO",
     "orePrice": 14,
     "waterPrice": 3,
-    "enginepartsPrice": 8,
+    "enginePartsPrice": 8,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "SONIA_GILES",
+        "weaponType": "PROTON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "LOTTIE_KEY",
+        "weaponType": "PHOTON",
+        "bounty": 38
+      },
+      {
+        "criminalName": "COLTON_BURT",
+        "weaponType": "PARTICLE",
+        "bounty": 31
+      },
+      {
+        "criminalName": "BRANDON_FOWLER",
+        "weaponType": "PHOTON",
+        "bounty": 47
+      },
+      {
+        "criminalName": "MARIE_JUSTICE",
+        "weaponType": "PARTICLE",
+        "bounty": 35
+      },
+      {
+        "criminalName": "NIA_SHARP",
+        "weaponType": "PARTICLE",
+        "bounty": 42
+      },
+      {
+        "criminalName": "SOPHIE_DOUGLAS",
+        "weaponType": "PLASMA",
+        "bounty": 37
+      },
+      {
+        "criminalName": "BOBBIE_SALAZAR",
+        "weaponType": "PHOTON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "DANIELLE_BALL",
+        "weaponType": "TACHYON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "PHOEBE_TREVINO",
+        "weaponType": "PLASMA",
+        "bounty": 34
+      },
+      {
+        "criminalName": "TEODOR_BONNER",
+        "weaponType": "LASER",
+        "bounty": 38
+      },
+      {
+        "criminalName": "AVA_MAE_MERRILL",
+        "weaponType": "PHOTON",
+        "bounty": 50
+      },
+      {
+        "criminalName": "WILFRED_FRY",
+        "weaponType": "PLASMA",
+        "bounty": 47
+      }
+    ]
   },
   {
     "name": "UNKNOWN",
     "orePrice": 12,
     "waterPrice": 3,
-    "enginepartsPrice": 13,
+    "enginePartsPrice": 13,
     "contrabandPrice": 16,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "CATHERINE_PECK",
+        "weaponType": "LASER",
+        "bounty": 45
+      },
+      {
+        "criminalName": "JESSIE_GREEN",
+        "weaponType": "PLASMA",
+        "bounty": 37
+      },
+      {
+        "criminalName": "FRANKLYN_PIERCE",
+        "weaponType": "PROTON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "FARIS_JACKSON",
+        "weaponType": "PLASMA",
+        "bounty": 41
+      },
+      {
+        "criminalName": "EFFIE_WILKERSON",
+        "weaponType": "TACHYON",
+        "bounty": 30
+      }
+    ]
   },
   {
     "name": "CARINEA",
     "orePrice": 15,
     "waterPrice": 13,
-    "enginepartsPrice": 2,
+    "enginePartsPrice": 2,
     "contrabandPrice": 8,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "ANNIE_SAWYER",
+        "weaponType": "LASER",
+        "bounty": 32
+      },
+      {
+        "criminalName": "CAYDEN_VASQUEZ",
+        "weaponType": "TACHYON",
+        "bounty": 49
+      },
+      {
+        "criminalName": "HASNAIN_GARCIA",
+        "weaponType": "PROTON",
+        "bounty": 33
+      },
+      {
+        "criminalName": "PIXIE_MCDOWELL",
+        "weaponType": "LASER",
+        "bounty": 31
+      },
+      {
+        "criminalName": "KYRAN_BENTLEY",
+        "weaponType": "PARTICLE",
+        "bounty": 38
+      },
+      {
+        "criminalName": "SAMIR_MORRISON",
+        "weaponType": "TACHYON",
+        "bounty": 44
+      }
+    ]
   },
   {
     "name": "FREITAL",
     "orePrice": 5,
     "waterPrice": 6,
-    "enginepartsPrice": 18,
+    "enginePartsPrice": 18,
     "contrabandPrice": 28,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "JONAH_CHAPMAN",
+        "weaponType": "PHOTON",
+        "bounty": 48
+      },
+      {
+        "criminalName": "BARNEY_COOKE",
+        "weaponType": "TACHYON",
+        "bounty": 32
+      },
+      {
+        "criminalName": "PETER_DAVIS",
+        "weaponType": "PLASMA",
+        "bounty": 43
+      },
+      {
+        "criminalName": "NELA_CLEMENTS",
+        "weaponType": "LASER",
+        "bounty": 39
+      },
+      {
+        "criminalName": "REEVA_CARTER",
+        "weaponType": "PROTON",
+        "bounty": 32
+      },
+      {
+        "criminalName": "LEONA_BERNARD",
+        "weaponType": "LASER",
+        "bounty": 41
+      },
+      {
+        "criminalName": "IOAN_SERRANO",
+        "weaponType": "LASER",
+        "bounty": 46
+      },
+      {
+        "criminalName": "ELA_TUCKER",
+        "weaponType": "PARTICLE",
+        "bounty": 41
+      },
+      {
+        "criminalName": "REMI_CARROLL",
+        "weaponType": "LASER",
+        "bounty": 37
+      },
+      {
+        "criminalName": "JANA_GOODMAN",
+        "weaponType": "PLASMA",
+        "bounty": 35
+      }
+    ]
   },
   {
     "name": "ALCATRAZ",
     "orePrice": 4,
     "waterPrice": 18,
-    "enginepartsPrice": 9,
+    "enginePartsPrice": 9,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "ANGUS_BYERS",
+        "weaponType": "PROTON",
+        "bounty": 33
+      },
+      {
+        "criminalName": "ARNIE_MCLEAN",
+        "weaponType": "TACHYON",
+        "bounty": 31
+      },
+      {
+        "criminalName": "AMAYA_FRYE",
+        "weaponType": "PARTICLE",
+        "bounty": 41
+      },
+      {
+        "criminalName": "SAFAA_SIMPSON",
+        "weaponType": "TACHYON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "ARWEN_WHITEHEAD",
+        "weaponType": "TACHYON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "COURTNEY_CRAWFORD",
+        "weaponType": "LASER",
+        "bounty": 45
+      },
+      {
+        "criminalName": "ENID_TURNER",
+        "weaponType": "PARTICLE",
+        "bounty": 35
+      },
+      {
+        "criminalName": "CAI_JENSEN",
+        "weaponType": "PLASMA",
+        "bounty": 50
+      },
+      {
+        "criminalName": "TYLER_JAMES_LIVINGSTON",
+        "weaponType": "PROTON",
+        "bounty": 38
+      },
+      {
+        "criminalName": "CIARAN_YOUNG",
+        "weaponType": "PHOTON",
+        "bounty": 47
+      },
+      {
+        "criminalName": "JADE_FLEMING",
+        "weaponType": "PROTON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "JUDE_PETERSON",
+        "weaponType": "PROTON",
+        "bounty": 48
+      }
+    ]
   },
   {
     "name": "PRIMUS",
     "orePrice": 19,
     "waterPrice": 14,
-    "enginepartsPrice": 5,
+    "enginePartsPrice": 5,
     "contrabandPrice": 38,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "CADI_NEAL",
+        "weaponType": "PROTON",
+        "bounty": 33
+      },
+      {
+        "criminalName": "CAMILLE_HARDY",
+        "weaponType": "PHOTON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "ELISE_DAUGHERTY",
+        "weaponType": "PROTON",
+        "bounty": 32
+      },
+      {
+        "criminalName": "WIKTOR_HOLMES",
+        "weaponType": "PARTICLE",
+        "bounty": 40
+      },
+      {
+        "criminalName": "EMMANUELLA_BOWMAN",
+        "weaponType": "PLASMA",
+        "bounty": 32
+      },
+      {
+        "criminalName": "MALAIKA_COX",
+        "weaponType": "TACHYON",
+        "bounty": 38
+      },
+      {
+        "criminalName": "LILLIAN_WOODARD",
+        "weaponType": "PARTICLE",
+        "bounty": 35
+      },
+      {
+        "criminalName": "AMIRA_FINLEY",
+        "weaponType": "PARTICLE",
+        "bounty": 47
+      },
+      {
+        "criminalName": "HAFSAH_BARTON",
+        "weaponType": "PLASMA",
+        "bounty": 35
+      },
+      {
+        "criminalName": "ZIDAN_YORK",
+        "weaponType": "PHOTON",
+        "bounty": 46
+      },
+      {
+        "criminalName": "ANDRE_MCCARTY",
+        "weaponType": "TACHYON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "GIULIA_DUFFY",
+        "weaponType": "LASER",
+        "bounty": 35
+      },
+      {
+        "criminalName": "IGOR_HANSEN",
+        "weaponType": "PARTICLE",
+        "bounty": 45
+      },
+      {
+        "criminalName": "KEEGAN_REYES",
+        "weaponType": "PLASMA",
+        "bounty": 50
+      }
+    ]
   },
   {
     "name": "OURAY",
     "orePrice": 13,
     "waterPrice": 11,
-    "enginepartsPrice": 6,
+    "enginePartsPrice": 6,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "MABEL_LOGAN",
+        "weaponType": "PARTICLE",
+        "bounty": 34
+      },
+      {
+        "criminalName": "JETT_COCHRAN",
+        "weaponType": "PROTON",
+        "bounty": 50
+      },
+      {
+        "criminalName": "CRYSTAL_CHANDLER",
+        "weaponType": "LASER",
+        "bounty": 40
+      },
+      {
+        "criminalName": "HAYLEY_CANTU",
+        "weaponType": "PLASMA",
+        "bounty": 43
+      },
+      {
+        "criminalName": "FREDERICK_WILLIS",
+        "weaponType": "PARTICLE",
+        "bounty": 44
+      },
+      {
+        "criminalName": "AMEERAH_LOPEZ",
+        "weaponType": "TACHYON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "MARGARET_FISCHER",
+        "weaponType": "PLASMA",
+        "bounty": 46
+      },
+      {
+        "criminalName": "SAHIL_REILLY",
+        "weaponType": "TACHYON",
+        "bounty": 46
+      },
+      {
+        "criminalName": "MARTA_SNOW",
+        "weaponType": "TACHYON",
+        "bounty": 42
+      },
+      {
+        "criminalName": "LILA_HEAD",
+        "weaponType": "PROTON",
+        "bounty": 50
+      },
+      {
+        "criminalName": "ORSON_MAY",
+        "weaponType": "PLASMA",
+        "bounty": 49
+      }
+    ]
   },
   {
     "name": "KIEL",
     "orePrice": 18,
     "waterPrice": 19,
-    "enginepartsPrice": 19,
+    "enginePartsPrice": 19,
     "contrabandPrice": 6,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "YUSUF_ENGLISH",
+        "weaponType": "PLASMA",
+        "bounty": 48
+      },
+      {
+        "criminalName": "DIYA_STEWART",
+        "weaponType": "PLASMA",
+        "bounty": 38
+      },
+      {
+        "criminalName": "JIA_BYRD",
+        "weaponType": "TACHYON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "AGATHA_MADDOX",
+        "weaponType": "LASER",
+        "bounty": 44
+      },
+      {
+        "criminalName": "KYE_HOGAN",
+        "weaponType": "LASER",
+        "bounty": 30
+      },
+      {
+        "criminalName": "CONNIE_TORRES",
+        "weaponType": "LASER",
+        "bounty": 44
+      },
+      {
+        "criminalName": "ALIA_GUERRA",
+        "weaponType": "PROTON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "CHRISTINE_HEWITT",
+        "weaponType": "PROTON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "ADELE_DICKSON",
+        "weaponType": "PHOTON",
+        "bounty": 38
+      },
+      {
+        "criminalName": "BRIANNA_MASON",
+        "weaponType": "PARTICLE",
+        "bounty": 35
+      },
+      {
+        "criminalName": "HARRIS_CHARLES",
+        "weaponType": "PLASMA",
+        "bounty": 45
+      },
+      {
+        "criminalName": "ARMAN_CHAN",
+        "weaponType": "PARTICLE",
+        "bounty": 39
+      },
+      {
+        "criminalName": "DEACON_FARMER",
+        "weaponType": "TACHYON",
+        "bounty": 36
+      }
+    ]
   },
   {
     "name": "VOGTLAND",
     "orePrice": 3,
     "waterPrice": 20,
-    "enginepartsPrice": 2,
+    "enginePartsPrice": 2,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "FLORRIE_STONE",
+        "weaponType": "PLASMA",
+        "bounty": 37
+      },
+      {
+        "criminalName": "KAI_WOODWARD",
+        "weaponType": "PROTON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "HUDA_HOLLOWAY",
+        "weaponType": "PARTICLE",
+        "bounty": 42
+      },
+      {
+        "criminalName": "HARI_WYNN",
+        "weaponType": "PARTICLE",
+        "bounty": 50
+      },
+      {
+        "criminalName": "HASSAN_BROWNING",
+        "weaponType": "PARTICLE",
+        "bounty": 46
+      },
+      {
+        "criminalName": "AYMAN_HARPER",
+        "weaponType": "PARTICLE",
+        "bounty": 47
+      },
+      {
+        "criminalName": "FREYJA_ADKINS",
+        "weaponType": "LASER",
+        "bounty": 31
+      },
+      {
+        "criminalName": "LOUIS_KIM",
+        "weaponType": "PHOTON",
+        "bounty": 48
+      },
+      {
+        "criminalName": "AIMEE_RODGERS",
+        "weaponType": "PARTICLE",
+        "bounty": 41
+      },
+      {
+        "criminalName": "GABRIELA_POPE",
+        "weaponType": "PROTON",
+        "bounty": 45
+      }
+    ]
   },
   {
     "name": "MALTA",
     "orePrice": 15,
     "waterPrice": 10,
-    "enginepartsPrice": 6,
+    "enginePartsPrice": 6,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "VINNY_SAVAGE",
+        "weaponType": "PARTICLE",
+        "bounty": 35
+      },
+      {
+        "criminalName": "BENEDICT_WATSON",
+        "weaponType": "PROTON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "ARJUN_PETERSEN",
+        "weaponType": "PLASMA",
+        "bounty": 46
+      },
+      {
+        "criminalName": "RORY_FLORES",
+        "weaponType": "PARTICLE",
+        "bounty": 43
+      },
+      {
+        "criminalName": "MAISY_MULLINS",
+        "weaponType": "PLASMA",
+        "bounty": 45
+      },
+      {
+        "criminalName": "KARSON_PETTY",
+        "weaponType": "TACHYON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "CONNOR_ORTIZ",
+        "weaponType": "LASER",
+        "bounty": 43
+      },
+      {
+        "criminalName": "NATALIE_SUTTON",
+        "weaponType": "TACHYON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "AMAN_BEARD",
+        "weaponType": "TACHYON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "ELENA_JOHNS",
+        "weaponType": "PLASMA",
+        "bounty": 49
+      },
+      {
+        "criminalName": "SCOTT_PATTERSON",
+        "weaponType": "PARTICLE",
+        "bounty": 30
+      },
+      {
+        "criminalName": "IDRIS_RYAN",
+        "weaponType": "LASER",
+        "bounty": 45
+      },
+      {
+        "criminalName": "IMOGEN_RICHARDSON",
+        "weaponType": "PARTICLE",
+        "bounty": 49
+      }
+    ]
   },
   {
     "name": "TOLEDO",
     "orePrice": 3,
     "waterPrice": 5,
-    "enginepartsPrice": 4,
+    "enginePartsPrice": 4,
     "contrabandPrice": 12,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "COCO_ROSA",
+        "weaponType": "LASER",
+        "bounty": 40
+      },
+      {
+        "criminalName": "KARA_BAIRD",
+        "weaponType": "PARTICLE",
+        "bounty": 31
+      },
+      {
+        "criminalName": "KALEB_WEAVER",
+        "weaponType": "PHOTON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "AANYA_CLEMONS",
+        "weaponType": "PARTICLE",
+        "bounty": 46
+      },
+      {
+        "criminalName": "OLIVER_MEYER",
+        "weaponType": "PHOTON",
+        "bounty": 39
+      },
+      {
+        "criminalName": "RUFUS_HOLCOMB",
+        "weaponType": "PROTON",
+        "bounty": 44
+      },
+      {
+        "criminalName": "EMMANUEL_HEATH",
+        "weaponType": "PHOTON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "ESHAL_BURKS",
+        "weaponType": "TACHYON",
+        "bounty": 43
+      }
+    ]
   },
   {
     "name": "NEW_LONDON",
     "orePrice": 8,
     "waterPrice": 6,
-    "enginepartsPrice": 16,
+    "enginePartsPrice": 16,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "GRACIE_CALDWELL",
+        "weaponType": "TACHYON",
+        "bounty": 32
+      },
+      {
+        "criminalName": "NATE_HORN",
+        "weaponType": "PLASMA",
+        "bounty": 49
+      },
+      {
+        "criminalName": "HUMPHREY_HOWELL",
+        "weaponType": "TACHYON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "DARCIE_WARD",
+        "weaponType": "PARTICLE",
+        "bounty": 50
+      },
+      {
+        "criminalName": "LAIBA_MCDANIEL",
+        "weaponType": "PARTICLE",
+        "bounty": 48
+      },
+      {
+        "criminalName": "ELLA_GRACE_SCHULTZ",
+        "weaponType": "PARTICLE",
+        "bounty": 33
+      },
+      {
+        "criminalName": "KATE_PORTER",
+        "weaponType": "PROTON",
+        "bounty": 46
+      },
+      {
+        "criminalName": "NIALL_BOYER",
+        "weaponType": "TACHYON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "EMMIE_MACDONALD",
+        "weaponType": "TACHYON",
+        "bounty": 31
+      },
+      {
+        "criminalName": "KINGSLEY_KIRK",
+        "weaponType": "TACHYON",
+        "bounty": 33
+      },
+      {
+        "criminalName": "EVIE_ROSE_HOOVER",
+        "weaponType": "LASER",
+        "bounty": 36
+      }
+    ]
   },
   {
     "name": "HOUSTON",
     "orePrice": 5,
     "waterPrice": 7,
-    "enginepartsPrice": 10,
+    "enginePartsPrice": 10,
     "contrabandPrice": 36,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "ZARA_MANN",
+        "weaponType": "PLASMA",
+        "bounty": 40
+      },
+      {
+        "criminalName": "BRAYDON_HOOPER",
+        "weaponType": "PHOTON",
+        "bounty": 38
+      },
+      {
+        "criminalName": "ROME_CARDENAS",
+        "weaponType": "PLASMA",
+        "bounty": 49
+      },
+      {
+        "criminalName": "KYLE_SOSA",
+        "weaponType": "PLASMA",
+        "bounty": 47
+      },
+      {
+        "criminalName": "MEGHAN_OCHOA",
+        "weaponType": "PROTON",
+        "bounty": 38
+      },
+      {
+        "criminalName": "LILY_MAY_DURAN",
+        "weaponType": "PARTICLE",
+        "bounty": 47
+      },
+      {
+        "criminalName": "DEBORAH_ERICKSON",
+        "weaponType": "PHOTON",
+        "bounty": 38
+      },
+      {
+        "criminalName": "NED_SHELTON",
+        "weaponType": "PROTON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "LEIA_MCINTYRE",
+        "weaponType": "PROTON",
+        "bounty": 49
+      }
+    ]
   },
   {
     "name": "FALKLAND",
     "orePrice": 9,
     "waterPrice": 15,
-    "enginepartsPrice": 8,
+    "enginePartsPrice": 8,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "KRISTINA_SPARKS",
+        "weaponType": "TACHYON",
+        "bounty": 34
+      },
+      {
+        "criminalName": "NOVA_BIRD",
+        "weaponType": "PLASMA",
+        "bounty": 41
+      },
+      {
+        "criminalName": "KASPER_CUNNINGHAM",
+        "weaponType": "PHOTON",
+        "bounty": 32
+      },
+      {
+        "criminalName": "PRIMROSE_LAMBERT",
+        "weaponType": "PARTICLE",
+        "bounty": 36
+      },
+      {
+        "criminalName": "ZANDER_GILL",
+        "weaponType": "LASER",
+        "bounty": 46
+      },
+      {
+        "criminalName": "LEXI_DUDLEY",
+        "weaponType": "PARTICLE",
+        "bounty": 38
+      },
+      {
+        "criminalName": "ANDY_DECKER",
+        "weaponType": "LASER",
+        "bounty": 40
+      },
+      {
+        "criminalName": "ASHWIN_GARNER",
+        "weaponType": "PARTICLE",
+        "bounty": 30
+      },
+      {
+        "criminalName": "ARTUR_BUSH",
+        "weaponType": "PHOTON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "JANNAH_NAVARRO",
+        "weaponType": "PROTON",
+        "bounty": 39
+      },
+      {
+        "criminalName": "ALEXANDRE_GUTHRIE",
+        "weaponType": "PROTON",
+        "bounty": 33
+      },
+      {
+        "criminalName": "LANA_WILKINS",
+        "weaponType": "TACHYON",
+        "bounty": 32
+      },
+      {
+        "criminalName": "ELIOT_VAUGHAN",
+        "weaponType": "PARTICLE",
+        "bounty": 44
+      },
+      {
+        "criminalName": "SULLIVAN_FUENTES",
+        "weaponType": "PHOTON",
+        "bounty": 48
+      },
+      {
+        "criminalName": "DILAN_FARLEY",
+        "weaponType": "PLASMA",
+        "bounty": 43
+      },
+      {
+        "criminalName": "LEONIDAS_BATTLE",
+        "weaponType": "LASER",
+        "bounty": 35
+      }
+    ]
   },
   {
     "name": "HIDDEN_FORCE",
     "orePrice": 9,
     "waterPrice": 16,
-    "enginepartsPrice": 8,
+    "enginePartsPrice": 8,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "WARREN_BARLOW",
+        "weaponType": "TACHYON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "YASIN_GLENN",
+        "weaponType": "PHOTON",
+        "bounty": 32
+      },
+      {
+        "criminalName": "JENSON_ANDREWS",
+        "weaponType": "PLASMA",
+        "bounty": 37
+      },
+      {
+        "criminalName": "YANIS_COOK",
+        "weaponType": "PLASMA",
+        "bounty": 48
+      },
+      {
+        "criminalName": "SIENA_HENDERSON",
+        "weaponType": "PARTICLE",
+        "bounty": 44
+      },
+      {
+        "criminalName": "AYANA_HANSON",
+        "weaponType": "PARTICLE",
+        "bounty": 49
+      },
+      {
+        "criminalName": "STEFFAN_SEARS",
+        "weaponType": "LASER",
+        "bounty": 35
+      },
+      {
+        "criminalName": "AYSHA_IRWIN",
+        "weaponType": "LASER",
+        "bounty": 31
+      },
+      {
+        "criminalName": "OTIS_GOMEZ",
+        "weaponType": "TACHYON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "AADAM_CAMACHO",
+        "weaponType": "LASER",
+        "bounty": 49
+      }
+    ]
   },
   {
     "name": "CADIZ",
     "orePrice": 7,
     "waterPrice": 17,
-    "enginepartsPrice": 7,
+    "enginePartsPrice": 7,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "ARIAN_ROMERO",
+        "weaponType": "TACHYON",
+        "bounty": 33
+      },
+      {
+        "criminalName": "YANNIS_GILBERT",
+        "weaponType": "LASER",
+        "bounty": 39
+      },
+      {
+        "criminalName": "ISOBELLE_HAMPTON",
+        "weaponType": "PROTON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "CHESTER_QUINN",
+        "weaponType": "PHOTON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "ANNABELL_LOVE",
+        "weaponType": "TACHYON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "MIKEY_ONEAL",
+        "weaponType": "PLASMA",
+        "bounty": 43
+      },
+      {
+        "criminalName": "LISA_LARSEN",
+        "weaponType": "PARTICLE",
+        "bounty": 32
+      },
+      {
+        "criminalName": "YASSIN_WALTERS",
+        "weaponType": "PARTICLE",
+        "bounty": 45
+      },
+      {
+        "criminalName": "RAHEEM_HARDIN",
+        "weaponType": "TACHYON",
+        "bounty": 32
+      },
+      {
+        "criminalName": "SINEAD_HUDSON",
+        "weaponType": "LASER",
+        "bounty": 36
+      },
+      {
+        "criminalName": "RUDY_GOLDEN",
+        "weaponType": "LASER",
+        "bounty": 39
+      },
+      {
+        "criminalName": "REBECCA_CHEN",
+        "weaponType": "PROTON",
+        "bounty": 33
+      }
+    ]
   },
   {
     "name": "CHISOS",
     "orePrice": 3,
     "waterPrice": 19,
-    "enginepartsPrice": 16,
+    "enginePartsPrice": 16,
     "contrabandPrice": 16,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "ERYN_RODRIQUEZ",
+        "weaponType": "LASER",
+        "bounty": 33
+      },
+      {
+        "criminalName": "SEBASTIAN_MORAN",
+        "weaponType": "PROTON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "RAY_HYDE",
+        "weaponType": "PARTICLE",
+        "bounty": 40
+      },
+      {
+        "criminalName": "TRAVIS_WHITNEY",
+        "weaponType": "TACHYON",
+        "bounty": 37
+      },
+      {
+        "criminalName": "CARTER_FOREMAN",
+        "weaponType": "PHOTON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "VIOLET_RANDOLPH",
+        "weaponType": "TACHYON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "MAKSIM_WELLS",
+        "weaponType": "TACHYON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "CAROLINA_ADAMS",
+        "weaponType": "LASER",
+        "bounty": 40
+      },
+      {
+        "criminalName": "MAIZIE_MCCLAIN",
+        "weaponType": "LASER",
+        "bounty": 48
+      },
+      {
+        "criminalName": "JULIAN_VANG",
+        "weaponType": "PLASMA",
+        "bounty": 47
+      },
+      {
+        "criminalName": "RUPERT_MCCALL",
+        "weaponType": "PLASMA",
+        "bounty": 45
+      }
+    ]
   },
   {
     "name": "GAMMU",
     "orePrice": 6,
     "waterPrice": 17,
-    "enginepartsPrice": 5,
+    "enginePartsPrice": 5,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "EMILY_PEARSON",
+        "weaponType": "LASER",
+        "bounty": 40
+      },
+      {
+        "criminalName": "SOPHIA_ROSARIO",
+        "weaponType": "LASER",
+        "bounty": 46
+      },
+      {
+        "criminalName": "CHRISTIAN_PUCKETT",
+        "weaponType": "PROTON",
+        "bounty": 48
+      },
+      {
+        "criminalName": "ALEXANDER_MCGUIRE",
+        "weaponType": "TACHYON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "ROBERT_MCLAUGHLIN",
+        "weaponType": "TACHYON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "LEWIS_LONG",
+        "weaponType": "PHOTON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "AHYAN_PUGH",
+        "weaponType": "TACHYON",
+        "bounty": 31
+      },
+      {
+        "criminalName": "LAYLA_ROSE_BAKER",
+        "weaponType": "PLASMA",
+        "bounty": 49
+      },
+      {
+        "criminalName": "MIKAEEL_GUTIERREZ",
+        "weaponType": "PHOTON",
+        "bounty": 37
+      },
+      {
+        "criminalName": "KHALID_LAWSON",
+        "weaponType": "PLASMA",
+        "bounty": 37
+      },
+      {
+        "criminalName": "FRIDA_MCKEE",
+        "weaponType": "PARTICLE",
+        "bounty": 38
+      },
+      {
+        "criminalName": "PARIS_STANTON",
+        "weaponType": "PHOTON",
+        "bounty": 31
+      },
+      {
+        "criminalName": "ALVIN_VAUGHN",
+        "weaponType": "PHOTON",
+        "bounty": 46
+      },
+      {
+        "criminalName": "DEMI_LEIGH_MACK",
+        "weaponType": "LASER",
+        "bounty": 48
+      }
+    ]
   },
   {
     "name": "WRIGHT",
     "orePrice": 3,
     "waterPrice": 3,
-    "enginepartsPrice": 20,
+    "enginePartsPrice": 20,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "COLE_BUTLER",
+        "weaponType": "TACHYON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "AMAYAH_EWING",
+        "weaponType": "PROTON",
+        "bounty": 34
+      },
+      {
+        "criminalName": "GENEVIEVE_ROTH",
+        "weaponType": "LASER",
+        "bounty": 39
+      },
+      {
+        "criminalName": "KAMRAN_STEPHENSON",
+        "weaponType": "PARTICLE",
+        "bounty": 33
+      },
+      {
+        "criminalName": "TEIGAN_BURNETT",
+        "weaponType": "PROTON",
+        "bounty": 49
+      },
+      {
+        "criminalName": "JAKUB_CRAIG",
+        "weaponType": "PHOTON",
+        "bounty": 37
+      },
+      {
+        "criminalName": "MATHEW_MACIAS",
+        "weaponType": "PROTON",
+        "bounty": 46
+      },
+      {
+        "criminalName": "SHANIA_RANDALL",
+        "weaponType": "PARTICLE",
+        "bounty": 42
+      },
+      {
+        "criminalName": "MILAN_NEWTON",
+        "weaponType": "TACHYON",
+        "bounty": 44
+      },
+      {
+        "criminalName": "RAFAEL_MITCHELL",
+        "weaponType": "PROTON",
+        "bounty": 31
+      },
+      {
+        "criminalName": "PRIYA_BARRETT",
+        "weaponType": "TACHYON",
+        "bounty": 44
+      },
+      {
+        "criminalName": "ROSIE_VALDEZ",
+        "weaponType": "PARTICLE",
+        "bounty": 30
+      }
+    ]
   },
   {
     "name": "KALHMERA",
     "orePrice": 2,
     "waterPrice": 10,
-    "enginepartsPrice": 17,
+    "enginePartsPrice": 17,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "FABIAN_MOODY",
+        "weaponType": "PHOTON",
+        "bounty": 48
+      },
+      {
+        "criminalName": "AUSTIN_GRAVES",
+        "weaponType": "LASER",
+        "bounty": 31
+      },
+      {
+        "criminalName": "THOMAS_HIGGINS",
+        "weaponType": "PHOTON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "GREGORY_WEEKS",
+        "weaponType": "PROTON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "WREN_JOYCE",
+        "weaponType": "LASER",
+        "bounty": 34
+      },
+      {
+        "criminalName": "JONAS_SMALL",
+        "weaponType": "TACHYON",
+        "bounty": 49
+      },
+      {
+        "criminalName": "MATTEO_NEWMAN",
+        "weaponType": "LASER",
+        "bounty": 34
+      },
+      {
+        "criminalName": "CRISTIAN_HARDING",
+        "weaponType": "LASER",
+        "bounty": 45
+      },
+      {
+        "criminalName": "ABDURRAHMAN_KIRBY",
+        "weaponType": "PHOTON",
+        "bounty": 37
+      },
+      {
+        "criminalName": "MONICA_HURST",
+        "weaponType": "PLASMA",
+        "bounty": 35
+      },
+      {
+        "criminalName": "TIFFANY_THOMAS",
+        "weaponType": "PHOTON",
+        "bounty": 41
+      }
+    ]
   },
   {
     "name": "LOS_ANGELES",
     "orePrice": 14,
     "waterPrice": 5,
-    "enginepartsPrice": 10,
+    "enginePartsPrice": 10,
     "contrabandPrice": 28,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "SHAYAN_WILSON",
+        "weaponType": "PROTON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "ELSPETH_MCCULLOUGH",
+        "weaponType": "PARTICLE",
+        "bounty": 38
+      },
+      {
+        "criminalName": "RONALD_DELANEY",
+        "weaponType": "PARTICLE",
+        "bounty": 37
+      },
+      {
+        "criminalName": "THEON_MARSH",
+        "weaponType": "PROTON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "HAWA_HESTER",
+        "weaponType": "PHOTON",
+        "bounty": 33
+      },
+      {
+        "criminalName": "LILLY_MAI_KNAPP",
+        "weaponType": "TACHYON",
+        "bounty": 42
+      },
+      {
+        "criminalName": "AXEL_CAMPBELL",
+        "weaponType": "PARTICLE",
+        "bounty": 43
+      },
+      {
+        "criminalName": "DORIAN_POLLARD",
+        "weaponType": "PROTON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "GREYSON_HUNT",
+        "weaponType": "PHOTON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "TYRELL_HUMPHREY",
+        "weaponType": "TACHYON",
+        "bounty": 31
+      },
+      {
+        "criminalName": "PRESLEY_TRUJILLO",
+        "weaponType": "PHOTON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "HAIDER_DALE",
+        "weaponType": "TACHYON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "YUNUS_DANIEL",
+        "weaponType": "TACHYON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "SKYLAR_BRADLEY",
+        "weaponType": "PARTICLE",
+        "bounty": 46
+      },
+      {
+        "criminalName": "FRANCISZEK_KENNEDY",
+        "weaponType": "PHOTON",
+        "bounty": 47
+      },
+      {
+        "criminalName": "ARUN_OLSEN",
+        "weaponType": "LASER",
+        "bounty": 31
+      },
+      {
+        "criminalName": "STEPHANIE_HERRERA",
+        "weaponType": "TACHYON",
+        "bounty": 39
+      },
+      {
+        "criminalName": "JUSTIN_WALL",
+        "weaponType": "TACHYON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "RUBEN_LEWIS",
+        "weaponType": "PARTICLE",
+        "bounty": 35
+      }
+    ]
   },
   {
     "name": "WILLARD",
     "orePrice": 10,
     "waterPrice": 12,
-    "enginepartsPrice": 12,
+    "enginePartsPrice": 12,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "DAPHNE_ELLIOTT",
+        "weaponType": "TACHYON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "OLAF_HINTON",
+        "weaponType": "PLASMA",
+        "bounty": 32
+      },
+      {
+        "criminalName": "ELWOOD_KELLY",
+        "weaponType": "LASER",
+        "bounty": 37
+      },
+      {
+        "criminalName": "PIOTR_HALE",
+        "weaponType": "PROTON",
+        "bounty": 42
+      },
+      {
+        "criminalName": "LIBERTY_HAYNES",
+        "weaponType": "PARTICLE",
+        "bounty": 44
+      },
+      {
+        "criminalName": "KATRINA_MCCRAY",
+        "weaponType": "PHOTON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "ROSA_FITZGERALD",
+        "weaponType": "PLASMA",
+        "bounty": 41
+      },
+      {
+        "criminalName": "UNA_DAWSON",
+        "weaponType": "PHOTON",
+        "bounty": 44
+      },
+      {
+        "criminalName": "WINIFRED_HALEY",
+        "weaponType": "PARTICLE",
+        "bounty": 49
+      },
+      {
+        "criminalName": "JORGE_ATKINS",
+        "weaponType": "PARTICLE",
+        "bounty": 30
+      },
+      {
+        "criminalName": "AMAR_STUART",
+        "weaponType": "PHOTON",
+        "bounty": 49
+      },
+      {
+        "criminalName": "GEORGIE_WALSH",
+        "weaponType": "PHOTON",
+        "bounty": 41
+      }
+    ]
   },
   {
     "name": "JERSEY",
     "orePrice": 2,
     "waterPrice": 8,
-    "enginepartsPrice": 15,
+    "enginePartsPrice": 15,
     "contrabandPrice": 12,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "JUAN_HUNTER",
+        "weaponType": "LASER",
+        "bounty": 39
+      },
+      {
+        "criminalName": "SULTAN_RICHARDS",
+        "weaponType": "PROTON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "ESTELLE_RILEY",
+        "weaponType": "PHOTON",
+        "bounty": 34
+      },
+      {
+        "criminalName": "RIAAN_SALINAS",
+        "weaponType": "PHOTON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "MAIA_ROWLAND",
+        "weaponType": "PLASMA",
+        "bounty": 35
+      },
+      {
+        "criminalName": "ANIKA_HARRISON",
+        "weaponType": "PLASMA",
+        "bounty": 39
+      },
+      {
+        "criminalName": "MYLES_TODD",
+        "weaponType": "PARTICLE",
+        "bounty": 42
+      },
+      {
+        "criminalName": "KOBY_SANFORD",
+        "weaponType": "TACHYON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "EVERLY_CRUZ",
+        "weaponType": "TACHYON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "ALEENA_ELLIS",
+        "weaponType": "PLASMA",
+        "bounty": 35
+      },
+      {
+        "criminalName": "RODRIGO_JAMES",
+        "weaponType": "PARTICLE",
+        "bounty": 33
+      },
+      {
+        "criminalName": "FYNLEY_WONG",
+        "weaponType": "PARTICLE",
+        "bounty": 46
+      }
+    ]
   },
   {
     "name": "POTSDAM",
     "orePrice": 2,
     "waterPrice": 16,
-    "enginepartsPrice": 8,
+    "enginePartsPrice": 8,
     "contrabandPrice": 14,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "KOBI_HAYDEN",
+        "weaponType": "PLASMA",
+        "bounty": 36
+      },
+      {
+        "criminalName": "MAKSYMILIAN_TANNER",
+        "weaponType": "PHOTON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "JESSE_WALTON",
+        "weaponType": "PLASMA",
+        "bounty": 30
+      },
+      {
+        "criminalName": "ROMAN_CALDERON",
+        "weaponType": "PLASMA",
+        "bounty": 48
+      },
+      {
+        "criminalName": "HUSSEIN_HARMON",
+        "weaponType": "PLASMA",
+        "bounty": 36
+      },
+      {
+        "criminalName": "AISHAH_EVANS",
+        "weaponType": "PLASMA",
+        "bounty": 41
+      },
+      {
+        "criminalName": "RUBIE_PERKINS",
+        "weaponType": "PROTON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "MADELINE_KENT",
+        "weaponType": "TACHYON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "NALA_VAZQUEZ",
+        "weaponType": "PROTON",
+        "bounty": 34
+      },
+      {
+        "criminalName": "CURTIS_PARRISH",
+        "weaponType": "PARTICLE",
+        "bounty": 31
+      },
+      {
+        "criminalName": "HANNAH_HOOD",
+        "weaponType": "PROTON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "ALASTAIR_GILLIAM",
+        "weaponType": "TACHYON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "SHAH_ROSE",
+        "weaponType": "PARTICLE",
+        "bounty": 33
+      },
+      {
+        "criminalName": "ROSANNA_BENJAMIN",
+        "weaponType": "LASER",
+        "bounty": 49
+      },
+      {
+        "criminalName": "AARIZ_ALBERT",
+        "weaponType": "PLASMA",
+        "bounty": 32
+      }
+    ]
   },
   {
     "name": "CAMBRIDGE",
     "orePrice": 7,
     "waterPrice": 12,
-    "enginepartsPrice": 20,
+    "enginePartsPrice": 20,
     "contrabandPrice": 12,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "OMAR_PACHECO",
+        "weaponType": "PROTON",
+        "bounty": 42
+      },
+      {
+        "criminalName": "KENZIE_DELGADO",
+        "weaponType": "PHOTON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "ADYAN_PRICE",
+        "weaponType": "PLASMA",
+        "bounty": 35
+      },
+      {
+        "criminalName": "MARTINA_STANLEY",
+        "weaponType": "LASER",
+        "bounty": 33
+      },
+      {
+        "criminalName": "KIERA_SHERMAN",
+        "weaponType": "PHOTON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "JASPER_TYLER",
+        "weaponType": "PLASMA",
+        "bounty": 49
+      },
+      {
+        "criminalName": "JAN_SELLERS",
+        "weaponType": "PROTON",
+        "bounty": 31
+      },
+      {
+        "criminalName": "HONEY_GOODWIN",
+        "weaponType": "PLASMA",
+        "bounty": 48
+      },
+      {
+        "criminalName": "CELESTE_DUNN",
+        "weaponType": "PARTICLE",
+        "bounty": 45
+      }
+    ]
   },
   {
     "name": "RONNEBURG",
     "orePrice": 4,
     "waterPrice": 2,
-    "enginepartsPrice": 1,
+    "enginePartsPrice": 1,
     "contrabandPrice": 4,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "BELLA_WILLIAMS",
+        "weaponType": "PLASMA",
+        "bounty": 46
+      },
+      {
+        "criminalName": "ABBAS_ANTHONY",
+        "weaponType": "PARTICLE",
+        "bounty": 45
+      },
+      {
+        "criminalName": "ARIA_WARREN",
+        "weaponType": "PHOTON",
+        "bounty": 39
+      },
+      {
+        "criminalName": "BELLA_ROSE_MOONEY",
+        "weaponType": "PHOTON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "SAAD_ARMSTRONG",
+        "weaponType": "PLASMA",
+        "bounty": 33
+      },
+      {
+        "criminalName": "MIYA_CASTILLO",
+        "weaponType": "PARTICLE",
+        "bounty": 38
+      },
+      {
+        "criminalName": "BRUNO_PHILLIPS",
+        "weaponType": "LASER",
+        "bounty": 32
+      },
+      {
+        "criminalName": "SYDNEY_WIGGINS",
+        "weaponType": "LASER",
+        "bounty": 41
+      },
+      {
+        "criminalName": "KELVIN_PAGE",
+        "weaponType": "LASER",
+        "bounty": 30
+      },
+      {
+        "criminalName": "MACKENZIE_MCFADDEN",
+        "weaponType": "PLASMA",
+        "bounty": 36
+      }
+    ]
   },
   {
     "name": "PACIFICA",
     "orePrice": 12,
     "waterPrice": 16,
-    "enginepartsPrice": 13,
+    "enginePartsPrice": 13,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "ZAKI_REEVES",
+        "weaponType": "PLASMA",
+        "bounty": 43
+      },
+      {
+        "criminalName": "CHARLES_MARQUEZ",
+        "weaponType": "LASER",
+        "bounty": 42
+      },
+      {
+        "criminalName": "NANCIE_VELASQUEZ",
+        "weaponType": "TACHYON",
+        "bounty": 31
+      },
+      {
+        "criminalName": "IDREES_PEREZ",
+        "weaponType": "PROTON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "JOSE_YATES",
+        "weaponType": "PLASMA",
+        "bounty": 38
+      },
+      {
+        "criminalName": "ERICA_CARVER",
+        "weaponType": "PLASMA",
+        "bounty": 45
+      },
+      {
+        "criminalName": "ZAYAN_REID",
+        "weaponType": "PLASMA",
+        "bounty": 31
+      },
+      {
+        "criminalName": "ARCHIBALD_MCCOY",
+        "weaponType": "PLASMA",
+        "bounty": 49
+      },
+      {
+        "criminalName": "MINNIE_BOWEN",
+        "weaponType": "TACHYON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "FRANKLIN_ALEXANDER",
+        "weaponType": "TACHYON",
+        "bounty": 38
+      },
+      {
+        "criminalName": "ROCCO_ALSTON",
+        "weaponType": "PLASMA",
+        "bounty": 43
+      },
+      {
+        "criminalName": "KIMBERLY_VANCE",
+        "weaponType": "LASER",
+        "bounty": 43
+      }
+    ]
   },
   {
     "name": "DOVER",
     "orePrice": 16,
     "waterPrice": 8,
-    "enginepartsPrice": 17,
+    "enginePartsPrice": 17,
     "contrabandPrice": 20,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "KAMILA_JOHNSTON",
+        "weaponType": "PARTICLE",
+        "bounty": 36
+      },
+      {
+        "criminalName": "LOLA_ROSE_WALLACE",
+        "weaponType": "LASER",
+        "bounty": 43
+      },
+      {
+        "criminalName": "LILY_MAI_DILLON",
+        "weaponType": "PROTON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "KEZIAH_HODGE",
+        "weaponType": "PROTON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "ISLA_ROSE_REED",
+        "weaponType": "LASER",
+        "bounty": 46
+      },
+      {
+        "criminalName": "AMINA_WHEELER",
+        "weaponType": "PARTICLE",
+        "bounty": 38
+      },
+      {
+        "criminalName": "EMILY_ROSE_MADDEN",
+        "weaponType": "LASER",
+        "bounty": 37
+      },
+      {
+        "criminalName": "MIKAIL_WALLS",
+        "weaponType": "TACHYON",
+        "bounty": 32
+      },
+      {
+        "criminalName": "AYRA_FARRELL",
+        "weaponType": "TACHYON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "JEMIMA_MEYERS",
+        "weaponType": "LASER",
+        "bounty": 37
+      }
+    ]
   },
   {
     "name": "ABILENE",
     "orePrice": 2,
     "waterPrice": 13,
-    "enginepartsPrice": 3,
+    "enginePartsPrice": 3,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "LOUIE_BLANCHARD",
+        "weaponType": "PROTON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "ESMEE_ONEIL",
+        "weaponType": "PARTICLE",
+        "bounty": 46
+      },
+      {
+        "criminalName": "IZABELA_COPELAND",
+        "weaponType": "PHOTON",
+        "bounty": 38
+      },
+      {
+        "criminalName": "KAIRO_STRONG",
+        "weaponType": "PHOTON",
+        "bounty": 47
+      },
+      {
+        "criminalName": "KAYLEN_BECKER",
+        "weaponType": "LASER",
+        "bounty": 44
+      }
+    ]
   },
   {
     "name": "ALEXANDRIA",
     "orePrice": 1,
     "waterPrice": 8,
-    "enginepartsPrice": 17,
+    "enginePartsPrice": 17,
     "contrabandPrice": 16,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "ELINA_MAXWELL",
+        "weaponType": "TACHYON",
+        "bounty": 44
+      },
+      {
+        "criminalName": "BRYAN_LEE",
+        "weaponType": "PLASMA",
+        "bounty": 30
+      },
+      {
+        "criminalName": "ORLANDO_LANCASTER",
+        "weaponType": "PARTICLE",
+        "bounty": 48
+      },
+      {
+        "criminalName": "MALACHY_WASHINGTON",
+        "weaponType": "PHOTON",
+        "bounty": 34
+      },
+      {
+        "criminalName": "SEB_ROY",
+        "weaponType": "TACHYON",
+        "bounty": 48
+      },
+      {
+        "criminalName": "MELISSA_HENRY",
+        "weaponType": "PLASMA",
+        "bounty": 43
+      },
+      {
+        "criminalName": "COEN_BARBER",
+        "weaponType": "PHOTON",
+        "bounty": 39
+      },
+      {
+        "criminalName": "ADELINE_OCONNOR",
+        "weaponType": "PHOTON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "LILLY_ROSE_KELLEY",
+        "weaponType": "TACHYON",
+        "bounty": 48
+      },
+      {
+        "criminalName": "ADITYA_THORNTON",
+        "weaponType": "PARTICLE",
+        "bounty": 39
+      },
+      {
+        "criminalName": "MAHDI_CLAYTON",
+        "weaponType": "TACHYON",
+        "bounty": 34
+      }
+    ]
   },
   {
     "name": "HIKARI",
     "orePrice": 3,
     "waterPrice": 12,
-    "enginepartsPrice": 4,
+    "enginePartsPrice": 4,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "SHIV_LYNN",
+        "weaponType": "LASER",
+        "bounty": 43
+      },
+      {
+        "criminalName": "LOUISE_BLACKWELL",
+        "weaponType": "PLASMA",
+        "bounty": 47
+      },
+      {
+        "criminalName": "SHILOH_PENA",
+        "weaponType": "PARTICLE",
+        "bounty": 46
+      },
+      {
+        "criminalName": "ARISHA_OWENS",
+        "weaponType": "PHOTON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "AAYAN_SOTO",
+        "weaponType": "LASER",
+        "bounty": 48
+      },
+      {
+        "criminalName": "ANTON_JUAREZ",
+        "weaponType": "PARTICLE",
+        "bounty": 34
+      },
+      {
+        "criminalName": "FRANCESCO_NOEL",
+        "weaponType": "PHOTON",
+        "bounty": 31
+      },
+      {
+        "criminalName": "WOODY_HARRINGTON",
+        "weaponType": "PROTON",
+        "bounty": 31
+      },
+      {
+        "criminalName": "RANIA_GARZA",
+        "weaponType": "PROTON",
+        "bounty": 37
+      },
+      {
+        "criminalName": "BETHAN_CHANEY",
+        "weaponType": "TACHYON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "NINA_PATTON",
+        "weaponType": "TACHYON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "ZAYN_NUNEZ",
+        "weaponType": "PROTON",
+        "bounty": 42
+      }
+    ]
   },
   {
     "name": "HANNOVER",
     "orePrice": 17,
     "waterPrice": 9,
-    "enginepartsPrice": 7,
+    "enginePartsPrice": 7,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "AKIRA_HAMILTON",
+        "weaponType": "PROTON",
+        "bounty": 47
+      },
+      {
+        "criminalName": "ALFIE_FRANCO",
+        "weaponType": "PARTICLE",
+        "bounty": 44
+      },
+      {
+        "criminalName": "AYESHA_PARSONS",
+        "weaponType": "PHOTON",
+        "bounty": 47
+      },
+      {
+        "criminalName": "TERRY_GUERRERO",
+        "weaponType": "TACHYON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "MARYAM_DEJESUS",
+        "weaponType": "TACHYON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "ISA_AVERY",
+        "weaponType": "PROTON",
+        "bounty": 33
+      },
+      {
+        "criminalName": "EMIR_GALLAGHER",
+        "weaponType": "PLASMA",
+        "bounty": 46
+      },
+      {
+        "criminalName": "MAXIMUS_JACOBS",
+        "weaponType": "LASER",
+        "bounty": 50
+      },
+      {
+        "criminalName": "ALICJA_ASHLEY",
+        "weaponType": "PLASMA",
+        "bounty": 46
+      },
+      {
+        "criminalName": "VIVIAN_HOBBS",
+        "weaponType": "PLASMA",
+        "bounty": 39
+      },
+      {
+        "criminalName": "JAXON_BROCK",
+        "weaponType": "PLASMA",
+        "bounty": 41
+      },
+      {
+        "criminalName": "NYLA_ZIMMERMAN",
+        "weaponType": "PHOTON",
+        "bounty": 43
+      }
+    ]
   },
   {
     "name": "MACTAN",
     "orePrice": 6,
     "waterPrice": 10,
-    "enginepartsPrice": 16,
+    "enginePartsPrice": 16,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "NOOR_DIAZ",
+        "weaponType": "PLASMA",
+        "bounty": 42
+      },
+      {
+        "criminalName": "LELAND_JONES",
+        "weaponType": "PROTON",
+        "bounty": 32
+      },
+      {
+        "criminalName": "VALENTINA_DELEON",
+        "weaponType": "LASER",
+        "bounty": 47
+      },
+      {
+        "criminalName": "AYAN_RODRIGUEZ",
+        "weaponType": "TACHYON",
+        "bounty": 38
+      }
+    ]
   },
   {
     "name": "LEON",
     "orePrice": 15,
     "waterPrice": 2,
-    "enginepartsPrice": 3,
+    "enginePartsPrice": 3,
     "contrabandPrice": 2,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "LOWRI_HENSLEY",
+        "weaponType": "LASER",
+        "bounty": 47
+      },
+      {
+        "criminalName": "CIAN_BEACH",
+        "weaponType": "PLASMA",
+        "bounty": 33
+      },
+      {
+        "criminalName": "CONOR_WEBB",
+        "weaponType": "PROTON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "TOMOS_FULLER",
+        "weaponType": "PARTICLE",
+        "bounty": 31
+      },
+      {
+        "criminalName": "MAYA_DYER",
+        "weaponType": "PROTON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "PATRICIA_COMBS",
+        "weaponType": "TACHYON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "HARRI_MORGAN",
+        "weaponType": "PLASMA",
+        "bounty": 44
+      },
+      {
+        "criminalName": "KODI_CASEY",
+        "weaponType": "PARTICLE",
+        "bounty": 46
+      },
+      {
+        "criminalName": "NATHAN_CAREY",
+        "weaponType": "PROTON",
+        "bounty": 31
+      },
+      {
+        "criminalName": "CAELAN_GUZMAN",
+        "weaponType": "LASER",
+        "bounty": 42
+      },
+      {
+        "criminalName": "ANNALISE_DUNCAN",
+        "weaponType": "LASER",
+        "bounty": 35
+      },
+      {
+        "criminalName": "REID_STOKES",
+        "weaponType": "PLASMA",
+        "bounty": 46
+      },
+      {
+        "criminalName": "DAISIE_KING",
+        "weaponType": "PROTON",
+        "bounty": 46
+      },
+      {
+        "criminalName": "MORGAN_HERRING",
+        "weaponType": "PROTON",
+        "bounty": 31
+      }
+    ]
   },
   {
     "name": "CELLA_DOR",
     "orePrice": 7,
     "waterPrice": 7,
-    "enginepartsPrice": 13,
+    "enginePartsPrice": 13,
     "contrabandPrice": 4,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "MACAULEY_BROWN",
+        "weaponType": "PARTICLE",
+        "bounty": 38
+      },
+      {
+        "criminalName": "IMAN_PETERS",
+        "weaponType": "TACHYON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "RIVER_FAULKNER",
+        "weaponType": "PROTON",
+        "bounty": 33
+      },
+      {
+        "criminalName": "ACE_BARRERA",
+        "weaponType": "PROTON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "ROBYN_KIRKLAND",
+        "weaponType": "PARTICLE",
+        "bounty": 44
+      },
+      {
+        "criminalName": "ARYA_CONTRERAS",
+        "weaponType": "PLASMA",
+        "bounty": 37
+      },
+      {
+        "criminalName": "NUALA_ARNOLD",
+        "weaponType": "PARTICLE",
+        "bounty": 44
+      },
+      {
+        "criminalName": "ANIYA_MORSE",
+        "weaponType": "PLASMA",
+        "bounty": 40
+      },
+      {
+        "criminalName": "LOWEN_BASS",
+        "weaponType": "LASER",
+        "bounty": 43
+      },
+      {
+        "criminalName": "ALEXIA_HULL",
+        "weaponType": "PARTICLE",
+        "bounty": 33
+      },
+      {
+        "criminalName": "MACY_MCFARLAND",
+        "weaponType": "PARTICLE",
+        "bounty": 39
+      }
+    ]
   },
   {
     "name": "AURIGA",
     "orePrice": 9,
     "waterPrice": 6,
-    "enginepartsPrice": 8,
+    "enginePartsPrice": 8,
     "contrabandPrice": 8,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "TYMOTEUSZ_MCPHERSON",
+        "weaponType": "PHOTON",
+        "bounty": 37
+      },
+      {
+        "criminalName": "ERNIE_FULTON",
+        "weaponType": "PARTICLE",
+        "bounty": 39
+      },
+      {
+        "criminalName": "ANAIS_POOLE",
+        "weaponType": "TACHYON",
+        "bounty": 42
+      },
+      {
+        "criminalName": "APRIL_WILKINSON",
+        "weaponType": "PLASMA",
+        "bounty": 35
+      },
+      {
+        "criminalName": "DHRUV_ROMAN",
+        "weaponType": "PLASMA",
+        "bounty": 48
+      },
+      {
+        "criminalName": "EVE_ODOM",
+        "weaponType": "PHOTON",
+        "bounty": 31
+      },
+      {
+        "criminalName": "LEONARD_LINDSAY",
+        "weaponType": "PROTON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "ADAM_PRINCE",
+        "weaponType": "PHOTON",
+        "bounty": 44
+      },
+      {
+        "criminalName": "BRIAN_CARNEY",
+        "weaponType": "PROTON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "BRENDAN_GRIFFIN",
+        "weaponType": "PARTICLE",
+        "bounty": 38
+      }
+    ]
   },
   {
     "name": "BARROW",
     "orePrice": 10,
     "waterPrice": 10,
-    "enginepartsPrice": 19,
+    "enginePartsPrice": 19,
     "contrabandPrice": 6,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "DULCIE_WATTS",
+        "weaponType": "PLASMA",
+        "bounty": 50
+      },
+      {
+        "criminalName": "ANAYA_GOFF",
+        "weaponType": "PLASMA",
+        "bounty": 31
+      },
+      {
+        "criminalName": "THEA_NOLAN",
+        "weaponType": "TACHYON",
+        "bounty": 48
+      },
+      {
+        "criminalName": "SIMON_LINDSEY",
+        "weaponType": "PHOTON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "LOCHLAN_RIOS",
+        "weaponType": "LASER",
+        "bounty": 37
+      }
+    ]
   },
   {
     "name": "ISLAY",
     "orePrice": 14,
     "waterPrice": 7,
-    "enginepartsPrice": 10,
+    "enginePartsPrice": 10,
     "contrabandPrice": 32,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "POLA_DALTON",
+        "weaponType": "PROTON",
+        "bounty": 50
+      },
+      {
+        "criminalName": "INAYAH_MIDDLETON",
+        "weaponType": "PROTON",
+        "bounty": 32
+      },
+      {
+        "criminalName": "DANIELA_DAVIDSON",
+        "weaponType": "TACHYON",
+        "bounty": 33
+      },
+      {
+        "criminalName": "VEER_MCKAY",
+        "weaponType": "TACHYON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "IVOR_RAY",
+        "weaponType": "PHOTON",
+        "bounty": 34
+      },
+      {
+        "criminalName": "ERIKA_PACE",
+        "weaponType": "LASER",
+        "bounty": 48
+      },
+      {
+        "criminalName": "ISHAAQ_MCDONALD",
+        "weaponType": "TACHYON",
+        "bounty": 39
+      }
+    ]
   },
   {
     "name": "SCHUTZ",
     "orePrice": 3,
     "waterPrice": 6,
-    "enginepartsPrice": 17,
+    "enginePartsPrice": 17,
     "contrabandPrice": 38,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "JOY_MOSS",
+        "weaponType": "PROTON",
+        "bounty": 38
+      },
+      {
+        "criminalName": "ARABELLA_ALFORD",
+        "weaponType": "LASER",
+        "bounty": 34
+      },
+      {
+        "criminalName": "ROMEO_GAINES",
+        "weaponType": "PARTICLE",
+        "bounty": 44
+      },
+      {
+        "criminalName": "PADDY_MASSEY",
+        "weaponType": "PLASMA",
+        "bounty": 48
+      },
+      {
+        "criminalName": "YOUSEF_LYNCH",
+        "weaponType": "PLASMA",
+        "bounty": 43
+      },
+      {
+        "criminalName": "TEO_CROSS",
+        "weaponType": "PHOTON",
+        "bounty": 42
+      },
+      {
+        "criminalName": "COREY_MORROW",
+        "weaponType": "PROTON",
+        "bounty": 42
+      },
+      {
+        "criminalName": "CARSON_CERVANTES",
+        "weaponType": "PROTON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "MIA_CHANG",
+        "weaponType": "PHOTON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "KENDRICK_FREDERICK",
+        "weaponType": "PLASMA",
+        "bounty": 33
+      },
+      {
+        "criminalName": "DOUGLAS_GREGORY",
+        "weaponType": "PLASMA",
+        "bounty": 45
+      },
+      {
+        "criminalName": "ELORA_NORMAN",
+        "weaponType": "PHOTON",
+        "bounty": 36
+      }
+    ]
   },
   {
     "name": "MOJAVE",
     "orePrice": 5,
     "waterPrice": 4,
-    "enginepartsPrice": 17,
+    "enginePartsPrice": 17,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "ABDALLAH_COLON",
+        "weaponType": "PHOTON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "ZION_MAYO",
+        "weaponType": "PLASMA",
+        "bounty": 40
+      },
+      {
+        "criminalName": "CLAYTON_FINCH",
+        "weaponType": "PARTICLE",
+        "bounty": 30
+      },
+      {
+        "criminalName": "IZABELLA_POTTER",
+        "weaponType": "PROTON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "MILENA_BALDWIN",
+        "weaponType": "TACHYON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "MALI_WELCH",
+        "weaponType": "PARTICLE",
+        "bounty": 49
+      },
+      {
+        "criminalName": "MAJA_BRADSHAW",
+        "weaponType": "TACHYON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "PARKER_KLEIN",
+        "weaponType": "PLASMA",
+        "bounty": 44
+      },
+      {
+        "criminalName": "ROSS_PERRY",
+        "weaponType": "PLASMA",
+        "bounty": 36
+      },
+      {
+        "criminalName": "MINAHIL_CANNON",
+        "weaponType": "LASER",
+        "bounty": 49
+      }
+    ]
   },
   {
     "name": "BRUCHSAL",
     "orePrice": 15,
     "waterPrice": 7,
-    "enginepartsPrice": 4,
+    "enginePartsPrice": 4,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "ANTONY_MORRIS",
+        "weaponType": "PROTON",
+        "bounty": 50
+      },
+      {
+        "criminalName": "KENNY_COLE",
+        "weaponType": "PARTICLE",
+        "bounty": 37
+      },
+      {
+        "criminalName": "TILLY_MONTGOMERY",
+        "weaponType": "LASER",
+        "bounty": 33
+      },
+      {
+        "criminalName": "AMY_POWELL",
+        "weaponType": "PHOTON",
+        "bounty": 38
+      }
+    ]
   },
   {
     "name": "SETO",
     "orePrice": 14,
     "waterPrice": 8,
-    "enginepartsPrice": 5,
+    "enginePartsPrice": 5,
     "contrabandPrice": 4,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "TOMMY_LEE_VALENTINE",
+        "weaponType": "PROTON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "OWAIN_FERRELL",
+        "weaponType": "LASER",
+        "bounty": 48
+      },
+      {
+        "criminalName": "CARLY_GRAHAM",
+        "weaponType": "PROTON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "KLAY_CASTANEDA",
+        "weaponType": "PARTICLE",
+        "bounty": 36
+      },
+      {
+        "criminalName": "ESTHER_BAILEY",
+        "weaponType": "TACHYON",
+        "bounty": 32
+      },
+      {
+        "criminalName": "KAJUS_CLAY",
+        "weaponType": "PHOTON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "HERBIE_MARTIN",
+        "weaponType": "PLASMA",
+        "bounty": 50
+      },
+      {
+        "criminalName": "EMILIE_BOYLE",
+        "weaponType": "TACHYON",
+        "bounty": 49
+      },
+      {
+        "criminalName": "AGNES_MENDEZ",
+        "weaponType": "LASER",
+        "bounty": 36
+      },
+      {
+        "criminalName": "MAGNUS_HOUSTON",
+        "weaponType": "PARTICLE",
+        "bounty": 33
+      },
+      {
+        "criminalName": "IMAAN_CHAVEZ",
+        "weaponType": "PLASMA",
+        "bounty": 30
+      },
+      {
+        "criminalName": "AARYA_CHAMBERS",
+        "weaponType": "PARTICLE",
+        "bounty": 46
+      },
+      {
+        "criminalName": "RUSSELL_MATHEWS",
+        "weaponType": "TACHYON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "MADISON_PALMER",
+        "weaponType": "PLASMA",
+        "bounty": 33
+      }
+    ]
   },
   {
     "name": "ARRANMORE",
     "orePrice": 14,
     "waterPrice": 14,
-    "enginepartsPrice": 20,
+    "enginePartsPrice": 20,
     "contrabandPrice": 38,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "ASIYA_WHITLEY",
+        "weaponType": "PHOTON",
+        "bounty": 44
+      },
+      {
+        "criminalName": "JOSEPHINE_HARRELL",
+        "weaponType": "TACHYON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "CARLA_FLETCHER",
+        "weaponType": "LASER",
+        "bounty": 34
+      },
+      {
+        "criminalName": "JUNIOR_BURKE",
+        "weaponType": "LASER",
+        "bounty": 38
+      },
+      {
+        "criminalName": "MCKENZIE_MYERS",
+        "weaponType": "PHOTON",
+        "bounty": 37
+      },
+      {
+        "criminalName": "IWAN_KNOWLES",
+        "weaponType": "PHOTON",
+        "bounty": 37
+      },
+      {
+        "criminalName": "BLANKA_UNDERWOOD",
+        "weaponType": "PHOTON",
+        "bounty": 38
+      },
+      {
+        "criminalName": "WINTER_DONALDSON",
+        "weaponType": "PHOTON",
+        "bounty": 37
+      }
+    ]
   },
   {
     "name": "AYR",
     "orePrice": 13,
     "waterPrice": 4,
-    "enginepartsPrice": 2,
+    "enginePartsPrice": 2,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "HUGHIE_PRATT",
+        "weaponType": "PROTON",
+        "bounty": 32
+      },
+      {
+        "criminalName": "MARNIE_FERGUSON",
+        "weaponType": "PLASMA",
+        "bounty": 47
+      },
+      {
+        "criminalName": "LEO_PATE",
+        "weaponType": "TACHYON",
+        "bounty": 49
+      }
+    ]
   },
   {
     "name": "RUIZ",
     "orePrice": 5,
     "waterPrice": 14,
-    "enginepartsPrice": 14,
+    "enginePartsPrice": 14,
     "contrabandPrice": 34,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "ARIELLA_WARNER",
+        "weaponType": "TACHYON",
+        "bounty": 50
+      },
+      {
+        "criminalName": "DEXTER_HERMAN",
+        "weaponType": "LASER",
+        "bounty": 50
+      },
+      {
+        "criminalName": "LAUREN_PRESTON",
+        "weaponType": "PLASMA",
+        "bounty": 34
+      },
+      {
+        "criminalName": "ERIC_MOLINA",
+        "weaponType": "PROTON",
+        "bounty": 46
+      }
+    ]
   },
   {
     "name": "BRAZOS",
     "orePrice": 4,
     "waterPrice": 18,
-    "enginepartsPrice": 2,
+    "enginePartsPrice": 2,
     "contrabandPrice": 26,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "AYOUB_OSBORN",
+        "weaponType": "PHOTON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "NATHANAEL_GILLESPIE",
+        "weaponType": "PHOTON",
+        "bounty": 47
+      },
+      {
+        "criminalName": "JULIETTE_COLLINS",
+        "weaponType": "PHOTON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "HERMIONE_LOWE",
+        "weaponType": "TACHYON",
+        "bounty": 34
+      },
+      {
+        "criminalName": "POPPY_MAE_CLARK",
+        "weaponType": "PARTICLE",
+        "bounty": 43
+      }
+    ]
   },
   {
     "name": "NEW_TOKYO",
     "orePrice": 17,
     "waterPrice": 18,
-    "enginepartsPrice": 9,
+    "enginePartsPrice": 9,
     "contrabandPrice": 26,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "ZACKARY_TALLEY",
+        "weaponType": "PARTICLE",
+        "bounty": 32
+      },
+      {
+        "criminalName": "RAYMOND_FORD",
+        "weaponType": "PHOTON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "YAHYA_VALENZUELA",
+        "weaponType": "PLASMA",
+        "bounty": 40
+      },
+      {
+        "criminalName": "RHYS_FOSTER",
+        "weaponType": "LASER",
+        "bounty": 41
+      },
+      {
+        "criminalName": "ASA_GENTRY",
+        "weaponType": "LASER",
+        "bounty": 34
+      },
+      {
+        "criminalName": "BRADLEY_CARSON",
+        "weaponType": "PHOTON",
+        "bounty": 31
+      },
+      {
+        "criminalName": "JESSICA_ROBLES",
+        "weaponType": "TACHYON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "FFION_HOLDER",
+        "weaponType": "PROTON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "MARK_MEJIA",
+        "weaponType": "PARTICLE",
+        "bounty": 30
+      },
+      {
+        "criminalName": "JACE_BATES",
+        "weaponType": "PARTICLE",
+        "bounty": 39
+      },
+      {
+        "criminalName": "JIYA_TATE",
+        "weaponType": "PROTON",
+        "bounty": 42
+      },
+      {
+        "criminalName": "RICHIE_MARSHALL",
+        "weaponType": "LASER",
+        "bounty": 30
+      },
+      {
+        "criminalName": "ALISHA_SCOTT",
+        "weaponType": "PARTICLE",
+        "bounty": 39
+      }
+    ]
   },
   {
     "name": "MENES",
     "orePrice": 11,
     "waterPrice": 7,
-    "enginepartsPrice": 9,
+    "enginePartsPrice": 9,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "RAYAN_SWEENEY",
+        "weaponType": "TACHYON",
+        "bounty": 46
+      },
+      {
+        "criminalName": "SAIRA_JOYNER",
+        "weaponType": "PROTON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "ALEXIS_DOTSON",
+        "weaponType": "PLASMA",
+        "bounty": 47
+      },
+      {
+        "criminalName": "JASMIN_LEVINE",
+        "weaponType": "LASER",
+        "bounty": 37
+      }
+    ]
   },
   {
     "name": "DAWSON",
     "orePrice": 18,
     "waterPrice": 15,
-    "enginepartsPrice": 2,
+    "enginePartsPrice": 2,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "DREW_HENDRICKS",
+        "weaponType": "TACHYON",
+        "bounty": 49
+      },
+      {
+        "criminalName": "JAKOB_PARKS",
+        "weaponType": "LASER",
+        "bounty": 39
+      },
+      {
+        "criminalName": "JORDAN_STEVENS",
+        "weaponType": "PROTON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "FRANCES_RICHMOND",
+        "weaponType": "PLASMA",
+        "bounty": 39
+      },
+      {
+        "criminalName": "LILIANA_SEXTON",
+        "weaponType": "LASER",
+        "bounty": 38
+      },
+      {
+        "criminalName": "LEE_ROSALES",
+        "weaponType": "LASER",
+        "bounty": 43
+      },
+      {
+        "criminalName": "MAEVE_GLOVER",
+        "weaponType": "PROTON",
+        "bounty": 41
+      }
+    ]
   },
   {
     "name": "DEIDUS",
     "orePrice": 9,
     "waterPrice": 14,
-    "enginepartsPrice": 5,
+    "enginePartsPrice": 5,
     "contrabandPrice": 38,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "CHASE_ALVARADO",
+        "weaponType": "PROTON",
+        "bounty": 46
+      },
+      {
+        "criminalName": "TED_MAYER",
+        "weaponType": "TACHYON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "JIMMY_HANCOCK",
+        "weaponType": "PARTICLE",
+        "bounty": 35
+      },
+      {
+        "criminalName": "ELI_KAUFMAN",
+        "weaponType": "PHOTON",
+        "bounty": 47
+      },
+      {
+        "criminalName": "ROMILLY_GALLOWAY",
+        "weaponType": "LASER",
+        "bounty": 49
+      },
+      {
+        "criminalName": "MUSA_FRANK",
+        "weaponType": "LASER",
+        "bounty": 37
+      },
+      {
+        "criminalName": "JAYSON_ALLISON",
+        "weaponType": "TACHYON",
+        "bounty": 47
+      },
+      {
+        "criminalName": "CARA_RIGGS",
+        "weaponType": "TACHYON",
+        "bounty": 37
+      },
+      {
+        "criminalName": "DIXIE_BOLTON",
+        "weaponType": "PARTICLE",
+        "bounty": 34
+      },
+      {
+        "criminalName": "ANTONIA_BREWER",
+        "weaponType": "PARTICLE",
+        "bounty": 34
+      },
+      {
+        "criminalName": "LENA_DAY",
+        "weaponType": "PHOTON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "AYDIN_GEORGE",
+        "weaponType": "PARTICLE",
+        "bounty": 33
+      }
+    ]
   },
   {
     "name": "DENVER",
     "orePrice": 17,
     "waterPrice": 7,
-    "enginepartsPrice": 2,
+    "enginePartsPrice": 2,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "NIEVE_RIDDLE",
+        "weaponType": "PARTICLE",
+        "bounty": 50
+      },
+      {
+        "criminalName": "JUNAID_HANEY",
+        "weaponType": "LASER",
+        "bounty": 40
+      },
+      {
+        "criminalName": "ELLIE_MAI_LESTER",
+        "weaponType": "PARTICLE",
+        "bounty": 42
+      },
+      {
+        "criminalName": "NERIAH_JACOBSON",
+        "weaponType": "LASER",
+        "bounty": 31
+      },
+      {
+        "criminalName": "ANWEN_CASH",
+        "weaponType": "PLASMA",
+        "bounty": 43
+      },
+      {
+        "criminalName": "MILA_ROJAS",
+        "weaponType": "PARTICLE",
+        "bounty": 50
+      }
+    ]
   },
   {
     "name": "NEW_BERLIN",
     "orePrice": 14,
     "waterPrice": 15,
-    "enginepartsPrice": 12,
+    "enginePartsPrice": 12,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "GRACIE_MAY_BURGESS",
+        "weaponType": "LASER",
+        "bounty": 47
+      },
+      {
+        "criminalName": "PAYTON_GRAY",
+        "weaponType": "TACHYON",
+        "bounty": 34
+      },
+      {
+        "criminalName": "ROWAN_ROCHA",
+        "weaponType": "PHOTON",
+        "bounty": 34
+      },
+      {
+        "criminalName": "PAIGE_STARK",
+        "weaponType": "PROTON",
+        "bounty": 37
+      },
+      {
+        "criminalName": "LENNY_BUCKNER",
+        "weaponType": "TACHYON",
+        "bounty": 46
+      },
+      {
+        "criminalName": "DAMON_KRAMER",
+        "weaponType": "TACHYON",
+        "bounty": 46
+      },
+      {
+        "criminalName": "AMANAH_WILLIAMSON",
+        "weaponType": "PROTON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "ANDREW_BOOKER",
+        "weaponType": "PHOTON",
+        "bounty": 44
+      },
+      {
+        "criminalName": "BRUCE_JORDAN",
+        "weaponType": "PHOTON",
+        "bounty": 47
+      },
+      {
+        "criminalName": "LUCIAN_ROBERTSON",
+        "weaponType": "LASER",
+        "bounty": 50
+      },
+      {
+        "criminalName": "KHADEEJAH_GROSS",
+        "weaponType": "PARTICLE",
+        "bounty": 41
+      }
+    ]
   },
   {
     "name": "MANHATTAN",
     "orePrice": 16,
     "waterPrice": 5,
-    "enginepartsPrice": 9,
+    "enginePartsPrice": 9,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "ORLA_JENNINGS",
+        "weaponType": "PROTON",
+        "bounty": 38
+      },
+      {
+        "criminalName": "REBECA_CAMPOS",
+        "weaponType": "TACHYON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "TEDDIE_LAWRENCE",
+        "weaponType": "LASER",
+        "bounty": 34
+      },
+      {
+        "criminalName": "TOMASZ_AGUILAR",
+        "weaponType": "PARTICLE",
+        "bounty": 33
+      },
+      {
+        "criminalName": "ZAHRAA_CRANE",
+        "weaponType": "PLASMA",
+        "bounty": 42
+      },
+      {
+        "criminalName": "ANGEL_LE",
+        "weaponType": "TACHYON",
+        "bounty": 31
+      },
+      {
+        "criminalName": "REGAN_CARR",
+        "weaponType": "PHOTON",
+        "bounty": 49
+      },
+      {
+        "criminalName": "FIONN_ATKINSON",
+        "weaponType": "PROTON",
+        "bounty": 31
+      },
+      {
+        "criminalName": "CLAIRE_CLINE",
+        "weaponType": "LASER",
+        "bounty": 31
+      },
+      {
+        "criminalName": "KYLAN_BENSON",
+        "weaponType": "LASER",
+        "bounty": 40
+      }
+    ]
   },
   {
     "name": "MAINE",
     "orePrice": 7,
     "waterPrice": 12,
-    "enginepartsPrice": 7,
+    "enginePartsPrice": 7,
     "contrabandPrice": 18,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "ZAVIER_LAMB",
+        "weaponType": "TACHYON",
+        "bounty": 47
+      },
+      {
+        "criminalName": "ISSAC_VELAZQUEZ",
+        "weaponType": "PLASMA",
+        "bounty": 31
+      },
+      {
+        "criminalName": "AMOS_MELTON",
+        "weaponType": "LASER",
+        "bounty": 41
+      },
+      {
+        "criminalName": "DEAN_MCINTOSH",
+        "weaponType": "PHOTON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "TARAN_NIELSEN",
+        "weaponType": "TACHYON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "ELIZABETH_CONLEY",
+        "weaponType": "LASER",
+        "bounty": 47
+      },
+      {
+        "criminalName": "LUCCA_COLLIER",
+        "weaponType": "PLASMA",
+        "bounty": 44
+      },
+      {
+        "criminalName": "KAELAN_ESTRADA",
+        "weaponType": "TACHYON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "TRINITY_NOBLE",
+        "weaponType": "TACHYON",
+        "bounty": 36
+      }
+    ]
   },
   {
     "name": "BUFFALO",
     "orePrice": 16,
     "waterPrice": 19,
-    "enginepartsPrice": 10,
+    "enginePartsPrice": 10,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "JAK_NICHOLS",
+        "weaponType": "PHOTON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "BETSY_DELACRUZ",
+        "weaponType": "LASER",
+        "bounty": 35
+      },
+      {
+        "criminalName": "EFA_ROLLINS",
+        "weaponType": "LASER",
+        "bounty": 44
+      },
+      {
+        "criminalName": "AAMINAH_SANTOS",
+        "weaponType": "TACHYON",
+        "bounty": 33
+      }
+    ]
   },
   {
     "name": "WATERFORD",
     "orePrice": 12,
     "waterPrice": 6,
-    "enginepartsPrice": 18,
+    "enginePartsPrice": 18,
     "contrabandPrice": 36,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "ALISSA_MAYNARD",
+        "weaponType": "PARTICLE",
+        "bounty": 43
+      },
+      {
+        "criminalName": "RITA_FREEMAN",
+        "weaponType": "LASER",
+        "bounty": 33
+      },
+      {
+        "criminalName": "KACPER_EDWARDS",
+        "weaponType": "PLASMA",
+        "bounty": 37
+      },
+      {
+        "criminalName": "NAHLA_GREER",
+        "weaponType": "PHOTON",
+        "bounty": 31
+      },
+      {
+        "criminalName": "SPENCER_REYNOLDS",
+        "weaponType": "PARTICLE",
+        "bounty": 35
+      },
+      {
+        "criminalName": "LENNON_ALVAREZ",
+        "weaponType": "PLASMA",
+        "bounty": 38
+      },
+      {
+        "criminalName": "PENNY_BRITT",
+        "weaponType": "TACHYON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "ADNAN_MCKNIGHT",
+        "weaponType": "PLASMA",
+        "bounty": 45
+      },
+      {
+        "criminalName": "ALEC_FITZPATRICK",
+        "weaponType": "PLASMA",
+        "bounty": 47
+      },
+      {
+        "criminalName": "RAFE_STEIN",
+        "weaponType": "LASER",
+        "bounty": 40
+      },
+      {
+        "criminalName": "ARNOLD_WOLF",
+        "weaponType": "PROTON",
+        "bounty": 49
+      }
+    ]
   },
   {
     "name": "SPRAGUE",
     "orePrice": 18,
     "waterPrice": 2,
-    "enginepartsPrice": 13,
+    "enginePartsPrice": 13,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "SYLVIA_FRANCIS",
+        "weaponType": "LASER",
+        "bounty": 33
+      },
+      {
+        "criminalName": "DOMINYKAS_SYKES",
+        "weaponType": "PLASMA",
+        "bounty": 46
+      },
+      {
+        "criminalName": "EDDIE_AGUIRRE",
+        "weaponType": "TACHYON",
+        "bounty": 34
+      },
+      {
+        "criminalName": "MIKOLAJ_PARKER",
+        "weaponType": "PROTON",
+        "bounty": 31
+      },
+      {
+        "criminalName": "SEAMUS_SARGENT",
+        "weaponType": "PROTON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "DAWUD_CONWAY",
+        "weaponType": "PROTON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "KHALIL_BOOTH",
+        "weaponType": "PARTICLE",
+        "bounty": 32
+      }
+    ]
   },
   {
     "name": "MUNICH",
     "orePrice": 1,
     "waterPrice": 11,
-    "enginepartsPrice": 1,
+    "enginePartsPrice": 1,
     "contrabandPrice": 26,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "ZAINA_BISHOP",
+        "weaponType": "PARTICLE",
+        "bounty": 38
+      },
+      {
+        "criminalName": "ARJAN_WILEY",
+        "weaponType": "TACHYON",
+        "bounty": 39
+      },
+      {
+        "criminalName": "ARIELLE_RAMOS",
+        "weaponType": "PROTON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "OLIVIA_ROSE_SAMPSON",
+        "weaponType": "PHOTON",
+        "bounty": 33
+      },
+      {
+        "criminalName": "DAISY_TERRY",
+        "weaponType": "PROTON",
+        "bounty": 49
+      },
+      {
+        "criminalName": "HASHIR_MANNING",
+        "weaponType": "TACHYON",
+        "bounty": 45
+      }
+    ]
   },
   {
     "name": "HAMBURG",
     "orePrice": 9,
     "waterPrice": 4,
-    "enginepartsPrice": 1,
+    "enginePartsPrice": 1,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "SAUL_WINTERS",
+        "weaponType": "LASER",
+        "bounty": 41
+      },
+      {
+        "criminalName": "OSMAN_KELLER",
+        "weaponType": "PARTICLE",
+        "bounty": 36
+      },
+      {
+        "criminalName": "CADE_HAMMOND",
+        "weaponType": "TACHYON",
+        "bounty": 39
+      },
+      {
+        "criminalName": "HARLOW_SOLIS",
+        "weaponType": "TACHYON",
+        "bounty": 39
+      },
+      {
+        "criminalName": "RALPHY_JARVIS",
+        "weaponType": "PLASMA",
+        "bounty": 32
+      },
+      {
+        "criminalName": "KAIA_ESPINOZA",
+        "weaponType": "TACHYON",
+        "bounty": 46
+      },
+      {
+        "criminalName": "LEANDRO_WALKER",
+        "weaponType": "LASER",
+        "bounty": 42
+      },
+      {
+        "criminalName": "EADIE_MORTON",
+        "weaponType": "LASER",
+        "bounty": 30
+      }
+    ]
   },
   {
     "name": "HADES",
     "orePrice": 3,
     "waterPrice": 14,
-    "enginepartsPrice": 6,
+    "enginePartsPrice": 6,
     "contrabandPrice": 4,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "CALLUM_BURNS",
+        "weaponType": "PHOTON",
+        "bounty": 44
+      },
+      {
+        "criminalName": "JAZMINE_GORDON",
+        "weaponType": "PARTICLE",
+        "bounty": 41
+      },
+      {
+        "criminalName": "JANNAT_ELLISON",
+        "weaponType": "PHOTON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "SHEA_NELSON",
+        "weaponType": "PARTICLE",
+        "bounty": 50
+      },
+      {
+        "criminalName": "RUQAYYAH_BARRON",
+        "weaponType": "PLASMA",
+        "bounty": 36
+      },
+      {
+        "criminalName": "ATHENA_ROBINSON",
+        "weaponType": "PLASMA",
+        "bounty": 32
+      },
+      {
+        "criminalName": "ANNABELLE_CHASE",
+        "weaponType": "PLASMA",
+        "bounty": 35
+      },
+      {
+        "criminalName": "FERGUS_GLASS",
+        "weaponType": "PLASMA",
+        "bounty": 45
+      },
+      {
+        "criminalName": "MOHAMMAD_HALL",
+        "weaponType": "PROTON",
+        "bounty": 49
+      },
+      {
+        "criminalName": "SOPHIA_ROSE_BRIGGS",
+        "weaponType": "PROTON",
+        "bounty": 50
+      },
+      {
+        "criminalName": "CHLOE_CANTRELL",
+        "weaponType": "PLASMA",
+        "bounty": 41
+      }
+    ]
   },
   {
     "name": "VESUVIUS",
     "orePrice": 16,
     "waterPrice": 2,
-    "enginepartsPrice": 4,
+    "enginePartsPrice": 4,
     "contrabandPrice": 16,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "INDIE_AVILA",
+        "weaponType": "PROTON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "EDISON_NIEVES",
+        "weaponType": "PARTICLE",
+        "bounty": 40
+      },
+      {
+        "criminalName": "MUSTAFA_MOORE",
+        "weaponType": "PLASMA",
+        "bounty": 49
+      },
+      {
+        "criminalName": "CHAYA_WALTER",
+        "weaponType": "PROTON",
+        "bounty": 37
+      },
+      {
+        "criminalName": "AMARA_WOOD",
+        "weaponType": "PHOTON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "RYDER_FRAZIER",
+        "weaponType": "PARTICLE",
+        "bounty": 50
+      },
+      {
+        "criminalName": "LILITH_WARE",
+        "weaponType": "LASER",
+        "bounty": 36
+      },
+      {
+        "criminalName": "ZAINAB_LEONARD",
+        "weaponType": "PHOTON",
+        "bounty": 47
+      },
+      {
+        "criminalName": "MOHAMMED_CHERRY",
+        "weaponType": "LASER",
+        "bounty": 40
+      },
+      {
+        "criminalName": "AYUB_KNOX",
+        "weaponType": "LASER",
+        "bounty": 38
+      },
+      {
+        "criminalName": "LUCY_ORR",
+        "weaponType": "PROTON",
+        "bounty": 38
+      },
+      {
+        "criminalName": "LEON_OLSON",
+        "weaponType": "PHOTON",
+        "bounty": 48
+      },
+      {
+        "criminalName": "HOLLIE_TERRELL",
+        "weaponType": "PHOTON",
+        "bounty": 32
+      }
+    ]
   },
   {
     "name": "GAIA",
     "orePrice": 11,
     "waterPrice": 3,
-    "enginepartsPrice": 7,
+    "enginePartsPrice": 7,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "AMANDA_MCCARTHY",
+        "weaponType": "PHOTON",
+        "bounty": 32
+      },
+      {
+        "criminalName": "BUDDY_HART",
+        "weaponType": "PARTICLE",
+        "bounty": 36
+      },
+      {
+        "criminalName": "JUNO_DICKERSON",
+        "weaponType": "PLASMA",
+        "bounty": 33
+      },
+      {
+        "criminalName": "VERITY_BLANKENSHIP",
+        "weaponType": "PLASMA",
+        "bounty": 33
+      },
+      {
+        "criminalName": "ANGELO_BARRY",
+        "weaponType": "PARTICLE",
+        "bounty": 44
+      },
+      {
+        "criminalName": "REEGAN_CHRISTENSEN",
+        "weaponType": "LASER",
+        "bounty": 41
+      },
+      {
+        "criminalName": "ALEX_HARRIS",
+        "weaponType": "LASER",
+        "bounty": 30
+      },
+      {
+        "criminalName": "ELIANA_LLOYD",
+        "weaponType": "PROTON",
+        "bounty": 34
+      },
+      {
+        "criminalName": "LACHLAN_CHRISTIAN",
+        "weaponType": "PLASMA",
+        "bounty": 38
+      },
+      {
+        "criminalName": "AQSA_COBB",
+        "weaponType": "PHOTON",
+        "bounty": 36
+      },
+      {
+        "criminalName": "SYEDA_SULLIVAN",
+        "weaponType": "TACHYON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "REECE_SHARPE",
+        "weaponType": "PLASMA",
+        "bounty": 42
+      },
+      {
+        "criminalName": "CHRISTINA_BURCH",
+        "weaponType": "TACHYON",
+        "bounty": 36
+      }
+    ]
   },
   {
     "name": "MONTEZUMA",
     "orePrice": 17,
     "waterPrice": 4,
-    "enginepartsPrice": 13,
+    "enginePartsPrice": 13,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "DOLLY_MURPHY",
+        "weaponType": "PLASMA",
+        "bounty": 38
+      },
+      {
+        "criminalName": "CHARLIE_BOND",
+        "weaponType": "PLASMA",
+        "bounty": 39
+      },
+      {
+        "criminalName": "LILY_MAE_HINES",
+        "weaponType": "PLASMA",
+        "bounty": 40
+      },
+      {
+        "criminalName": "AMELIA_GRACE_RATLIFF",
+        "weaponType": "PARTICLE",
+        "bounty": 31
+      },
+      {
+        "criminalName": "JENSEN_WEST",
+        "weaponType": "PARTICLE",
+        "bounty": 41
+      },
+      {
+        "criminalName": "IDA_CURTIS",
+        "weaponType": "PLASMA",
+        "bounty": 33
+      },
+      {
+        "criminalName": "ALYSSIA_BRIDGES",
+        "weaponType": "PROTON",
+        "bounty": 37
+      },
+      {
+        "criminalName": "WERONIKA_RHODES",
+        "weaponType": "PLASMA",
+        "bounty": 49
+      },
+      {
+        "criminalName": "ROMY_GONZALES",
+        "weaponType": "PLASMA",
+        "bounty": 47
+      },
+      {
+        "criminalName": "NEO_GOOD",
+        "weaponType": "TACHYON",
+        "bounty": 46
+      }
+    ]
   },
   {
     "name": "CALIFORNIA_MINOR",
     "orePrice": 20,
     "waterPrice": 13,
-    "enginepartsPrice": 11,
+    "enginePartsPrice": 11,
     "contrabandPrice": 0,
-    "faction": "LIBERTY_POLICE"
+    "faction": "LIBERTY_POLICE",
+    "contracts": [
+      {
+        "criminalName": "EOIN_WAGNER",
+        "weaponType": "PROTON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "PHILIP_LANDRY",
+        "weaponType": "PLASMA",
+        "bounty": 32
+      },
+      {
+        "criminalName": "KAITLYN_SIMMONS",
+        "weaponType": "TACHYON",
+        "bounty": 30
+      },
+      {
+        "criminalName": "NIKODEM_FRENCH",
+        "weaponType": "PARTICLE",
+        "bounty": 32
+      },
+      {
+        "criminalName": "PAISLEY_LEACH",
+        "weaponType": "PARTICLE",
+        "bounty": 38
+      },
+      {
+        "criminalName": "ANGELICA_LEVY",
+        "weaponType": "PLASMA",
+        "bounty": 46
+      },
+      {
+        "criminalName": "VIKTORIA_BAXTER",
+        "weaponType": "LASER",
+        "bounty": 48
+      },
+      {
+        "criminalName": "ASHLEY_MATHIS",
+        "weaponType": "LASER",
+        "bounty": 40
+      },
+      {
+        "criminalName": "BRIDGET_DIXON",
+        "weaponType": "PROTON",
+        "bounty": 36
+      }
+    ]
   },
   {
     "name": "DURANGO",
     "orePrice": 7,
     "waterPrice": 3,
-    "enginepartsPrice": 10,
+    "enginePartsPrice": 10,
     "contrabandPrice": 38,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "MARIAM_NASH",
+        "weaponType": "LASER",
+        "bounty": 37
+      },
+      {
+        "criminalName": "BYRON_MORALES",
+        "weaponType": "TACHYON",
+        "bounty": 40
+      },
+      {
+        "criminalName": "JAZMIN_EATON",
+        "weaponType": "PROTON",
+        "bounty": 32
+      },
+      {
+        "criminalName": "LEIGHTON_PATRICK",
+        "weaponType": "PHOTON",
+        "bounty": 49
+      },
+      {
+        "criminalName": "DAKOTA_RUSH",
+        "weaponType": "PARTICLE",
+        "bounty": 50
+      },
+      {
+        "criminalName": "LENNOX_MCGOWAN",
+        "weaponType": "PLASMA",
+        "bounty": 34
+      },
+      {
+        "criminalName": "BENNY_DUNLAP",
+        "weaponType": "TACHYON",
+        "bounty": 43
+      },
+      {
+        "criminalName": "ARNAV_MCKENZIE",
+        "weaponType": "PLASMA",
+        "bounty": 37
+      },
+      {
+        "criminalName": "MATEUSZ_LEON",
+        "weaponType": "PROTON",
+        "bounty": 41
+      },
+      {
+        "criminalName": "ADELAIDE_LANG",
+        "weaponType": "LASER",
+        "bounty": 44
+      },
+      {
+        "criminalName": "KADE_MULLEN",
+        "weaponType": "PROTON",
+        "bounty": 45
+      }
+    ]
   },
   {
     "name": "GUNNISON",
     "orePrice": 6,
     "waterPrice": 16,
-    "enginepartsPrice": 16,
+    "enginePartsPrice": 16,
     "contrabandPrice": 40,
-    "faction": "XENOS"
+    "faction": "XENOS",
+    "contracts": [
+      {
+        "criminalName": "KENDRA_PAYNE",
+        "weaponType": "PROTON",
+        "bounty": 47
+      },
+      {
+        "criminalName": "CALI_ROSS",
+        "weaponType": "PLASMA",
+        "bounty": 32
+      },
+      {
+        "criminalName": "THEIA_LOTT",
+        "weaponType": "PHOTON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "EVIE_BERG",
+        "weaponType": "TACHYON",
+        "bounty": 35
+      },
+      {
+        "criminalName": "BETH_WEBER",
+        "weaponType": "PHOTON",
+        "bounty": 45
+      },
+      {
+        "criminalName": "CALLIE_SANTIAGO",
+        "weaponType": "PHOTON",
+        "bounty": 44
+      },
+      {
+        "criminalName": "ISMAEL_DOWNS",
+        "weaponType": "PARTICLE",
+        "bounty": 43
+      },
+      {
+        "criminalName": "SHAY_FIELDS",
+        "weaponType": "PHOTON",
+        "bounty": 33
+      },
+      {
+        "criminalName": "VLAD_HOFFMAN",
+        "weaponType": "PHOTON",
+        "bounty": 42
+      },
+      {
+        "criminalName": "ISRA_ODONNELL",
+        "weaponType": "TACHYON",
+        "bounty": 45
+      }
+    ]
   }
 ]
