@@ -1,0 +1,818 @@
+[
+  {
+    "name": "CRETE",
+    "orePrice": 7,
+    "waterPrice": 7,
+    "enginepartsPrice": 7,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "BADEN_BADEN",
+    "orePrice": 13,
+    "waterPrice": 14,
+    "enginepartsPrice": 17,
+    "contrabandPrice": 32,
+    "faction": "XENOS"
+  },
+  {
+    "name": "PLANETOLD",
+    "orePrice": 10,
+    "waterPrice": 9,
+    "enginepartsPrice": 11,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "CEREBUS",
+    "orePrice": 19,
+    "waterPrice": 16,
+    "enginepartsPrice": 18,
+    "contrabandPrice": 8,
+    "faction": "XENOS"
+  },
+  {
+    "name": "FUJI",
+    "orePrice": 3,
+    "waterPrice": 17,
+    "enginepartsPrice": 17,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "HOLSTEIN",
+    "orePrice": 20,
+    "waterPrice": 9,
+    "enginepartsPrice": 7,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "HONSHU",
+    "orePrice": 7,
+    "waterPrice": 10,
+    "enginepartsPrice": 5,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "LEIDEN",
+    "orePrice": 4,
+    "waterPrice": 4,
+    "enginepartsPrice": 16,
+    "contrabandPrice": 24,
+    "faction": "XENOS"
+  },
+  {
+    "name": "PITTSBURGH",
+    "orePrice": 10,
+    "waterPrice": 17,
+    "enginepartsPrice": 4,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "ATKA",
+    "orePrice": 13,
+    "waterPrice": 2,
+    "enginepartsPrice": 14,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "KURILE",
+    "orePrice": 1,
+    "waterPrice": 12,
+    "enginepartsPrice": 6,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "STULINGEN",
+    "orePrice": 9,
+    "waterPrice": 15,
+    "enginepartsPrice": 10,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "CALI",
+    "orePrice": 13,
+    "waterPrice": 10,
+    "enginepartsPrice": 6,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "NOME",
+    "orePrice": 9,
+    "waterPrice": 9,
+    "enginepartsPrice": 4,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "VESPUS",
+    "orePrice": 18,
+    "waterPrice": 9,
+    "enginepartsPrice": 12,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "AALEN",
+    "orePrice": 9,
+    "waterPrice": 15,
+    "enginepartsPrice": 20,
+    "contrabandPrice": 8,
+    "faction": "XENOS"
+  },
+  {
+    "name": "HIRAN",
+    "orePrice": 1,
+    "waterPrice": 17,
+    "enginepartsPrice": 14,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "CURACAO",
+    "orePrice": 2,
+    "waterPrice": 1,
+    "enginepartsPrice": 9,
+    "contrabandPrice": 2,
+    "faction": "XENOS"
+  },
+  {
+    "name": "PRENTA",
+    "orePrice": 10,
+    "waterPrice": 12,
+    "enginepartsPrice": 13,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "KYUSHU",
+    "orePrice": 13,
+    "waterPrice": 13,
+    "enginepartsPrice": 11,
+    "contrabandPrice": 16,
+    "faction": "XENOS"
+  },
+  {
+    "name": "SARUM",
+    "orePrice": 11,
+    "waterPrice": 12,
+    "enginepartsPrice": 4,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "IZU",
+    "orePrice": 4,
+    "waterPrice": 10,
+    "enginepartsPrice": 19,
+    "contrabandPrice": 32,
+    "faction": "XENOS"
+  },
+  {
+    "name": "LEEDS",
+    "orePrice": 1,
+    "waterPrice": 7,
+    "enginepartsPrice": 10,
+    "contrabandPrice": 22,
+    "faction": "XENOS"
+  },
+  {
+    "name": "BREISGAU",
+    "orePrice": 16,
+    "waterPrice": 13,
+    "enginepartsPrice": 20,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "JUNYO",
+    "orePrice": 8,
+    "waterPrice": 12,
+    "enginepartsPrice": 19,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "HARRIS",
+    "orePrice": 2,
+    "waterPrice": 13,
+    "enginepartsPrice": 19,
+    "contrabandPrice": 32,
+    "faction": "XENOS"
+  },
+  {
+    "name": "ELYSIUM",
+    "orePrice": 16,
+    "waterPrice": 1,
+    "enginepartsPrice": 20,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "TEGAKIS",
+    "orePrice": 12,
+    "waterPrice": 16,
+    "enginepartsPrice": 14,
+    "contrabandPrice": 14,
+    "faction": "XENOS"
+  },
+  {
+    "name": "PADUA",
+    "orePrice": 10,
+    "waterPrice": 12,
+    "enginepartsPrice": 8,
+    "contrabandPrice": 22,
+    "faction": "XENOS"
+  },
+  {
+    "name": "KITADAKE",
+    "orePrice": 5,
+    "waterPrice": 15,
+    "enginepartsPrice": 4,
+    "contrabandPrice": 20,
+    "faction": "XENOS"
+  },
+  {
+    "name": "PYGAR",
+    "orePrice": 7,
+    "waterPrice": 1,
+    "enginepartsPrice": 5,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "MALLORCA",
+    "orePrice": 8,
+    "waterPrice": 19,
+    "enginepartsPrice": 5,
+    "contrabandPrice": 8,
+    "faction": "XENOS"
+  },
+  {
+    "name": "KYOTO",
+    "orePrice": 9,
+    "waterPrice": 12,
+    "enginepartsPrice": 18,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "RYUKU",
+    "orePrice": 17,
+    "waterPrice": 2,
+    "enginepartsPrice": 14,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "CAIRO",
+    "orePrice": 8,
+    "waterPrice": 13,
+    "enginepartsPrice": 18,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "STUTTGART",
+    "orePrice": 1,
+    "waterPrice": 17,
+    "enginepartsPrice": 10,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "ASO",
+    "orePrice": 14,
+    "waterPrice": 3,
+    "enginepartsPrice": 8,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "UNKNOWN",
+    "orePrice": 12,
+    "waterPrice": 3,
+    "enginepartsPrice": 13,
+    "contrabandPrice": 16,
+    "faction": "XENOS"
+  },
+  {
+    "name": "CARINEA",
+    "orePrice": 15,
+    "waterPrice": 13,
+    "enginepartsPrice": 2,
+    "contrabandPrice": 8,
+    "faction": "XENOS"
+  },
+  {
+    "name": "FREITAL",
+    "orePrice": 5,
+    "waterPrice": 6,
+    "enginepartsPrice": 18,
+    "contrabandPrice": 28,
+    "faction": "XENOS"
+  },
+  {
+    "name": "ALCATRAZ",
+    "orePrice": 4,
+    "waterPrice": 18,
+    "enginepartsPrice": 9,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "PRIMUS",
+    "orePrice": 19,
+    "waterPrice": 14,
+    "enginepartsPrice": 5,
+    "contrabandPrice": 38,
+    "faction": "XENOS"
+  },
+  {
+    "name": "OURAY",
+    "orePrice": 13,
+    "waterPrice": 11,
+    "enginepartsPrice": 6,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "KIEL",
+    "orePrice": 18,
+    "waterPrice": 19,
+    "enginepartsPrice": 19,
+    "contrabandPrice": 6,
+    "faction": "XENOS"
+  },
+  {
+    "name": "VOGTLAND",
+    "orePrice": 3,
+    "waterPrice": 20,
+    "enginepartsPrice": 2,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "MALTA",
+    "orePrice": 15,
+    "waterPrice": 10,
+    "enginepartsPrice": 6,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "TOLEDO",
+    "orePrice": 3,
+    "waterPrice": 5,
+    "enginepartsPrice": 4,
+    "contrabandPrice": 12,
+    "faction": "XENOS"
+  },
+  {
+    "name": "NEW_LONDON",
+    "orePrice": 8,
+    "waterPrice": 6,
+    "enginepartsPrice": 16,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "HOUSTON",
+    "orePrice": 5,
+    "waterPrice": 7,
+    "enginepartsPrice": 10,
+    "contrabandPrice": 36,
+    "faction": "XENOS"
+  },
+  {
+    "name": "FALKLAND",
+    "orePrice": 9,
+    "waterPrice": 15,
+    "enginepartsPrice": 8,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "HIDDEN_FORCE",
+    "orePrice": 9,
+    "waterPrice": 16,
+    "enginepartsPrice": 8,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "CADIZ",
+    "orePrice": 7,
+    "waterPrice": 17,
+    "enginepartsPrice": 7,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "CHISOS",
+    "orePrice": 3,
+    "waterPrice": 19,
+    "enginepartsPrice": 16,
+    "contrabandPrice": 16,
+    "faction": "XENOS"
+  },
+  {
+    "name": "GAMMU",
+    "orePrice": 6,
+    "waterPrice": 17,
+    "enginepartsPrice": 5,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "WRIGHT",
+    "orePrice": 3,
+    "waterPrice": 3,
+    "enginepartsPrice": 20,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "KALHMERA",
+    "orePrice": 2,
+    "waterPrice": 10,
+    "enginepartsPrice": 17,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "LOS_ANGELES",
+    "orePrice": 14,
+    "waterPrice": 5,
+    "enginepartsPrice": 10,
+    "contrabandPrice": 28,
+    "faction": "XENOS"
+  },
+  {
+    "name": "WILLARD",
+    "orePrice": 10,
+    "waterPrice": 12,
+    "enginepartsPrice": 12,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "JERSEY",
+    "orePrice": 2,
+    "waterPrice": 8,
+    "enginepartsPrice": 15,
+    "contrabandPrice": 12,
+    "faction": "XENOS"
+  },
+  {
+    "name": "POTSDAM",
+    "orePrice": 2,
+    "waterPrice": 16,
+    "enginepartsPrice": 8,
+    "contrabandPrice": 14,
+    "faction": "XENOS"
+  },
+  {
+    "name": "CAMBRIDGE",
+    "orePrice": 7,
+    "waterPrice": 12,
+    "enginepartsPrice": 20,
+    "contrabandPrice": 12,
+    "faction": "XENOS"
+  },
+  {
+    "name": "RONNEBURG",
+    "orePrice": 4,
+    "waterPrice": 2,
+    "enginepartsPrice": 1,
+    "contrabandPrice": 4,
+    "faction": "XENOS"
+  },
+  {
+    "name": "PACIFICA",
+    "orePrice": 12,
+    "waterPrice": 16,
+    "enginepartsPrice": 13,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "DOVER",
+    "orePrice": 16,
+    "waterPrice": 8,
+    "enginepartsPrice": 17,
+    "contrabandPrice": 20,
+    "faction": "XENOS"
+  },
+  {
+    "name": "ABILENE",
+    "orePrice": 2,
+    "waterPrice": 13,
+    "enginepartsPrice": 3,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "ALEXANDRIA",
+    "orePrice": 1,
+    "waterPrice": 8,
+    "enginepartsPrice": 17,
+    "contrabandPrice": 16,
+    "faction": "XENOS"
+  },
+  {
+    "name": "HIKARI",
+    "orePrice": 3,
+    "waterPrice": 12,
+    "enginepartsPrice": 4,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "HANNOVER",
+    "orePrice": 17,
+    "waterPrice": 9,
+    "enginepartsPrice": 7,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "MACTAN",
+    "orePrice": 6,
+    "waterPrice": 10,
+    "enginepartsPrice": 16,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "LEON",
+    "orePrice": 15,
+    "waterPrice": 2,
+    "enginepartsPrice": 3,
+    "contrabandPrice": 2,
+    "faction": "XENOS"
+  },
+  {
+    "name": "CELLA_DOR",
+    "orePrice": 7,
+    "waterPrice": 7,
+    "enginepartsPrice": 13,
+    "contrabandPrice": 4,
+    "faction": "XENOS"
+  },
+  {
+    "name": "AURIGA",
+    "orePrice": 9,
+    "waterPrice": 6,
+    "enginepartsPrice": 8,
+    "contrabandPrice": 8,
+    "faction": "XENOS"
+  },
+  {
+    "name": "BARROW",
+    "orePrice": 10,
+    "waterPrice": 10,
+    "enginepartsPrice": 19,
+    "contrabandPrice": 6,
+    "faction": "XENOS"
+  },
+  {
+    "name": "ISLAY",
+    "orePrice": 14,
+    "waterPrice": 7,
+    "enginepartsPrice": 10,
+    "contrabandPrice": 32,
+    "faction": "XENOS"
+  },
+  {
+    "name": "SCHUTZ",
+    "orePrice": 3,
+    "waterPrice": 6,
+    "enginepartsPrice": 17,
+    "contrabandPrice": 38,
+    "faction": "XENOS"
+  },
+  {
+    "name": "MOJAVE",
+    "orePrice": 5,
+    "waterPrice": 4,
+    "enginepartsPrice": 17,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "BRUCHSAL",
+    "orePrice": 15,
+    "waterPrice": 7,
+    "enginepartsPrice": 4,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "SETO",
+    "orePrice": 14,
+    "waterPrice": 8,
+    "enginepartsPrice": 5,
+    "contrabandPrice": 4,
+    "faction": "XENOS"
+  },
+  {
+    "name": "ARRANMORE",
+    "orePrice": 14,
+    "waterPrice": 14,
+    "enginepartsPrice": 20,
+    "contrabandPrice": 38,
+    "faction": "XENOS"
+  },
+  {
+    "name": "AYR",
+    "orePrice": 13,
+    "waterPrice": 4,
+    "enginepartsPrice": 2,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "RUIZ",
+    "orePrice": 5,
+    "waterPrice": 14,
+    "enginepartsPrice": 14,
+    "contrabandPrice": 34,
+    "faction": "XENOS"
+  },
+  {
+    "name": "BRAZOS",
+    "orePrice": 4,
+    "waterPrice": 18,
+    "enginepartsPrice": 2,
+    "contrabandPrice": 26,
+    "faction": "XENOS"
+  },
+  {
+    "name": "NEW_TOKYO",
+    "orePrice": 17,
+    "waterPrice": 18,
+    "enginepartsPrice": 9,
+    "contrabandPrice": 26,
+    "faction": "XENOS"
+  },
+  {
+    "name": "MENES",
+    "orePrice": 11,
+    "waterPrice": 7,
+    "enginepartsPrice": 9,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "DAWSON",
+    "orePrice": 18,
+    "waterPrice": 15,
+    "enginepartsPrice": 2,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "DEIDUS",
+    "orePrice": 9,
+    "waterPrice": 14,
+    "enginepartsPrice": 5,
+    "contrabandPrice": 38,
+    "faction": "XENOS"
+  },
+  {
+    "name": "DENVER",
+    "orePrice": 17,
+    "waterPrice": 7,
+    "enginepartsPrice": 2,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "NEW_BERLIN",
+    "orePrice": 14,
+    "waterPrice": 15,
+    "enginepartsPrice": 12,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "MANHATTAN",
+    "orePrice": 16,
+    "waterPrice": 5,
+    "enginepartsPrice": 9,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "MAINE",
+    "orePrice": 7,
+    "waterPrice": 12,
+    "enginepartsPrice": 7,
+    "contrabandPrice": 18,
+    "faction": "XENOS"
+  },
+  {
+    "name": "BUFFALO",
+    "orePrice": 16,
+    "waterPrice": 19,
+    "enginepartsPrice": 10,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "WATERFORD",
+    "orePrice": 12,
+    "waterPrice": 6,
+    "enginepartsPrice": 18,
+    "contrabandPrice": 36,
+    "faction": "XENOS"
+  },
+  {
+    "name": "SPRAGUE",
+    "orePrice": 18,
+    "waterPrice": 2,
+    "enginepartsPrice": 13,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "MUNICH",
+    "orePrice": 1,
+    "waterPrice": 11,
+    "enginepartsPrice": 1,
+    "contrabandPrice": 26,
+    "faction": "XENOS"
+  },
+  {
+    "name": "HAMBURG",
+    "orePrice": 9,
+    "waterPrice": 4,
+    "enginepartsPrice": 1,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "HADES",
+    "orePrice": 3,
+    "waterPrice": 14,
+    "enginepartsPrice": 6,
+    "contrabandPrice": 4,
+    "faction": "XENOS"
+  },
+  {
+    "name": "VESUVIUS",
+    "orePrice": 16,
+    "waterPrice": 2,
+    "enginepartsPrice": 4,
+    "contrabandPrice": 16,
+    "faction": "XENOS"
+  },
+  {
+    "name": "GAIA",
+    "orePrice": 11,
+    "waterPrice": 3,
+    "enginepartsPrice": 7,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "MONTEZUMA",
+    "orePrice": 17,
+    "waterPrice": 4,
+    "enginepartsPrice": 13,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "CALIFORNIA_MINOR",
+    "orePrice": 20,
+    "waterPrice": 13,
+    "enginepartsPrice": 11,
+    "contrabandPrice": 0,
+    "faction": "LIBERTY_POLICE"
+  },
+  {
+    "name": "DURANGO",
+    "orePrice": 7,
+    "waterPrice": 3,
+    "enginepartsPrice": 10,
+    "contrabandPrice": 38,
+    "faction": "XENOS"
+  },
+  {
+    "name": "GUNNISON",
+    "orePrice": 6,
+    "waterPrice": 16,
+    "enginepartsPrice": 16,
+    "contrabandPrice": 40,
+    "faction": "XENOS"
+  }
+]
