@@ -95,6 +95,7 @@ func freelancer(stars []*Star) []*Transaction {
 		}
 	}
 
+	fmt.Printf("path: %v\n", visitedStars)
 	println("blanace: ", profit)
 	return transactions
 }
@@ -148,6 +149,11 @@ func visitStar(currentStar uint8, stars []*Star, visitedStars []uint8, balance u
 }
 
 func findJumpableStars(startingStar uint8, nrOfStars uint8, excludeIndexes []uint8) []uint8 {
+	if nrOfStars == uint8(len(excludeIndexes)-1) {
+		// only the last star is remaining. Return the last star
+		return []uint8{nrOfStars-1}
+	}
+
 	var out []uint8
 	i := uint8(max(int8(startingStar-3), 0))
 	end := min(nrOfStars-1, startingStar+3)
@@ -155,7 +161,9 @@ func findJumpableStars(startingStar uint8, nrOfStars uint8, excludeIndexes []uin
 		if in(i, excludeIndexes) {
 			continue
 		}
-		if nrOfStars > uint8(len(excludeIndexes)+1)  && hasInvalidNeighbour(i, nrOfStars, append(excludeIndexes, i)) {
+		starmap := starMapBools(nrOfStars, excludeIndexes)
+		starmap[i] = true
+		if !canReachEndVisitingAllStars(i, starmap, uint8(len(excludeIndexes)+1)) {
 			continue
 		}
 		out = append(out, i)
@@ -163,32 +171,91 @@ func findJumpableStars(startingStar uint8, nrOfStars uint8, excludeIndexes []uin
 	return out
 }
 
-func hasInvalidNeighbour(starI uint8, nrOfStars uint8, excludeIndexes []uint8) bool {
-	// checks if one of starI neighbours is invalid
-	// invalid means: must still be visited but has no jumpable neighbourds after this poitn has been visited
-	// excludedIndexes already contains starI
+func starMapBools(nrOfStars uint8, excludeIndexes []uint8) []bool {
+	starMap := make([]bool, nrOfStars)
+	for _, excludedI := range excludeIndexes {
+		starMap[excludedI] = true
+	}
+	return starMap
+}
+
+func canReachEndVisitingAllStars(starI uint8, starmap []bool, nrOfVisistedStars uint8) bool {
+
+	nrOfStars := uint8(len(starmap))
+
+	if nrOfVisistedStars+1 == nrOfStars {
+		// starI is the second to last star
+		return nrOfStars - starI - 1 <= 3
+	}
 
 	i := uint8(max(int8(starI-3), 0))
 	end := min(nrOfStars-1, starI+3)
 	for ; i <= end; i++ {
-		if !in(i, excludeIndexes) && !hasNeighbour(i, nrOfStars, append(excludeIndexes, i)) {
+		if starmap[i] {
+			// never travel into already visited stars
+			continue
+		}
+		starmap[i] = true
+		x := canReachEndVisitingAllStars(i, starmap, nrOfVisistedStars+1)
+		starmap[i] = false
+		if x {
 			return true
 		}
 	}
+	fmt.Printf("%v  %v\n", starI, starmap)
 	return false
 }
 
-
-func hasNeighbour(starI uint8, nrOfStars uint8, excludeIndexes []uint8) bool {
-	i := uint8(max(int8(starI-3), 0))
-	end := min(nrOfStars-1, starI+3)
-	for ; i <= end; i++ {
-		if !in(i, excludeIndexes) {
-			return true
-		}
-	}
-	return false
-}
+//func hasInvalidNeighbour(starI uint8, nrOfStars uint8, excludeIndexes []uint8) bool {
+//	// checks if one of starI neighbours is invalid
+//
+//	i := uint8(max(int8(starI-3), 0))
+//	end := min(nrOfStars-1, starI+3)
+//	for ; i <= end; i++ {
+//		if in(i, excludeIndexes) {
+//			// ignore any neighbours that are in the excluded list
+//			continue
+//		}
+//		if !hasNeighbour(i, nrOfStars, append(excludeIndexes, i)) {
+//			// a neighbour without any other neighbours is invalid
+//			return true
+//		}
+//		if !canReachFinalStar(i, nrOfStars, append(excludeIndexes, i)) {
+//			// a neighbour from where we cannot reach the final star is invalid
+//			return true
+//		}
+//	}
+//	return false
+//}
+//
+//func canReachFinalStar(starI uint8, nrOfStars uint8, excludeIndexes []uint8) bool {
+//	// go through the sorted excludeIndexes, if the delta between two values (or a combination of consequtive values) is larger than 2 than we can't reach the end.
+//	gap := 1
+//	for i := starI+1; i < nrOfStars; i++ {
+//		if gap >= 3 {
+//			return false
+//		}
+//		if in(i, excludeIndexes) {
+//			gap++
+//			continue
+//		} else {
+//			gap = 0
+//			excludeIndexes = append(excludeIndexes, i)
+//		}
+//	}
+//	return true
+//}
+//
+//func hasNeighbour(starI uint8, nrOfStars uint8, excludeIndexes []uint8) bool {
+//	i := uint8(max(int8(starI-3), 0))
+//	end := min(nrOfStars-1, starI+3)
+//	for ; i <= end; i++ {
+//		if !in(i, excludeIndexes) {
+//			return true
+//		}
+//	}
+//	return false
+//}
 
 
 func max(a int8, b int8) int8{
