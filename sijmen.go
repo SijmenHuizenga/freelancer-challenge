@@ -22,7 +22,7 @@ var RESOURCES = []Resource{Ore, Water, EngineParts, Contraband}
 
 type Ship struct {
 	Price    uint16
-	Capacity uint8
+	Capacity uint16
 	Name     string
 }
 
@@ -118,16 +118,14 @@ func visitStar(currentStar uint8, stars []*Star, visitedStars []uint8, balance u
 var counter = float64(0)
 var lastSecond = time.Now().UnixNano()
 
-func solutionsPerSecond() bool {
+func solutionsPerSecond() {
 	counter++
 	if counter > 5000 {
 		deltaS := float64(time.Now().UnixNano() - lastSecond)
 		fmt.Printf("%v solutions/second\n", Round((counter / deltaS) * 1000000000))
 		lastSecond = time.Now().UnixNano()
 		counter = 0
-		return true
 	}
-	return false
 }
 
 func findJumpableStars(startingStar uint8, nrOfStars uint8, excludeIndexes []uint8) []uint8 {
@@ -150,12 +148,6 @@ func max(a int8, b int8) int8{
 	return b
 }
 func min(a uint8, b uint8) uint8{
-	if a < b {
-		return a
-	}
-	return b
-}
-func min16(a uint16, b uint16) uint16{
 	if a < b {
 		return a
 	}
