@@ -40,7 +40,6 @@ var weaponNames = map[Weapon]string {
 	5: "PROTON",
 }
 
-
 const (
 	TACHYON = 0
 	PLASMA = 1
@@ -98,10 +97,12 @@ func freelancer(stars []Star) []Transaction {
 	var currentShip = 0
 
 	var weaponShoppinglist = []Weapon {
-		PARTICLE, PROTON, // of omdraaien
+		PARTICLE,
+		PROTON, // of omdraaien
 		LASER,
-		PLASMA,
-		PHOTON, TACHYON, // of gewoon niet
+		//PLASMA,
+		//PHOTON,
+		//TACHYON, // of gewoon niet
 	}
 	var myWeapons []Weapon
 
@@ -183,6 +184,9 @@ func freelancer(stars []Star) []Transaction {
 		if len(transaction.WeaponPurchase) != 0 {
 			fmt.Printf("\n  Bought weapon %v", transaction.WeaponPurchase)
 		}
+		if acceptedContract != nil {
+			fmt.Printf("\n  Accepted Contract Type %v", acceptedContract.WeaponName)
+		}
 		println()
 
 		transactions = append(transactions, transaction)
@@ -199,7 +203,7 @@ func nextWeapon(w Weapon) Weapon{
 	return w+1
 }
 func nextWeapons(w []Weapon) []Weapon{
-	out := make([]Weapon, len(w))
+	var out []Weapon
 	for _, w := range w {
 		out = append(out, nextWeapon(w))
 	}

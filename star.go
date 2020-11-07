@@ -94,12 +94,12 @@ func (star *Star) bestContract(by Weapon) *Contract {
 
 func (star *Star) bestContractW(weapons []Weapon) *Contract {
 	var bestContract *Contract = nil
-	for _, contract := range star.Contracts{
-		if !in(contract.WeaponType, weapons) {
+	for contractI := range star.Contracts{
+		if !in(star.Contracts[contractI].WeaponType, weapons) {
 			continue
 		}
-		if bestContract == nil || contract.Bounty > bestContract.Bounty {
-			bestContract = &contract
+		if bestContract == nil || star.Contracts[contractI].Bounty > bestContract.Bounty {
+			bestContract = &star.Contracts[contractI]
 		}
 	}
 	return bestContract
