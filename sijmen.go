@@ -16,6 +16,7 @@ const (
 	EngineParts = "engineparts"
 	Contraband  = "contraband"
 )
+
 var RESOURCES = []Resource{Ore, Water, EngineParts, Contraband}
 
 type Ship struct {
@@ -24,14 +25,14 @@ type Ship struct {
 	Name     string
 }
 
-var ships = []Ship{
-	{Price: 0, Capacity: 10, Name: "SCRAPPY"},
-	//{Price: 500, Capacity: 15, Name: "RHINO"},
-	{Price: 1000, Capacity: 20, Name: "DRONE"},
-	{Price: 2000, Capacity: 30, Name: "HUMPBACK"},
-}
+var (
+	SCRAPPY  = Ship{Price: 0, Capacity: 10, Name: "SCRAPPY"}
+	RHINO    = Ship{Price: 500, Capacity: 15, Name: "RHINO"}
+	DRONE    = Ship{Price: 1000, Capacity: 20, Name: "DRONE"}
+	HUMPBACK = Ship{Price: 2000, Capacity: 30, Name: "HUMPBACK"}
+)
 
-var weaponNames = map[Weapon]string {
+var weaponNames = map[Weapon]string{
 	0: "TACHYON",
 	1: "PLASMA",
 	2: "LASER",
@@ -41,29 +42,40 @@ var weaponNames = map[Weapon]string {
 }
 
 const (
-	TACHYON = 0
-	PLASMA = 1
-	LASER = 2
-	PARTICLE = 3
-	PHOTON = 4
-	PROTON = 5
-    totalWeaponCount = 6
+	TACHYON          = 0
+	PLASMA           = 1
+	LASER            = 2
+	PARTICLE         = 3
+	PHOTON           = 4
+	PROTON           = 5
+	totalWeaponCount = 6
+)
+
+const (
+	option_ship = true
+	option_weapon = false
 )
 
 func weaponType(name string) Weapon {
 	switch name {
-		case "TACHYON": return TACHYON
-		case "PLASMA": return PLASMA
-		case "LASER": return LASER
-		case "PARTICLE": return PARTICLE
-		case "PHOTON": return PHOTON
-		case "PROTON": return PROTON
-		case "totalWeaponCount": return totalWeaponCount
+	case "TACHYON":
+		return TACHYON
+	case "PLASMA":
+		return PLASMA
+	case "LASER":
+		return LASER
+	case "PARTICLE":
+		return PARTICLE
+	case "PHOTON":
+		return PHOTON
+	case "PROTON":
+		return PROTON
+	case "totalWeaponCount":
+		return totalWeaponCount
 	}
 	log.Fatal("Weapon doesnt exist")
 	return 0
 }
-
 
 func main() {
 	jsonFile, err := os.Open("starmap.json")
@@ -83,34 +95,38 @@ func main() {
 	}
 
 	transactions := freelancer(stars)
-	jsonString, _ := json.Marshal(Output {
-		Name: "Sijmen Huizenga",
-		Email: "sijmenhuizenga@gmail.com",
+	jsonString, _ := json.Marshal(Output{
+		Name:         "Sijmen Huizenga",
+		Email:        "sijmenhuizenga@gmail.com",
 		Transactions: transactions,
 	})
 	ioutil.WriteFile("output.json", jsonString, os.ModePerm)
 }
 
+type Wish struct {
+	shipOrWeapon bool
+	weapon       Weapon
+	ship         Ship
+}
+
 func freelancer(stars []Star) []Transaction {
 	var balance uint16
 	var transactions []Transaction
-	var currentShip = 0
 
-	var weaponShoppinglist = []Weapon {
-		//PARTICLE,
-		PROTON, // of omdraaien
-		LASER,
-		//PLASMA,
-		//PHOTON,
-		//TACHYON, // of gewoon niet
+	var wishlist = []Wish{
+		{shipOrWeapon: option_weapon, weapon: PROTON},
+		{shipOrWeapon: option_weapon, weapon: LASER},
+		{shipOrWeapon: option_ship, ship: DRONE},
+		{shipOrWeapon: option_ship, ship: HUMPBACK},
 	}
-	var myWeapons []Weapon
 
-	var inventory = map[Resource]uint8 {
-		Ore: 1,
-		Water: 1,
+	var currentShip = SCRAPPY
+	var myWeapons []Weapon
+	var inventory = map[Resource]uint8{
+		Ore:         1,
+		Water:       1,
 		EngineParts: 1,
-		Contraband: 0,
+		Contraband:  0,
 	}
 
 	for i, star := range stars {
@@ -122,7 +138,7 @@ func freelancer(stars []Star) []Transaction {
 			JumpTo:           "",
 			WeaponPurchase:   []string{},
 			ContractAccepted: "",
-			ShipPurchase: 	  "",
+			ShipPurchase:     "",
 		}
 
 		// sell everything
@@ -133,47 +149,52 @@ func freelancer(stars []Star) []Transaction {
 		}
 
 		// on last star don't buy anything
-		if i == len(stars) - 1 {
+		if i == len(stars)-1 {
 			transactions = append(transactions, transaction)
 			break
 		}
 
 		nextStar := stars[i+1]
 
+		shoppingCost, _, shoppingList := star.bestDeal(&nextStar, balance, currentShip)
 
-		// buy a ship if we can
-		if currentShip < len(ships) - 1 && balance >= ships[currentShip + 1].Price + 50 {
-			currentShip ++
-			balance -= ships[currentShip].Price
-			transaction.ShipPurchase = ships[currentShip].Name
+		if len(wishlist) > 0 {
+			nextWishItem := wishlist[0]
+			if nextWishItem.shipOrWeapon == option_ship {
+				newShipShoppingcost, _, newShipShoppingList := star.bestDeal(&nextStar, balance, nextWishItem.ship)
+
+				if balance >= nextWishItem.ship.Price + newShipShoppingcost {
+					shoppingList = newShipShoppingList
+					transaction.ShipPurchase = nextWishItem.ship.Name
+					balance -= nextWishItem.ship.Price
+					currentShip = nextWishItem.ship
+					wishlist = wishlist[1:]
+				}
+			} else {
+				// buying weapons and fighting!
+				if balance >= shoppingCost+200 && star.hasContract(nextWeapon(nextWishItem.weapon)) {
+					// buy weapon on shoppinglist if we can use it immediately
+					myWeapons = append(myWeapons, nextWishItem.weapon)
+					transaction.WeaponPurchase = []string{weaponNames[nextWishItem.weapon]}
+					wishlist = wishlist[1:]
+					balance -= 200
+				}
+			}
 		}
 
-		_, _, shoppingList := star.bestDeal(&nextStar, balance, ships[currentShip])
+		if len(myWeapons) > 0 {
+			// if we have weapons, let's try to fight!
+			acceptedContract := star.bestContractW(nextWeapons(myWeapons))
+			transaction.ContractAccepted = acceptedContract.CriminalName
+			balance += uint16(acceptedContract.Bounty)
+		}
+
 
 		// buy the shoppinglist
 		for resource, amount := range shoppingList {
 			transaction.buy(resource, amount)
 			inventory[resource] += amount
 			balance -= uint16(amount) * uint16(star.getPrice(resource))
-		}
-
-		// buying weapons and fighting!
-		var acceptedContract *Contract = nil
-		if len(weaponShoppinglist) > 0 && balance > 200 && star.hasContract(nextWeapon(weaponShoppinglist[0])){
-			buying := weaponShoppinglist[0]
-			// buy weapon on shoppinglist if we can use it immediately
-			myWeapons = append(myWeapons, weaponShoppinglist[0])
-			weaponShoppinglist = weaponShoppinglist[1:]
-			acceptedContract = star.bestContract(nextWeapon(buying))
-			transaction.WeaponPurchase = []string{weaponNames[buying]}
-			balance -= 200
-		} else if len(myWeapons) > 0 {
-			// if I have weapons, let's try to fight!
-			acceptedContract = star.bestContractW(nextWeapons(myWeapons))
-		}
-		if acceptedContract != nil {
-			transaction.ContractAccepted = acceptedContract.CriminalName
-			balance += uint16(acceptedContract.Bounty)
 		}
 
 		// debugging
@@ -184,8 +205,8 @@ func freelancer(stars []Star) []Transaction {
 		if len(transaction.WeaponPurchase) != 0 {
 			fmt.Printf("\n  Bought weapon %v", transaction.WeaponPurchase)
 		}
-		if acceptedContract != nil {
-			fmt.Printf("\n  Accepted Contract Type %v", acceptedContract.WeaponName)
+		if transaction.ContractAccepted != "" {
+			fmt.Printf("\n  Contract %v", transaction.ContractAccepted)
 		}
 		println()
 
@@ -195,14 +216,13 @@ func freelancer(stars []Star) []Transaction {
 	return transactions
 }
 
-
-func nextWeapon(w Weapon) Weapon{
+func nextWeapon(w Weapon) Weapon {
 	if w == totalWeaponCount-1 {
 		return 0
 	}
-	return w+1
+	return w + 1
 }
-func nextWeapons(w []Weapon) []Weapon{
+func nextWeapons(w []Weapon) []Weapon {
 	var out []Weapon
 	for _, w := range w {
 		out = append(out, nextWeapon(w))

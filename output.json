@@ -224,25 +224,25 @@
       "deltaOre": 0,
       "deltaWater": -20,
       "deltaEngineParts": 0,
-      "deltaContraband": 4,
-      "contractAccepted": "PRESTON_HOUSE",
-      "shipPurchase": "HUMPBACK"
+      "deltaContraband": 20,
+      "contractAccepted": "PRESTON_HOUSE"
     },
     {
       "planet": "PADUA",
       "deltaOre": 0,
-      "deltaWater": 12,
+      "deltaWater": 20,
       "deltaEngineParts": 0,
-      "deltaContraband": -4,
+      "deltaContraband": -20,
       "contractAccepted": "EMRYS_WITT"
     },
     {
       "planet": "KITADAKE",
       "deltaOre": 30,
-      "deltaWater": -12,
+      "deltaWater": -20,
       "deltaEngineParts": 0,
       "deltaContraband": 0,
-      "contractAccepted": "JAYA_SANTANA"
+      "contractAccepted": "JAYA_SANTANA",
+      "shipPurchase": "HUMPBACK"
     },
     {
       "planet": "PYGAR",
