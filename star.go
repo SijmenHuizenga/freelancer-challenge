@@ -41,8 +41,8 @@ type BuyableResource struct {
 	profit   uint8
 }
 
-func (star *Star) bestDeal(goingToStar *Star, budget uint16, ship Ship) (bestCost uint16, bestProfit uint16, bestInventory map[Resource]uint8) {
-	capacity := ship.Capacity
+func (star *Star) bestDeal(goingToStar *Star, budget uint16, capacity uint16) (bestCost uint16, bestProfit uint16, bestInventory map[Resource]uint8) {
+	// the knapsack solution
 	buyableResources := star.bestDealFindBuyableResources(goingToStar)
 	cost, profit, inventory := knaphoor(0, 0, make([]uint8, len(buyableResources)), capacity, budget, buyableResources, 0)
 	shoppingList := map[Resource]uint8 {}
