@@ -58,43 +58,44 @@ func freelancer(stars []*Star) []*Transaction {
 		Contraband:  0,
 	}
 
-	visistedStars, _ := visitStar(0, stars, []uint8{}, 0, 0, inventory, 150)
-	balance, transactions, _ := profitForRoute(visistedStars, stars)
-
 	// this is the lookahead-approach.
 	// problem is that it causes results with unvisited stars
-	//lookahead := uint8(10)
-	//decisionPart := 5
-	//
-	//var visitedStars []uint8
-	//lastVisited := uint8(0)
-	//profit := uint16(0)
-	//var transactions []*Transaction
-	//
-	//for ; len(visitedStars)+1 < len(stars); {
-	//	// visit the next {lookahead} stars
-	//	additionalVisitedStars, _ := visitStar(lastVisited, stars, visitedStars, profit, 0, inventory, uint8(len(visitedStars))+lookahead)
-	//	if len(additionalVisitedStars) == len(visitedStars)+1 {
-	//		// no new stars visited. We are finished
-	//		break
-	//	}
-	//
-	//	fmt.Printf(    "additional: %v \n", additionalVisitedStars)
-	//	// Add the best {decisionPart} as part of our route
-	//	visitedStars = append(visitedStars, additionalVisitedStars[len(visitedStars):len(visitedStars)+decisionPart]...)
-	//	lastVisited = visitedStars[len(visitedStars)-1]
-	//	fmt.Printf("total: %v\n", visitedStars)
-	//
-	//	profit, transactions, inventory = profitForRoute(visitedStars, stars)
-	//	println(" Profit", profit)
-	//
-	//	// remove last to account for the fact that visitStar() will start at the last star
-	//	visitedStars = visitedStars[:len(visitedStars)-1]
-	//
-	//	fmt.Printf(" Inventory %v \n", inventory)
-	//}
+	lookahead := uint8(10)
+	decisionPart := 5
 
-	println("blanace: ", balance)
+	var visitedStars []uint8
+	profit := uint16(0)
+	var transactions []*Transaction
+
+	for ; len(visitedStars)+1 < len(stars); {
+		// prepare some variables to make visitStar happy
+		lastVisited := uint8(0)
+		var previousVisitedStars []uint8
+		if len(visitedStars) > 0 {
+			lastVisited = visitedStars[len(visitedStars)-1]
+			previousVisitedStars = visitedStars[:len(visitedStars)-1]
+		}
+
+		additionalVisitedStars, _ := visitStar(lastVisited, stars, previousVisitedStars, profit, 0, inventory, uint8(len(visitedStars))+lookahead)
+		if len(additionalVisitedStars) == len(visitedStars) {
+			break
+		}
+
+		// Add the best {decisionPart} as part of our route
+		visitedStars = append(visitedStars, additionalVisitedStars[len(visitedStars):len(visitedStars)+decisionPart]...)
+		fmt.Printf("total: %v\n", visitedStars)
+
+		profit, transactions, inventory = profitForRoute(visitedStars, stars)
+		println(" Profit", profit)
+	}
+
+	for i, star := range stars {
+		if ! in(uint8(i), visitedStars) {
+			println("Not visited ", star.Name)
+		}
+	}
+
+	println("blanace: ", profit)
 	return transactions
 }
 
@@ -117,7 +118,7 @@ func visitStar(currentStar uint8, stars []*Star, visitedStars []uint8, balance u
 
 	if len(neighbours) == 0 {
 		// nowhere to go but still stars to visit. This is an invalid solution.
-		return visitedStars, 0
+		return visitedStars[:len(visitedStars)-1], 0
 	}
 
 	bestBalance := balance
@@ -154,10 +155,41 @@ func findJumpableStars(startingStar uint8, nrOfStars uint8, excludeIndexes []uin
 		if in(i, excludeIndexes) {
 			continue
 		}
+		if nrOfStars > uint8(len(excludeIndexes)+1)  && hasInvalidNeighbour(i, nrOfStars, append(excludeIndexes, i)) {
+			continue
+		}
 		out = append(out, i)
 	}
 	return out
 }
+
+func hasInvalidNeighbour(starI uint8, nrOfStars uint8, excludeIndexes []uint8) bool {
+	// checks if one of starI neighbours is invalid
+	// invalid means: must still be visited but has no jumpable neighbourds after this poitn has been visited
+	// excludedIndexes already contains starI
+
+	i := uint8(max(int8(starI-3), 0))
+	end := min(nrOfStars-1, starI+3)
+	for ; i <= end; i++ {
+		if !in(i, excludeIndexes) && !hasNeighbour(i, nrOfStars, append(excludeIndexes, i)) {
+			return true
+		}
+	}
+	return false
+}
+
+
+func hasNeighbour(starI uint8, nrOfStars uint8, excludeIndexes []uint8) bool {
+	i := uint8(max(int8(starI-3), 0))
+	end := min(nrOfStars-1, starI+3)
+	for ; i <= end; i++ {
+		if !in(i, excludeIndexes) {
+			return true
+		}
+	}
+	return false
+}
+
 
 func max(a int8, b int8) int8{
 	if a > b {
