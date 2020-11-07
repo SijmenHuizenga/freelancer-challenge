@@ -97,7 +97,7 @@ func freelancer(stars []Star) []Transaction {
 	var currentShip = 0
 
 	var weaponShoppinglist = []Weapon {
-		PARTICLE,
+		//PARTICLE,
 		PROTON, // of omdraaien
 		LASER,
 		//PLASMA,
