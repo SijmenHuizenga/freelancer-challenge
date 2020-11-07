@@ -2,6 +2,12 @@ package main
 
 import "log"
 
+type Output struct {
+	Name string `json:"name"`
+	Email string `json:"email"`
+	Transactions []Transaction `json:"transactions"`
+}
+
 type Transaction struct {
 	Planet           string   `json:"planet"`
 	DeltaOre         int8   `json:"deltaOre"`

@@ -12,13 +12,19 @@ type Star struct {
 	ContrabandPrice  uint8      `json:"contrabandPrice"`
 	Faction          string     `json:"faction"`
 	Contracts        []Contract `json:"contracts"`
+
+	_aggregatedContracts map[Weapon]Bounty
 }
 
 type Contract struct {
 	CriminalName string `json:"criminalName"`
-	WeaponType   string `json:"weaponType"`
-	Bounty       string `json:"bounty"`
+	WeaponName   string `json:"weaponType"`
+	WeaponType   Weapon
+	Bounty       Bounty `json:"bounty"`
 }
+
+type Weapon uint8
+type Bounty int
 
 func (star *Star) getPrice(r Resource) uint8 {
 	switch r {
@@ -50,6 +56,62 @@ func (star *Star) bestDeal(goingToStar *Star, budget uint16, ship Ship) (bestCos
 		shoppingList[buyableResource.resource] = inventory[i]
 	}
 	return cost, profit, shoppingList
+}
+
+func (star *Star) contractsAggregated() map[Weapon]Bounty {
+	if star._aggregatedContracts != nil {
+		return star._aggregatedContracts
+	}
+	var out = map[Weapon]Bounty{}
+	for _, contract := range star.Contracts {
+		if val, ok := out[contract.WeaponType]; ok {
+			out[contract.WeaponType] = val + contract.Bounty
+		} else {
+			out[contract.WeaponType] = contract.Bounty
+		}
+	}
+	star._aggregatedContracts = out
+	return out
+}
+
+func (star *Star) hasContract(by Weapon) bool {
+	_, ok := star.contractsAggregated()[by]
+	return ok
+}
+
+func (star *Star) bestContract(by Weapon) *Contract {
+	var bestContract *Contract = nil
+	for contractI := range star.Contracts{
+		if star.Contracts[contractI].WeaponType != by {
+			continue
+		}
+		if bestContract == nil || star.Contracts[contractI].Bounty > bestContract.Bounty {
+			bestContract = &star.Contracts[contractI]
+		}
+	}
+	return bestContract
+}
+
+func (star *Star) bestContractW(weapons []Weapon) *Contract {
+	var bestContract *Contract = nil
+	for _, contract := range star.Contracts{
+		if !in(contract.WeaponType, weapons) {
+			continue
+		}
+		if bestContract == nil || contract.Bounty > bestContract.Bounty {
+			bestContract = &contract
+		}
+	}
+	return bestContract
+}
+
+func in(weaponType Weapon, weapons []Weapon) bool {
+	for _, w := range weapons {
+		if w == weaponType {
+			return true
+		}
+	}
+	return false
 }
 
 func knaphoor(cost uint16, profit uint16, inventory []uint8, inventoryCapacity uint16, budget uint16,
