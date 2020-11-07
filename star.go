@@ -41,55 +41,34 @@ type BuyableResource struct {
 	profit   uint8
 }
 
-func (star *Star) bestDeal(goingToStar *Star, budget uint16, capacity uint16) (bestCost uint16, bestProfit uint16, bestInventory map[Resource]uint8) {
-	// the knapsack solution
-	buyableResources := star.bestDealFindBuyableResources(goingToStar)
-	cost, profit, inventory := knaphoor(0, 0, make([]uint8, len(buyableResources)), capacity, budget, buyableResources, 0)
-	shoppingList := map[Resource]uint8 {}
-	for i, buyableResource := range buyableResources {
-		shoppingList[buyableResource.resource] = inventory[i]
-	}
-	return cost, profit, shoppingList
-}
+func (star *Star) bestDeal(goingToStar *Star, budget uint16, capacity uint8) (uint16, uint16, map[Resource]uint8) {
+	// the naive solution
+	bestResource := Resource("")
+	bestProfit := uint16(0)
+	bestCost := uint16(0)
+	for _, resource := range RESOURCES {
+		if resource == Contraband && star.Faction == "LIBERTY_POLICE" {
+			continue
+		}
+		profit := int16(goingToStar.getPrice(resource)) - int16(star.getPrice(resource))
+		if profit <= 0 {
+			continue
+		}
 
-func knaphoor(cost uint16, profit uint16, inventory []uint8, inventoryCapacity uint16, budget uint16,
-	resources []BuyableResource, continuationI int) (bestCost uint16, bestProfit uint16, bestInventory []uint8) {
-
-	if cost > budget {
-		return 999, 0, inventory
-	}
-
-	if inventoryCapacity == 0 {
-		return cost, profit, inventory
-	}
-
-	bestCost = cost
-	bestProfit = profit
-	bestInventory = inventory
-
-	for i := continuationI; i < len(resources); i++ {
-
-		newInv := make([]uint8, len(inventory))
-		copy(newInv, inventory)
-		newInv[i]++
-
-		newCost, newProfit, newInventory := knaphoor(
-			cost + uint16(resources[i].cost),
-			profit + uint16(resources[i].profit),
-			newInv,
-			inventoryCapacity - 1,
-			budget, resources, i)
-
-		if newProfit > bestProfit {
-			bestProfit = newProfit
-			bestCost = newCost
-			bestInventory = newInventory
+		if uint16(profit) > bestProfit {
+			bestProfit = uint16(profit)
+			bestResource = resource
+			bestCost = uint16(star.getPrice(resource))
 		}
 	}
+	if bestProfit == 0 {
+		return 999, 0, nil
+	}
+	shoppingList := map[Resource]uint8 {}
+	shoppingList[bestResource] = uint8(min16(uint16(capacity), budget / bestCost))
+	return uint16(shoppingList[bestResource]) * bestCost, bestProfit, shoppingList
 
-	return bestCost, bestProfit, bestInventory
 }
-
 
 func (star *Star) bestDealFindBuyableResources(goingToStar *Star) []BuyableResource {
 	var buyableThings []BuyableResource
