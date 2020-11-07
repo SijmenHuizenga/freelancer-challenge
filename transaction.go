@@ -2,12 +2,6 @@ package main
 
 import "log"
 
-type Output struct {
-	Name string `json:"name"`
-	Email string `json:"email"`
-	Transactions []*Transaction `json:"transactions"`
-}
-
 type Transaction struct {
 	Planet           string   `json:"planet"`
 	DeltaOre         int8   `json:"deltaOre"`
@@ -21,9 +15,6 @@ type Transaction struct {
 }
 
 func (t *Transaction) sell(resource Resource, amount uint8) {
-	if int8(amount) < 0 {
-		log.Fatal("Negative selling not allowed")
-	}
 	switch resource {
 	case Water:
 		t.DeltaWater -= int8(amount)
@@ -42,9 +33,6 @@ func (t *Transaction) sell(resource Resource, amount uint8) {
 }
 
 func (t *Transaction) buy(resource Resource, amount uint8) {
-	if int8(amount) < 0 {
-		log.Fatal("Negative buying not allowed")
-	}
 	switch resource {
 	case Water:
 		t.DeltaWater += int8(amount)
