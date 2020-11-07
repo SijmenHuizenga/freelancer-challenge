@@ -4,9 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
-	. "math"
 	"os"
-	"time"
 )
 
 type Resource string
@@ -63,6 +61,39 @@ func freelancer(stars []*Star) []*Transaction {
 	visistedStars, _ := visitStar(0, stars, []uint8{}, 0, 0, inventory, 150)
 	balance, transactions, _ := profitForRoute(visistedStars, stars)
 
+	// this is the lookahead-approach.
+	// problem is that it causes results with unvisited stars
+	//lookahead := uint8(10)
+	//decisionPart := 5
+	//
+	//var visitedStars []uint8
+	//lastVisited := uint8(0)
+	//profit := uint16(0)
+	//var transactions []*Transaction
+	//
+	//for ; len(visitedStars)+1 < len(stars); {
+	//	// visit the next {lookahead} stars
+	//	additionalVisitedStars, _ := visitStar(lastVisited, stars, visitedStars, profit, 0, inventory, uint8(len(visitedStars))+lookahead)
+	//	if len(additionalVisitedStars) == len(visitedStars)+1 {
+	//		// no new stars visited. We are finished
+	//		break
+	//	}
+	//
+	//	fmt.Printf(    "additional: %v \n", additionalVisitedStars)
+	//	// Add the best {decisionPart} as part of our route
+	//	visitedStars = append(visitedStars, additionalVisitedStars[len(visitedStars):len(visitedStars)+decisionPart]...)
+	//	lastVisited = visitedStars[len(visitedStars)-1]
+	//	fmt.Printf("total: %v\n", visitedStars)
+	//
+	//	profit, transactions, inventory = profitForRoute(visitedStars, stars)
+	//	println(" Profit", profit)
+	//
+	//	// remove last to account for the fact that visitStar() will start at the last star
+	//	visitedStars = visitedStars[:len(visitedStars)-1]
+	//
+	//	fmt.Printf(" Inventory %v \n", inventory)
+	//}
+
 	println("blanace: ", balance)
 	return transactions
 }
@@ -79,7 +110,6 @@ func visitStar(currentStar uint8, stars []*Star, visitedStars []uint8, balance u
 
 	// on last star don't buy anything
 	if len(visitedStars) == len(stars) || uint8(len(visitedStars)) == maxNrVisitedStars {
-		solutionsPerSecond()
 		return visitedStars, balance
 	}
 
@@ -112,20 +142,8 @@ func visitStar(currentStar uint8, stars []*Star, visitedStars []uint8, balance u
 		}
 	}
 
+	//fmt.Printf("%v  %v\n", bestVisitedStars, bestBalance)
 	return bestVisitedStars, bestBalance
-}
-
-var counter = float64(0)
-var lastSecond = time.Now().UnixNano()
-
-func solutionsPerSecond() {
-	counter++
-	if counter > 5000 {
-		deltaS := float64(time.Now().UnixNano() - lastSecond)
-		fmt.Printf("%v solutions/second\n", Round((counter / deltaS) * 1000000000))
-		lastSecond = time.Now().UnixNano()
-		counter = 0
-	}
 }
 
 func findJumpableStars(startingStar uint8, nrOfStars uint8, excludeIndexes []uint8) []uint8 {
