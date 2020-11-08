@@ -6,6 +6,8 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"strconv"
+	"sync"
 )
 
 type Resource string
@@ -90,7 +92,7 @@ var (
 )
 
 var wishes = []Wish{
-	weapon_TACHYON, weapon_PLASMA, weapon_LASER, weapon_PARTICLE, weapon_PHOTON, weapon_PROTON, ship_DRONE, ship_RHINO, ship_HUMPBACK,
+	weapon_TACHYON, weapon_PLASMA, weapon_LASER, weapon_PARTICLE, weapon_PHOTON, weapon_PROTON, ship_RHINO, ship_HUMPBACK,
 }
 
 func main() {
@@ -115,62 +117,75 @@ func main() {
 		starsP = append(starsP, &stars[i])
 	}
 
-	balance, transactions := freelancer(starsP, []*Wish{
-		&ship_RHINO, &weapon_LASER, &ship_HUMPBACK,
-	})
-	jsonString, _ := json.Marshal(Output{
-		Name:         "Sijmen Huizenga",
-		Email:        "sijmenhuizenga@gmail.com",
-		Transactions: transactions,
-	})
-	ioutil.WriteFile("output.json", jsonString, os.ModePerm)
-	fmt.Printf("Balance: %v\n", balance)
+	//balance, transactions := freelancer(starsP, []*Wish{
+	//	&ship_DRONE, &weapon_PLASMA, &weapon_TACHYON, &ship_HUMPBACK,
+	//})
+	//jsonString, _ := json.Marshal(Output{
+	//	Name:         "Sijmen Huizenga",
+	//	Email:        "sijmenhuizenga@gmail.com",
+	//	Transactions: transactions,
+	//})
+	//ioutil.WriteFile("output.json", jsonString, os.ModePerm)
+	//fmt.Printf("Balance: %v\n", balance)
+
+	var wg sync.WaitGroup
+	go func() {wishfull(starsP, []*Wish{&weapon_TACHYON}); wg.Done()}()
+	go func() {wishfull(starsP, []*Wish{&weapon_PLASMA}); wg.Done()}()
+	go func() {wishfull(starsP, []*Wish{&weapon_LASER}); wg.Done()}()
+	go func() {wishfull(starsP, []*Wish{&weapon_PARTICLE}); wg.Done()}()
+	go func() {wishfull(starsP, []*Wish{&weapon_PHOTON}); wg.Done()}()
+	go func() {wishfull(starsP, []*Wish{&weapon_PROTON}); wg.Done()}()
+	go func() {wishfull(starsP, []*Wish{&ship_RHINO}); wg.Done()}()
+	go func() {wishfull(starsP, []*Wish{&ship_HUMPBACK}); wg.Done()}()
+
+	wg.Add(8)
+	wg.Wait()
 }
 
 // used for brute-forcing all wish combinations
-//func wishfull(stars []*Star, wishlist []*Wish) {
-//	for wishI := range wishes {
-//		if inW(wishlist, &wishes[wishI]) {
-//			continue
-//		}
-//		nextList := append(wishlist, &wishes[wishI])
-//		//printWishes(nextList)
-//		balance, transactions := freelancer(stars, nextList)
-//		if balance > 20000 {
-//			jsonString, _ := json.Marshal(Output{
-//				Name:         "Sijmen Huizenga",
-//				Email:        "sijmenhuizenga@gmail.com",
-//				Transactions: transactions,
-//			})
-//			ioutil.WriteFile("output/"+strconv.Itoa(int(balance))+".json", jsonString, os.ModePerm)
-//			fmt.Printf("Found great option: %v\n", balance)
-//			printWishes(nextList)
-//		}
-//		if len(nextList) != len(wishes) {
-//			wishfull(stars, nextList)
-//		}
-//	}
-//}
-//
-//func printWishes(wishlist []*Wish) {
-//	for _, w := range wishlist {
-//		if w.shipOrWeapon == option_weapon {
-//			fmt.Printf(", %v", w.weapon)
-//		} else {
-//			fmt.Printf(", %v", w.ship.Name)
-//		}
-//	}
-//	println()
-//}
-//
-//func inW(hay []*Wish, search *Wish) bool {
-//	for _, w := range hay {
-//		if w == search {
-//			return true
-//		}
-//	}
-//	return false
-//}
+func wishfull(stars []*Star, wishlist []*Wish) {
+	for wishI := range wishes {
+		if inW(wishlist, &wishes[wishI]) {
+			continue
+		}
+		nextList := append(wishlist, &wishes[wishI])
+		printWishes(nextList)
+		balance, transactions := freelancer(stars, nextList)
+		if balance > 25000 {
+			jsonString, _ := json.Marshal(Output{
+				Name:         "Sijmen Huizenga",
+				Email:        "sijmenhuizenga@gmail.com",
+				Transactions: transactions,
+			})
+			ioutil.WriteFile("output/"+strconv.Itoa(int(balance))+".json", jsonString, os.ModePerm)
+			fmt.Printf("Found great option: %v\n", balance)
+			printWishes(nextList)
+		}
+		if len(nextList) < 4 {
+			wishfull(stars, nextList)
+		}
+	}
+}
+
+func printWishes(wishlist []*Wish) {
+	for _, w := range wishlist {
+		if w.shipOrWeapon == option_weapon {
+			fmt.Printf(", %v", w.weapon)
+		} else {
+			fmt.Printf(", %v", w.ship.Name)
+		}
+	}
+	println()
+}
+
+func inW(hay []*Wish, search *Wish) bool {
+	for _, w := range hay {
+		if w == search {
+			return true
+		}
+	}
+	return false
+}
 
 type Wish struct {
 	shipOrWeapon bool
@@ -209,7 +224,7 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 			ContractAccepted: "",
 			ShipPurchase:     "",
 		}
-		println("Visiting", starI)
+		//println("Visiting", starI)
 
 		// sell everything
 		for resource, amount := range s.inventory {
@@ -228,15 +243,15 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 			log.Fatal("No next links. That can't be. You were supposed to be infinite")
 		}
 
-		bestState, bestLink, _ := findBestNextLink(s, stars, starI, nextLinks, nrOfVisitedStars, 10)
+		bestState, bestLink, _ := findBestNextLink(s, stars, starI, nextLinks, nrOfVisitedStars, 4)
 
 		s = *bestState
 		nextLinks = bestLink.next
 		starI = int8(int(starI) + int(bestLink.step))
 		s.transaction.JumpTo = stars[starI].Name
-		println("  next step: ", bestLink.step)
-		println("  nr of visited stars: ", nrOfVisitedStars)
-		println("  balance: ", s.balance)
+		//println("  next step: ", bestLink.step)
+		//println("  nr of visited stars: ", nrOfVisitedStars)
+		//println("  balance: ", s.balance)
 
 		nrOfVisitedStars++
 		transactions = append(transactions, s.transaction)

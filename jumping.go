@@ -51,10 +51,38 @@ func D(depth uint8) *Link {
 				&[]*Link{{+1, l - depth - 2,
 					nTimesM(depth+1, +3, l - depth - 3, A)}})},
 	}
-	if depth < 6 {
+	if depth < 12 {
 		nextLinks = append(nextLinks, D(depth+1))
 	}
 
+	return &Link{
+		step:        +3,
+		linksToRoot: l,
+		next:        &nextLinks,
+	}
+}
+
+func E(depth uint8) *Link {
+	l := 2 + 2*depth
+
+	nextLinks := []*Link{
+		{-1, l - 1,
+			nTimesM(depth, -3, l-2,
+				&[]*Link{{+2, l - 2 - depth,
+					nTimesM(depth, +3, l-3-depth, A)}})},
+		{-2, l - 1,
+			nTimesM(depth-1, -3, l-2,
+				&[]*Link{{-2, l - 1 - depth,
+					nTimesM(depth, +3, l - 2 - depth, C)}})},
+		{+1, l,
+			nTimesM(depth, -3, l-1,
+				&[]*Link{{-2, l-1-depth,
+					nTimesM(depth+1, +3, l-2-depth, A)}})},
+	}
+
+	if depth < 30 {
+		nextLinks = append(nextLinks, E(depth+1))
+	}
 	return &Link{
 		step:        +3,
 		linksToRoot: l,
@@ -72,17 +100,23 @@ func buildStarmap() *[]*Link {
 	}
 
 	/////////////
+	var e = E(1)
 	var rootPlus2 = Link{
 		step:        +2,
 		linksToRoot: 2,
-		next:        &[]*Link{&B},
+		next:        &[]*Link{
+			&B,
+			{+1, 2, &[]*Link{{-2, 1, &[]*Link{{+3, 0, A}}}}},
+			{+2, 3, &[]*Link{{-3, 2, &[]*Link{{+2, 1, C}}}}},
+			e,
+		},
 	}
 
 	////////////
 	B.next = C
 
 	////////////
-	var d = D(50)
+	var d = D(1)
 	var rootPlus3 = Link{
 		step:        +3,
 		linksToRoot: 3,
@@ -99,7 +133,7 @@ func buildStarmap() *[]*Link {
 	*A = append(*A, &rootPlus2)
 	*A = append(*A, &rootPlus3)
 
-	//printLink(d, "")
+	//printLink(e, "")
 
 	return A
 }
