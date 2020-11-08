@@ -198,7 +198,7 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 	}
 	var nextLinks = STARMAP
 	var nrOfVisitedStars = 0
-	var starI = 0
+	var starI = int8(0)
 
 	for true {
 		s.transaction = Transaction{
@@ -221,63 +221,79 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 		}
 
 		// on last star don't buy anything
-		if starI == len(stars)-1 {
+		if int(starI) == len(stars)-1 {
 			transactions = append(transactions, s.transaction)
 			break
 		}
-
-		var bestState *State = nil
-		var bestLink *Link = nil
 
 		if nextLinks == nil || len(*nextLinks) == 0 {
 			log.Fatal("No next links. That can't be. You were supposed to be infinite")
 		}
 
-		for _, nextLink := range *nextLinks {
-			nextStarI := int8(starI) + nextLink.step
-			if nextStarI < 0 || nextStarI >= int8(len(stars)) {
-				continue
-			}
-			nrOfUnvisitedStars := uint8(len(stars) - nrOfVisitedStars)
-
-			if nextStarI == int8(len(stars)-1) && nrOfVisitedStars == 1 {
-				// never visit the last star EXCEPT when we are at the second-to-last star
-				continue
-			}
-
-			if nextLink.linksToRoot > nrOfUnvisitedStars-1 {
-				continue
-			}
-
-			nextStar := stars[nextStarI]
-			newState := visit(stars[starI], nextStar, State{
-				transaction: s.transaction,
-				balance:     s.balance,
-				inventory:   CopyMap(s.inventory),
-				wishlist:    s.wishlist,
-				myWeapons:   s.myWeapons,
-				myShip:      s.myShip,
-			})
-
-			if bestState == nil || newState.balance > s.balance {
-				bestLink = nextLink
-				bestState = &newState
-			}
-		}
-		if bestState == nil || bestLink == nil {
-			log.Fatal("No route found. Impossible!")
-		}
+		bestState, bestLink := findBestNextLink(s, stars, starI, nextLinks, nrOfVisitedStars, 12)
 
 		s = *bestState
 		nextLinks = bestLink.next
-		starI = starI + int(bestLink.step)
+		starI = int8(int(starI) + int(bestLink.step))
 		s.transaction.JumpTo = stars[starI].Name
 		println("  next step: ", bestLink.step)
+		println("  nr of visited stars: ", nrOfVisitedStars)
 
 		nrOfVisitedStars++
 		transactions = append(transactions, s.transaction)
 	}
 	return s.balance, transactions
+}
+
+func findBestNextLink(s State, stars []*Star, starI int8, nextLinks *[]*Link, nrOfVisitedStars int, lookahead uint8) (*State, *Link) {
+	//nrOfVisitedStars is including the current star
+	var bestState *State = nil
+	var bestLink *Link = nil
+	var bestLookaheadBalance = uint16(0)
+	for _, nextLink := range *nextLinks {
+		nextStarI := starI + nextLink.step
+		if nextStarI < 0 || nextStarI >= int8(len(stars)) {
+			continue
+		}
+		// nrOfUnvisitedStars: current jump is not included
+		nrOfUnvisitedStars := uint8(len(stars) - nrOfVisitedStars)
+		if nextStarI == int8(len(stars)-1) && nrOfUnvisitedStars == 1 {
+			// never visit the last star EXCEPT when we are at the second-to-last star
+			continue
+		}
+
+		if nextLink.linksToRoot > nrOfUnvisitedStars-1 {
+			continue
+		}
+
+		nextStar := stars[nextStarI]
+		newState := visit(stars[starI], nextStar, State{
+			transaction: s.transaction,
+			balance:     s.balance,
+			inventory:   CopyMap(s.inventory),
+			wishlist:    s.wishlist,
+			myWeapons:   s.myWeapons,
+			myShip:      s.myShip,
+		})
+
+		if nrOfUnvisitedStars > 2 && lookahead > 0 {
+			lookaheadBestState, _ := findBestNextLink(newState, stars, nextStarI, nextLink.next, nrOfVisitedStars+1, lookahead-1)
+			if bestState == nil || lookaheadBestState.balance > bestLookaheadBalance {
+				bestLink = nextLink
+				bestState = &newState
+			}
+		} else {
+			if bestState == nil || newState.balance > s.balance {
+				bestLink = nextLink
+				bestState = &newState
+			}
+		}
+	}
+	if bestState == nil || bestLink == nil {
+		log.Fatal("No route found. Impossible!")
+	}
+
+	return bestState, bestLink
 }
 
 type State struct {
