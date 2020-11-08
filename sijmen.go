@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"strconv"
 )
 
 type Resource string
@@ -111,17 +112,51 @@ func main() {
 		starsP = append(starsP, &stars[i])
 	}
 
-	balance, transactions := freelancer(starsP, []*Wish{
-		&wishes[5], &wishes[7], &wishes[2], &wishes[8],
-	})
-	jsonString, _ := json.Marshal(Output{
-		Name:         "Sijmen Huizenga",
-		Email:        "sijmenhuizenga@gmail.com",
-		Transactions: transactions,
-	})
-	ioutil.WriteFile("output.json", jsonString, os.ModePerm)
-	fmt.Printf("Balance: %v\n", balance)
+	wishfull(starsP, []*Wish{})
+}
 
+func wishfull(stars []*Star, wishlist []*Wish) {
+	for wishI := range wishes {
+		if inW(wishlist, &wishes[wishI]) {
+			continue
+		}
+		nextList := append(wishlist, &wishes[wishI])
+		//printWishes(nextList)
+		balance, transactions := freelancer(stars, nextList)
+		if balance > 20000 {
+			jsonString, _ := json.Marshal(Output{
+				Name:         "Sijmen Huizenga",
+				Email:        "sijmenhuizenga@gmail.com",
+				Transactions: transactions,
+			})
+			ioutil.WriteFile("output/"+strconv.Itoa(int(balance))+".json", jsonString, os.ModePerm)
+			fmt.Printf("Found great option: %v\n", balance)
+			printWishes(nextList)
+		}
+		if len(nextList) != len(wishes) {
+			wishfull(stars, nextList)
+		}
+	}
+}
+
+func printWishes(wishlist []*Wish) {
+	for _, w := range wishlist {
+		if w.shipOrWeapon == option_weapon {
+			fmt.Printf(", %v", w.weapon)
+		} else {
+			fmt.Printf(", %v", w.ship.Name)
+		}
+	}
+	println()
+}
+
+func inW(hay []*Wish, search *Wish) bool {
+	for _, w := range hay {
+		if w == search {
+			return true
+		}
+	}
+	return false
 }
 
 
@@ -162,7 +197,6 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 			ContractAccepted: "",
 			ShipPurchase:     "",
 		}
-		println("VISITING ", starI)
 
 		// sell everything
 		for resource, amount := range s.inventory {
@@ -219,7 +253,6 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 			log.Fatal("No route found. Impossible!")
 		}
 
-		println("  next step: ", bestLink.step)
 		s = *bestState
 		nextLinks = bestLink.next
 		starI = starI + int(bestLink.step)
