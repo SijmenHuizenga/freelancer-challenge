@@ -7,7 +7,6 @@ import (
 	"log"
 	"os"
 	"strconv"
-	"sync"
 )
 
 type Resource string
@@ -117,29 +116,29 @@ func main() {
 		starsP = append(starsP, &stars[i])
 	}
 
-	//balance, transactions := freelancer(starsP, []*Wish{
-	//	&ship_DRONE, &weapon_PLASMA, &weapon_TACHYON, &ship_HUMPBACK,
-	//})
-	//jsonString, _ := json.Marshal(Output{
-	//	Name:         "Sijmen Huizenga",
-	//	Email:        "sijmenhuizenga@gmail.com",
-	//	Transactions: transactions,
-	//})
-	//ioutil.WriteFile("output.json", jsonString, os.ModePerm)
-	//fmt.Printf("Balance: %v\n", balance)
+	balance, transactions := freelancer(starsP, []*Wish{
+		&weapon_PLASMA, &weapon_TACHYON, &ship_RHINO, &ship_HUMPBACK,
+	})
+	jsonString, _ := json.Marshal(Output{
+		Name:         "Sijmen Huizenga",
+		Email:        "sijmenhuizenga@gmail.com",
+		Transactions: transactions,
+	})
+	ioutil.WriteFile("output.json", jsonString, os.ModePerm)
+	fmt.Printf("Balance: %v\n", balance)
 
-	var wg sync.WaitGroup
-	go func() {wishfull(starsP, []*Wish{&weapon_TACHYON}); wg.Done()}()
-	go func() {wishfull(starsP, []*Wish{&weapon_PLASMA}); wg.Done()}()
-	go func() {wishfull(starsP, []*Wish{&weapon_LASER}); wg.Done()}()
-	go func() {wishfull(starsP, []*Wish{&weapon_PARTICLE}); wg.Done()}()
-	go func() {wishfull(starsP, []*Wish{&weapon_PHOTON}); wg.Done()}()
-	go func() {wishfull(starsP, []*Wish{&weapon_PROTON}); wg.Done()}()
-	go func() {wishfull(starsP, []*Wish{&ship_RHINO}); wg.Done()}()
-	go func() {wishfull(starsP, []*Wish{&ship_HUMPBACK}); wg.Done()}()
-
-	wg.Add(8)
-	wg.Wait()
+	//var wg sync.WaitGroup
+	//go func() {wishfull(starsP, []*Wish{&weapon_TACHYON}); wg.Done()}()
+	//go func() {wishfull(starsP, []*Wish{&weapon_PLASMA}); wg.Done()}()
+	//go func() {wishfull(starsP, []*Wish{&weapon_LASER}); wg.Done()}()
+	//go func() {wishfull(starsP, []*Wish{&weapon_PARTICLE}); wg.Done()}()
+	//go func() {wishfull(starsP, []*Wish{&weapon_PHOTON}); wg.Done()}()
+	//go func() {wishfull(starsP, []*Wish{&weapon_PROTON}); wg.Done()}()
+	//go func() {wishfull(starsP, []*Wish{&ship_RHINO}); wg.Done()}()
+	//go func() {wishfull(starsP, []*Wish{&ship_HUMPBACK}); wg.Done()}()
+	//
+	//wg.Add(8)
+	//wg.Wait()
 }
 
 // used for brute-forcing all wish combinations
@@ -224,7 +223,7 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 			ContractAccepted: "",
 			ShipPurchase:     "",
 		}
-		//println("Visiting", starI)
+		println("Visiting", stars[starI].Name, starI)
 
 		// sell everything
 		for resource, amount := range s.inventory {
@@ -243,15 +242,15 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 			log.Fatal("No next links. That can't be. You were supposed to be infinite")
 		}
 
-		bestState, bestLink, _ := findBestNextLink(s, stars, starI, nextLinks, nrOfVisitedStars, 4)
+		bestState, bestLink := findBestNextLink(s, stars, starI, nextLinks, nrOfVisitedStars, 3)
 
 		s = *bestState
 		nextLinks = bestLink.next
 		starI = int8(int(starI) + int(bestLink.step))
 		s.transaction.JumpTo = stars[starI].Name
-		//println("  next step: ", bestLink.step)
-		//println("  nr of visited stars: ", nrOfVisitedStars)
-		//println("  balance: ", s.balance)
+		println("  next step: ", bestLink.step)
+		println("  nr of visited stars: ", nrOfVisitedStars)
+		println("  balance: ", s.balance)
 
 		nrOfVisitedStars++
 		transactions = append(transactions, s.transaction)
@@ -259,11 +258,11 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 	return s.balance, transactions
 }
 
-func findBestNextLink(s State, stars []*Star, starI int8, nextLinks *[]*Link, nrOfVisitedStars int, lookahead uint8) (*State, *Link, uint16) {
+func findBestNextLink(s State, stars []*Star, starI int8, nextLinks *[]*Link, nrOfVisitedStars int, lookahead uint8) (*State, *Link) {
 	//nrOfVisitedStars is including the current star
 	var bestState *State = nil
 	var bestLink *Link = nil
-	var bestLookaheadInkomsten = uint16(0)
+	var bestLookaheadBalance = uint16(0)
 	for _, nextLink := range *nextLinks {
 		nextStarI := starI + nextLink.step
 		if nextStarI < 0 || nextStarI >= int8(len(stars)) {
@@ -281,7 +280,7 @@ func findBestNextLink(s State, stars []*Star, starI int8, nextLinks *[]*Link, nr
 		}
 
 		nextStar := stars[nextStarI]
-		newState, nextInkomsten := visit(stars[starI], nextStar, State{
+		newState := visit(stars[starI], nextStar, State{
 			transaction: s.transaction,
 			balance:     s.balance,
 			inventory:   CopyMap(s.inventory),
@@ -291,17 +290,23 @@ func findBestNextLink(s State, stars []*Star, starI int8, nextLinks *[]*Link, nr
 		})
 
 		if nrOfUnvisitedStars > 2 && lookahead > 0 {
-			_, _, lookaheadInkomsten := findBestNextLink(newState, stars, nextStarI, nextLink.next, nrOfVisitedStars+1, lookahead-1)
-			if bestState == nil || lookaheadInkomsten > bestLookaheadInkomsten {
+			lookaheadBestState, _ := findBestNextLink(State{
+				transaction: newState.transaction,
+				balance:     newState.balance,
+				inventory:   CopyMap(newState.inventory),
+				wishlist:    newState.wishlist,
+				myWeapons:   newState.myWeapons,
+				myShip:      newState.myShip,
+			}, stars, nextStarI, nextLink.next, nrOfVisitedStars+1, lookahead-1)
+			if bestState == nil || lookaheadBestState.balance > bestLookaheadBalance {
 				bestLink = nextLink
 				bestState = &newState
-				bestLookaheadInkomsten = nextInkomsten
+				bestLookaheadBalance = lookaheadBestState.balance
 			}
 		} else {
-			if bestState == nil || newState.balance > s.balance {
+			if bestState == nil || newState.balance > bestState.balance {
 				bestLink = nextLink
 				bestState = &newState
-				bestLookaheadInkomsten = nextInkomsten
 			}
 		}
 	}
@@ -309,7 +314,7 @@ func findBestNextLink(s State, stars []*Star, starI int8, nextLinks *[]*Link, nr
 		log.Fatal("No route found. Impossible!")
 	}
 
-	return bestState, bestLink, bestLookaheadInkomsten
+	return bestState, bestLink
 }
 
 type State struct {
@@ -321,9 +326,9 @@ type State struct {
 	myShip      *Ship
 }
 
-func visit(currentStar *Star, nextStar *Star, s State) (State, uint16) {
+func visit(currentStar *Star, nextStar *Star, s State) State {
 	// return transaction, balance, wishlist, myWeapons, myShip
-	shoppingCost, inkomsten, shoppingList := currentStar.bestDeal(nextStar, s.balance, *s.myShip)
+	shoppingCost, _, shoppingList := currentStar.bestDeal(nextStar, s.balance, *s.myShip)
 
 	if len(s.wishlist) > 0 {
 		nextWishItem := s.wishlist[0]
@@ -355,7 +360,6 @@ func visit(currentStar *Star, nextStar *Star, s State) (State, uint16) {
 		if bestcontract != nil {
 			s.transaction.ContractAccepted = bestcontract.CriminalName
 			s.balance += uint16(bestcontract.Bounty)
-			inkomsten += uint16(bestcontract.Bounty)
 		}
 	}
 
@@ -366,7 +370,7 @@ func visit(currentStar *Star, nextStar *Star, s State) (State, uint16) {
 		s.balance -= uint16(amount) * uint16(currentStar.getPrice(resource))
 	}
 
-	return s, inkomsten
+	return s
 }
 
 func nextWeapon(w Weapon) Weapon {

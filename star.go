@@ -179,6 +179,7 @@ func (star *Star) bestDealFindBuyableResources(goingToStar *Star) []BuyableResou
 			profit:   uint8(profit),
 			cost:     star.getPrice(resource),
 		}
+		// insert sorted
 		i := 0
 		for i < len(buyableThings) {
 			if buyableThings[i].profit < newResource.profit {

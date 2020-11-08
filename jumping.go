@@ -51,7 +51,7 @@ func D(depth uint8) *Link {
 				&[]*Link{{+1, l - depth - 2,
 					nTimesM(depth+1, +3, l - depth - 3, A)}})},
 	}
-	if depth < 12 {
+	if depth < 30 {
 		nextLinks = append(nextLinks, D(depth+1))
 	}
 
@@ -80,7 +80,7 @@ func E(depth uint8) *Link {
 					nTimesM(depth+1, +3, l-2-depth, A)}})},
 	}
 
-	if depth < 30 {
+	if depth < 50 {
 		nextLinks = append(nextLinks, E(depth+1))
 	}
 	return &Link{
