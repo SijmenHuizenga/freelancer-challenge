@@ -1,1 +1,925 @@
-{"name":"Sijmen Huizenga","email":"sijmenhuizenga@gmail.com","transactions":[{"planet":"CRETE","deltaOre":-1,"deltaWater":-1,"deltaEngineParts":2,"deltaContraband":0,"jumpTo":"BADEN_BADEN"},{"planet":"BADEN_BADEN","deltaOre":0,"deltaWater":3,"deltaEngineParts":-3,"deltaContraband":0,"jumpTo":"FUJI"},{"planet":"FUJI","deltaOre":10,"deltaWater":-3,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"CEREBUS"},{"planet":"CEREBUS","deltaOre":-10,"deltaWater":0,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"PLANETOLD"},{"planet":"PLANETOLD","deltaOre":10,"deltaWater":0,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"HOLSTEIN"},{"planet":"HOLSTEIN","deltaOre":-10,"deltaWater":10,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"PITTSBURGH"},{"planet":"PITTSBURGH","deltaOre":0,"deltaWater":-10,"deltaEngineParts":10,"deltaContraband":0,"jumpTo":"LEIDEN"},{"planet":"LEIDEN","deltaOre":0,"deltaWater":10,"deltaEngineParts":-10,"deltaContraband":0,"jumpTo":"HONSHU"},{"planet":"HONSHU","deltaOre":0,"deltaWater":-10,"deltaEngineParts":15,"deltaContraband":0,"jumpTo":"ATKA","shipPurchase":"RHINO"},{"planet":"ATKA","deltaOre":0,"deltaWater":15,"deltaEngineParts":-15,"deltaContraband":0,"jumpTo":"KURILE"},{"planet":"KURILE","deltaOre":15,"deltaWater":-15,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"NOME","weaponPurchase":["LASER"],"contractAccepted":"NELL_CLARKE"},{"planet":"NOME","deltaOre":0,"deltaWater":0,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"VESPUS","contractAccepted":"GETHIN_SWANSON"},{"planet":"VESPUS","deltaOre":-15,"deltaWater":15,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"STULINGEN","contractAccepted":"ISAIAH_KANE"},{"planet":"STULINGEN","deltaOre":15,"deltaWater":-15,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"CALI","contractAccepted":"KAROLINA_WILDER"},{"planet":"CALI","deltaOre":-15,"deltaWater":0,"deltaEngineParts":15,"deltaContraband":0,"jumpTo":"AALEN","contractAccepted":"TESSA_CARRILLO"},{"planet":"AALEN","deltaOre":15,"deltaWater":0,"deltaEngineParts":-15,"deltaContraband":0,"jumpTo":"PRENTA","contractAccepted":"YUVRAJ_MCKINNEY"},{"planet":"PRENTA","deltaOre":-15,"deltaWater":15,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"HIRAN","contractAccepted":"TABITHA_HODGES"},{"planet":"HIRAN","deltaOre":15,"deltaWater":-15,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"CURACAO","contractAccepted":"VINNIE_MILLER"},{"planet":"CURACAO","deltaOre":-15,"deltaWater":0,"deltaEngineParts":0,"deltaContraband":15,"jumpTo":"KYUSHU","contractAccepted":"NOEL_MCMILLAN"},{"planet":"KYUSHU","deltaOre":0,"deltaWater":0,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"IZU","contractAccepted":"ISLA_GRACE_DEAN"},{"planet":"IZU","deltaOre":15,"deltaWater":0,"deltaEngineParts":0,"deltaContraband":-15,"jumpTo":"SARUM","contractAccepted":"LEENA_CORTEZ"},{"planet":"SARUM","deltaOre":-15,"deltaWater":0,"deltaEngineParts":15,"deltaContraband":0,"jumpTo":"LEEDS","contractAccepted":"ASMA_MEADOWS"},{"planet":"LEEDS","deltaOre":30,"deltaWater":0,"deltaEngineParts":-15,"deltaContraband":0,"jumpTo":"BREISGAU","contractAccepted":"LILIA_MARTINEZ","shipPurchase":"HUMPBACK"},{"planet":"BREISGAU","deltaOre":-30,"deltaWater":0,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"ELYSIUM","contractAccepted":"ISLA_MAE_ROACH"},{"planet":"ELYSIUM","deltaOre":0,"deltaWater":30,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"HARRIS","contractAccepted":"VINCENT_ACOSTA"},{"planet":"HARRIS","deltaOre":30,"deltaWater":-30,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"JUNYO","contractAccepted":"MADDIE_WOLFE"},{"planet":"JUNYO","deltaOre":0,"deltaWater":0,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"TEGAKIS","contractAccepted":"WILSON_COLEMAN"},{"planet":"TEGAKIS","deltaOre":-30,"deltaWater":0,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"PYGAR","contractAccepted":"PRESTON_HOUSE"},{"planet":"PYGAR","deltaOre":0,"deltaWater":30,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"MALLORCA","contractAccepted":"INDIGO_HICKS"},{"planet":"MALLORCA","deltaOre":0,"deltaWater":-30,"deltaEngineParts":0,"deltaContraband":30,"jumpTo":"PADUA","contractAccepted":"LACEY_KLINE"},{"planet":"PADUA","deltaOre":0,"deltaWater":30,"deltaEngineParts":0,"deltaContraband":-30,"jumpTo":"KITADAKE","contractAccepted":"EMRYS_WITT"},{"planet":"KITADAKE","deltaOre":0,"deltaWater":-30,"deltaEngineParts":30,"deltaContraband":0,"jumpTo":"KYOTO","contractAccepted":"HENRI_ENGLAND"},{"planet":"KYOTO","deltaOre":0,"deltaWater":30,"deltaEngineParts":-30,"deltaContraband":0,"jumpTo":"STUTTGART","contractAccepted":"LILIAN_ROBBINS"},{"planet":"STUTTGART","deltaOre":30,"deltaWater":-30,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"RYUKU","contractAccepted":"SHELBY_COMPTON"},{"planet":"RYUKU","deltaOre":-30,"deltaWater":30,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"CAIRO","contractAccepted":"OLIVIA_GRACE_SHORT"},{"planet":"CAIRO","deltaOre":30,"deltaWater":-30,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"ASO"},{"planet":"ASO","deltaOre":-30,"deltaWater":30,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"CARINEA","contractAccepted":"NIA_SHARP"},{"planet":"CARINEA","deltaOre":0,"deltaWater":-30,"deltaEngineParts":30,"deltaContraband":0,"jumpTo":"UNKNOWN","contractAccepted":"KYRAN_BENTLEY"},{"planet":"UNKNOWN","deltaOre":0,"deltaWater":0,"deltaEngineParts":-30,"deltaContraband":30,"jumpTo":"FREITAL"},{"planet":"FREITAL","deltaOre":0,"deltaWater":30,"deltaEngineParts":0,"deltaContraband":-30,"jumpTo":"ALCATRAZ","contractAccepted":"ELA_TUCKER"},{"planet":"ALCATRAZ","deltaOre":30,"deltaWater":-30,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"KIEL","contractAccepted":"AMAYA_FRYE"},{"planet":"KIEL","deltaOre":-30,"deltaWater":0,"deltaEngineParts":0,"deltaContraband":30,"jumpTo":"PRIMUS","contractAccepted":"ARMAN_CHAN"},{"planet":"PRIMUS","deltaOre":0,"deltaWater":0,"deltaEngineParts":30,"deltaContraband":-30,"jumpTo":"OURAY","contractAccepted":"AMIRA_FINLEY"},{"planet":"OURAY","deltaOre":30,"deltaWater":0,"deltaEngineParts":-30,"deltaContraband":0,"jumpTo":"MALTA","contractAccepted":"FREDERICK_WILLIS"},{"planet":"MALTA","deltaOre":-30,"deltaWater":30,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"VOGTLAND","contractAccepted":"IMOGEN_RICHARDSON"},{"planet":"VOGTLAND","deltaOre":0,"deltaWater":-30,"deltaEngineParts":30,"deltaContraband":0,"jumpTo":"TOLEDO","contractAccepted":"HARI_WYNN"},{"planet":"TOLEDO","deltaOre":0,"deltaWater":0,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"NEW_LONDON","contractAccepted":"AANYA_CLEMONS"},{"planet":"NEW_LONDON","deltaOre":0,"deltaWater":30,"deltaEngineParts":-30,"deltaContraband":0,"jumpTo":"FALKLAND","contractAccepted":"DARCIE_WARD"},{"planet":"FALKLAND","deltaOre":0,"deltaWater":-30,"deltaEngineParts":30,"deltaContraband":0,"jumpTo":"HOUSTON","contractAccepted":"ELIOT_VAUGHAN"},{"planet":"HOUSTON","deltaOre":0,"deltaWater":30,"deltaEngineParts":-30,"deltaContraband":0,"jumpTo":"HIDDEN_FORCE","contractAccepted":"LILY_MAY_DURAN"},{"planet":"HIDDEN_FORCE","deltaOre":0,"deltaWater":0,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"GAMMU","contractAccepted":"AYANA_HANSON"},{"planet":"GAMMU","deltaOre":0,"deltaWater":-30,"deltaEngineParts":30,"deltaContraband":0,"jumpTo":"WRIGHT","contractAccepted":"FRIDA_MCKEE"},{"planet":"WRIGHT","deltaOre":0,"deltaWater":30,"deltaEngineParts":-30,"deltaContraband":0,"jumpTo":"CADIZ","contractAccepted":"SHANIA_RANDALL"},{"planet":"CADIZ","deltaOre":0,"deltaWater":-30,"deltaEngineParts":30,"deltaContraband":0,"jumpTo":"CHISOS","contractAccepted":"YASSIN_WALTERS"},{"planet":"CHISOS","deltaOre":0,"deltaWater":0,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"KALHMERA","contractAccepted":"RAY_HYDE"},{"planet":"KALHMERA","deltaOre":30,"deltaWater":0,"deltaEngineParts":-30,"deltaContraband":0,"jumpTo":"LOS_ANGELES"},{"planet":"LOS_ANGELES","deltaOre":-30,"deltaWater":0,"deltaEngineParts":30,"deltaContraband":0,"jumpTo":"JERSEY","contractAccepted":"SKYLAR_BRADLEY"},{"planet":"JERSEY","deltaOre":30,"deltaWater":0,"deltaEngineParts":-30,"deltaContraband":0,"jumpTo":"WILLARD","contractAccepted":"FYNLEY_WONG"},{"planet":"WILLARD","deltaOre":-30,"deltaWater":30,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"POTSDAM","contractAccepted":"WINIFRED_HALEY"},{"planet":"POTSDAM","deltaOre":30,"deltaWater":-30,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"PACIFICA","contractAccepted":"SHAH_ROSE"},{"planet":"PACIFICA","deltaOre":-30,"deltaWater":0,"deltaEngineParts":30,"deltaContraband":0,"jumpTo":"CAMBRIDGE"},{"planet":"CAMBRIDGE","deltaOre":0,"deltaWater":0,"deltaEngineParts":-30,"deltaContraband":0,"jumpTo":"RONNEBURG","contractAccepted":"CELESTE_DUNN"},{"planet":"RONNEBURG","deltaOre":0,"deltaWater":0,"deltaEngineParts":30,"deltaContraband":0,"jumpTo":"DOVER","contractAccepted":"ABBAS_ANTHONY"},{"planet":"DOVER","deltaOre":0,"deltaWater":30,"deltaEngineParts":-30,"deltaContraband":0,"jumpTo":"HIKARI","contractAccepted":"AMINA_WHEELER"},{"planet":"HIKARI","deltaOre":30,"deltaWater":-30,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"HANNOVER","contractAccepted":"SHILOH_PENA"},{"planet":"HANNOVER","deltaOre":-30,"deltaWater":30,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"ABILENE","contractAccepted":"ALFIE_FRANCO"},{"planet":"ABILENE","deltaOre":0,"deltaWater":-30,"deltaEngineParts":30,"deltaContraband":0,"jumpTo":"ALEXANDRIA","contractAccepted":"ESMEE_ONEIL"},{"planet":"ALEXANDRIA","deltaOre":30,"deltaWater":0,"deltaEngineParts":-30,"deltaContraband":0,"jumpTo":"MACTAN","contractAccepted":"ORLANDO_LANCASTER"},{"planet":"MACTAN","deltaOre":0,"deltaWater":0,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"AURIGA"},{"planet":"AURIGA","deltaOre":0,"deltaWater":0,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"LEON","contractAccepted":"ERNIE_FULTON"},{"planet":"LEON","deltaOre":-30,"deltaWater":0,"deltaEngineParts":30,"deltaContraband":0,"jumpTo":"CELLA_DOR","contractAccepted":"KODI_CASEY"},{"planet":"CELLA_DOR","deltaOre":0,"deltaWater":0,"deltaEngineParts":-30,"deltaContraband":30,"jumpTo":"ISLAY","contractAccepted":"ROBYN_KIRKLAND"},{"planet":"ISLAY","deltaOre":0,"deltaWater":0,"deltaEngineParts":30,"deltaContraband":-30,"jumpTo":"BARROW"},{"planet":"BARROW","deltaOre":0,"deltaWater":0,"deltaEngineParts":-30,"deltaContraband":30,"jumpTo":"SCHUTZ"},{"planet":"SCHUTZ","deltaOre":30,"deltaWater":0,"deltaEngineParts":0,"deltaContraband":-30,"jumpTo":"SETO","contractAccepted":"ROMEO_GAINES"},{"planet":"SETO","deltaOre":-30,"deltaWater":0,"deltaEngineParts":30,"deltaContraband":0,"jumpTo":"MOJAVE","contractAccepted":"AARYA_CHAMBERS"},{"planet":"MOJAVE","deltaOre":30,"deltaWater":0,"deltaEngineParts":-30,"deltaContraband":0,"jumpTo":"BRUCHSAL","contractAccepted":"MALI_WELCH"},{"planet":"BRUCHSAL","deltaOre":-30,"deltaWater":0,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"AYR","contractAccepted":"KENNY_COLE"},{"planet":"AYR","deltaOre":0,"deltaWater":0,"deltaEngineParts":30,"deltaContraband":0,"jumpTo":"ARRANMORE"},{"planet":"ARRANMORE","deltaOre":0,"deltaWater":30,"deltaEngineParts":-30,"deltaContraband":0,"jumpTo":"BRAZOS"},{"planet":"BRAZOS","deltaOre":0,"deltaWater":-30,"deltaEngineParts":30,"deltaContraband":0,"jumpTo":"RUIZ","contractAccepted":"POPPY_MAE_CLARK"},{"planet":"RUIZ","deltaOre":30,"deltaWater":0,"deltaEngineParts":-30,"deltaContraband":0,"jumpTo":"NEW_TOKYO"},{"planet":"NEW_TOKYO","deltaOre":-30,"deltaWater":0,"deltaEngineParts":0,"deltaContraband":30,"jumpTo":"DEIDUS","contractAccepted":"JACE_BATES"},{"planet":"DEIDUS","deltaOre":30,"deltaWater":0,"deltaEngineParts":0,"deltaContraband":-30,"jumpTo":"DAWSON","contractAccepted":"JIMMY_HANCOCK"},{"planet":"DAWSON","deltaOre":-30,"deltaWater":0,"deltaEngineParts":30,"deltaContraband":0,"jumpTo":"MENES"},{"planet":"MENES","deltaOre":30,"deltaWater":0,"deltaEngineParts":-30,"deltaContraband":0,"jumpTo":"DENVER"},{"planet":"DENVER","deltaOre":-30,"deltaWater":0,"deltaEngineParts":30,"deltaContraband":0,"jumpTo":"NEW_BERLIN","contractAccepted":"NIEVE_RIDDLE"},{"planet":"NEW_BERLIN","deltaOre":0,"deltaWater":30,"deltaEngineParts":-30,"deltaContraband":0,"jumpTo":"BUFFALO","contractAccepted":"KHADEEJAH_GROSS"},{"planet":"BUFFALO","deltaOre":0,"deltaWater":-30,"deltaEngineParts":30,"deltaContraband":0,"jumpTo":"SPRAGUE"},{"planet":"SPRAGUE","deltaOre":0,"deltaWater":30,"deltaEngineParts":-30,"deltaContraband":0,"jumpTo":"MAINE","contractAccepted":"KHALIL_BOOTH"},{"planet":"MAINE","deltaOre":30,"deltaWater":-30,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"MANHATTAN"},{"planet":"MANHATTAN","deltaOre":-30,"deltaWater":0,"deltaEngineParts":30,"deltaContraband":0,"jumpTo":"WATERFORD","contractAccepted":"TOMASZ_AGUILAR"},{"planet":"WATERFORD","deltaOre":0,"deltaWater":0,"deltaEngineParts":-30,"deltaContraband":0,"jumpTo":"HAMBURG","contractAccepted":"ALISSA_MAYNARD"},{"planet":"HAMBURG","deltaOre":0,"deltaWater":30,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"MUNICH","contractAccepted":"OSMAN_KELLER"},{"planet":"MUNICH","deltaOre":30,"deltaWater":-30,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"VESUVIUS","contractAccepted":"ZAINA_BISHOP"},{"planet":"VESUVIUS","deltaOre":-30,"deltaWater":30,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"HADES","contractAccepted":"RYDER_FRAZIER"},{"planet":"HADES","deltaOre":30,"deltaWater":-30,"deltaEngineParts":0,"deltaContraband":0,"jumpTo":"GAIA","contractAccepted":"SHEA_NELSON"},{"planet":"GAIA","deltaOre":-30,"deltaWater":0,"deltaEngineParts":30,"deltaContraband":0,"jumpTo":"DURANGO","contractAccepted":"ANGELO_BARRY"},{"planet":"DURANGO","deltaOre":30,"deltaWater":0,"deltaEngineParts":-30,"deltaContraband":0,"jumpTo":"CALIFORNIA_MINOR","contractAccepted":"DAKOTA_RUSH"},{"planet":"CALIFORNIA_MINOR","deltaOre":-30,"deltaWater":0,"deltaEngineParts":30,"deltaContraband":0,"jumpTo":"MONTEZUMA","contractAccepted":"PAISLEY_LEACH"},{"planet":"MONTEZUMA","deltaOre":0,"deltaWater":30,"deltaEngineParts":-30,"deltaContraband":0,"jumpTo":"GUNNISON","contractAccepted":"JENSEN_WEST"},{"planet":"GUNNISON","deltaOre":0,"deltaWater":-30,"deltaEngineParts":0,"deltaContraband":0}]}
+{
+  "name": "Sijmen Huizenga",
+  "email": "sijmenhuizenga@gmail.com",
+  "transactions": [
+    {
+      "planet": "CRETE",
+      "deltaOre": -1,
+      "deltaWater": -1,
+      "deltaEngineParts": 2,
+      "deltaContraband": 0,
+      "jumpTo": "BADEN_BADEN"
+    },
+    {
+      "planet": "BADEN_BADEN",
+      "deltaOre": 0,
+      "deltaWater": 3,
+      "deltaEngineParts": -3,
+      "deltaContraband": 0,
+      "jumpTo": "FUJI"
+    },
+    {
+      "planet": "FUJI",
+      "deltaOre": 10,
+      "deltaWater": -3,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "CEREBUS"
+    },
+    {
+      "planet": "CEREBUS",
+      "deltaOre": -10,
+      "deltaWater": 0,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "PLANETOLD",
+      "weaponPurchase": [
+        "PLASMA"
+      ],
+      "contractAccepted": "SOFIJA_BLAKE"
+    },
+    {
+      "planet": "PLANETOLD",
+      "deltaOre": 5,
+      "deltaWater": 0,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "HOLSTEIN",
+      "contractAccepted": "JOHNNY_WORKMAN"
+    },
+    {
+      "planet": "HOLSTEIN",
+      "deltaOre": -5,
+      "deltaWater": 10,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "PITTSBURGH",
+      "contractAccepted": "LILLIA_FLOWERS"
+    },
+    {
+      "planet": "PITTSBURGH",
+      "deltaOre": 0,
+      "deltaWater": -10,
+      "deltaEngineParts": 10,
+      "deltaContraband": 0,
+      "jumpTo": "LEIDEN",
+      "contractAccepted": "ELLA_LOUISE_RASMUSSEN"
+    },
+    {
+      "planet": "LEIDEN",
+      "deltaOre": 0,
+      "deltaWater": 10,
+      "deltaEngineParts": -10,
+      "deltaContraband": 0,
+      "jumpTo": "HONSHU",
+      "weaponPurchase": [
+        "TACHYON"
+      ],
+      "contractAccepted": "AAMIR_OWEN"
+    },
+    {
+      "planet": "HONSHU",
+      "deltaOre": 0,
+      "deltaWater": -10,
+      "deltaEngineParts": 10,
+      "deltaContraband": 0,
+      "jumpTo": "ATKA",
+      "contractAccepted": "MARLIE_PADILLA"
+    },
+    {
+      "planet": "ATKA",
+      "deltaOre": 0,
+      "deltaWater": 10,
+      "deltaEngineParts": -10,
+      "deltaContraband": 0,
+      "jumpTo": "KURILE",
+      "contractAccepted": "KALLUM_CASTRO"
+    },
+    {
+      "planet": "KURILE",
+      "deltaOre": 15,
+      "deltaWater": -10,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "NOME",
+      "contractAccepted": "SAOIRSE_WATERS",
+      "shipPurchase": "RHINO"
+    },
+    {
+      "planet": "NOME",
+      "deltaOre": 0,
+      "deltaWater": 0,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "VESPUS",
+      "contractAccepted": "DALE_HENDRIX"
+    },
+    {
+      "planet": "VESPUS",
+      "deltaOre": -15,
+      "deltaWater": 15,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "STULINGEN",
+      "contractAccepted": "JEEVAN_CARPENTER"
+    },
+    {
+      "planet": "STULINGEN",
+      "deltaOre": 15,
+      "deltaWater": -15,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "CALI",
+      "contractAccepted": "MALAKAI_SNYDER"
+    },
+    {
+      "planet": "CALI",
+      "deltaOre": -15,
+      "deltaWater": 0,
+      "deltaEngineParts": 15,
+      "deltaContraband": 0,
+      "jumpTo": "AALEN",
+      "contractAccepted": "CASPER_BARNES"
+    },
+    {
+      "planet": "AALEN",
+      "deltaOre": 15,
+      "deltaWater": 0,
+      "deltaEngineParts": -15,
+      "deltaContraband": 0,
+      "jumpTo": "PRENTA",
+      "contractAccepted": "WALTER_HEBERT"
+    },
+    {
+      "planet": "PRENTA",
+      "deltaOre": 0,
+      "deltaWater": 0,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "SARUM",
+      "contractAccepted": "CAIN_MERCER"
+    },
+    {
+      "planet": "SARUM",
+      "deltaOre": -15,
+      "deltaWater": 0,
+      "deltaEngineParts": 15,
+      "deltaContraband": 0,
+      "jumpTo": "CURACAO",
+      "contractAccepted": "ALINA_ABBOTT"
+    },
+    {
+      "planet": "CURACAO",
+      "deltaOre": 0,
+      "deltaWater": 15,
+      "deltaEngineParts": -15,
+      "deltaContraband": 0,
+      "jumpTo": "HIRAN",
+      "contractAccepted": "GIDEON_POWERS"
+    },
+    {
+      "planet": "HIRAN",
+      "deltaOre": 15,
+      "deltaWater": -15,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "KYUSHU",
+      "contractAccepted": "ESHAAL_ALLEN"
+    },
+    {
+      "planet": "KYUSHU",
+      "deltaOre": -15,
+      "deltaWater": 0,
+      "deltaEngineParts": 0,
+      "deltaContraband": 15,
+      "jumpTo": "IZU",
+      "contractAccepted": "FARAH_MENDOZA"
+    },
+    {
+      "planet": "IZU",
+      "deltaOre": 15,
+      "deltaWater": 0,
+      "deltaEngineParts": 0,
+      "deltaContraband": -15,
+      "jumpTo": "JUNYO",
+      "contractAccepted": "ABEL_BRYANT"
+    },
+    {
+      "planet": "JUNYO",
+      "deltaOre": 0,
+      "deltaWater": 0,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "ELYSIUM",
+      "contractAccepted": "ZAHRA_DOYLE"
+    },
+    {
+      "planet": "ELYSIUM",
+      "deltaOre": -15,
+      "deltaWater": 30,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "BREISGAU",
+      "contractAccepted": "HARLEY_FORBES",
+      "shipPurchase": "HUMPBACK"
+    },
+    {
+      "planet": "BREISGAU",
+      "deltaOre": 0,
+      "deltaWater": -30,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "LEEDS",
+      "contractAccepted": "NEVAEH_ROGERS"
+    },
+    {
+      "planet": "LEEDS",
+      "deltaOre": 0,
+      "deltaWater": 0,
+      "deltaEngineParts": 0,
+      "deltaContraband": 30,
+      "jumpTo": "HARRIS",
+      "contractAccepted": "JULIUS_HARTMAN"
+    },
+    {
+      "planet": "HARRIS",
+      "deltaOre": 30,
+      "deltaWater": 0,
+      "deltaEngineParts": 0,
+      "deltaContraband": -30,
+      "jumpTo": "TEGAKIS",
+      "contractAccepted": "ANDREAS_HOPKINS"
+    },
+    {
+      "planet": "TEGAKIS",
+      "deltaOre": -30,
+      "deltaWater": 0,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "PYGAR",
+      "contractAccepted": "KAISON_VINCENT"
+    },
+    {
+      "planet": "PYGAR",
+      "deltaOre": 0,
+      "deltaWater": 30,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "MALLORCA",
+      "contractAccepted": "SHANAYA_SHEPARD"
+    },
+    {
+      "planet": "MALLORCA",
+      "deltaOre": 0,
+      "deltaWater": -30,
+      "deltaEngineParts": 0,
+      "deltaContraband": 30,
+      "jumpTo": "PADUA",
+      "contractAccepted": "IBRAHIM_COTTON"
+    },
+    {
+      "planet": "PADUA",
+      "deltaOre": 0,
+      "deltaWater": 30,
+      "deltaEngineParts": 0,
+      "deltaContraband": -30,
+      "jumpTo": "KITADAKE",
+      "contractAccepted": "FAITH_ANDERSON"
+    },
+    {
+      "planet": "KITADAKE",
+      "deltaOre": 0,
+      "deltaWater": -30,
+      "deltaEngineParts": 30,
+      "deltaContraband": 0,
+      "jumpTo": "KYOTO",
+      "contractAccepted": "ZAYNE_HUBBARD"
+    },
+    {
+      "planet": "KYOTO",
+      "deltaOre": 0,
+      "deltaWater": 30,
+      "deltaEngineParts": -30,
+      "deltaContraband": 0,
+      "jumpTo": "STUTTGART",
+      "contractAccepted": "SOLOMON_SLATER"
+    },
+    {
+      "planet": "STUTTGART",
+      "deltaOre": 30,
+      "deltaWater": -30,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "RYUKU",
+      "contractAccepted": "GUS_FRANKLIN"
+    },
+    {
+      "planet": "RYUKU",
+      "deltaOre": -30,
+      "deltaWater": 30,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "CAIRO",
+      "contractAccepted": "EMELIA_HAYES"
+    },
+    {
+      "planet": "CAIRO",
+      "deltaOre": 30,
+      "deltaWater": -30,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "ASO",
+      "contractAccepted": "CHELSEA_AYALA"
+    },
+    {
+      "planet": "ASO",
+      "deltaOre": -30,
+      "deltaWater": 30,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "CARINEA",
+      "contractAccepted": "WILFRED_FRY"
+    },
+    {
+      "planet": "CARINEA",
+      "deltaOre": 0,
+      "deltaWater": -30,
+      "deltaEngineParts": 30,
+      "deltaContraband": 0,
+      "jumpTo": "UNKNOWN",
+      "contractAccepted": "ANNIE_SAWYER"
+    },
+    {
+      "planet": "UNKNOWN",
+      "deltaOre": 0,
+      "deltaWater": 0,
+      "deltaEngineParts": -30,
+      "deltaContraband": 30,
+      "jumpTo": "FREITAL",
+      "contractAccepted": "CATHERINE_PECK"
+    },
+    {
+      "planet": "FREITAL",
+      "deltaOre": 0,
+      "deltaWater": 30,
+      "deltaEngineParts": 0,
+      "deltaContraband": -30,
+      "jumpTo": "ALCATRAZ",
+      "contractAccepted": "IOAN_SERRANO"
+    },
+    {
+      "planet": "ALCATRAZ",
+      "deltaOre": 30,
+      "deltaWater": -30,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "KIEL",
+      "contractAccepted": "CAI_JENSEN"
+    },
+    {
+      "planet": "KIEL",
+      "deltaOre": -30,
+      "deltaWater": 0,
+      "deltaEngineParts": 0,
+      "deltaContraband": 30,
+      "jumpTo": "PRIMUS",
+      "contractAccepted": "YUSUF_ENGLISH"
+    },
+    {
+      "planet": "PRIMUS",
+      "deltaOre": 0,
+      "deltaWater": 0,
+      "deltaEngineParts": 30,
+      "deltaContraband": -30,
+      "jumpTo": "OURAY",
+      "contractAccepted": "KEEGAN_REYES"
+    },
+    {
+      "planet": "OURAY",
+      "deltaOre": 30,
+      "deltaWater": 0,
+      "deltaEngineParts": -30,
+      "deltaContraband": 0,
+      "jumpTo": "MALTA",
+      "contractAccepted": "ORSON_MAY"
+    },
+    {
+      "planet": "MALTA",
+      "deltaOre": -30,
+      "deltaWater": 30,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "VOGTLAND",
+      "contractAccepted": "ELENA_JOHNS"
+    },
+    {
+      "planet": "VOGTLAND",
+      "deltaOre": 0,
+      "deltaWater": -30,
+      "deltaEngineParts": 30,
+      "deltaContraband": 0,
+      "jumpTo": "TOLEDO",
+      "contractAccepted": "FLORRIE_STONE"
+    },
+    {
+      "planet": "TOLEDO",
+      "deltaOre": 0,
+      "deltaWater": 0,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "NEW_LONDON",
+      "contractAccepted": "COCO_ROSA"
+    },
+    {
+      "planet": "NEW_LONDON",
+      "deltaOre": 0,
+      "deltaWater": 30,
+      "deltaEngineParts": -30,
+      "deltaContraband": 0,
+      "jumpTo": "FALKLAND",
+      "contractAccepted": "NATE_HORN"
+    },
+    {
+      "planet": "FALKLAND",
+      "deltaOre": 0,
+      "deltaWater": -30,
+      "deltaEngineParts": 30,
+      "deltaContraband": 0,
+      "jumpTo": "HOUSTON",
+      "contractAccepted": "ZANDER_GILL"
+    },
+    {
+      "planet": "HOUSTON",
+      "deltaOre": 0,
+      "deltaWater": 30,
+      "deltaEngineParts": -30,
+      "deltaContraband": 0,
+      "jumpTo": "HIDDEN_FORCE",
+      "contractAccepted": "ROME_CARDENAS"
+    },
+    {
+      "planet": "HIDDEN_FORCE",
+      "deltaOre": 0,
+      "deltaWater": 0,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "GAMMU",
+      "contractAccepted": "AADAM_CAMACHO"
+    },
+    {
+      "planet": "GAMMU",
+      "deltaOre": 0,
+      "deltaWater": -30,
+      "deltaEngineParts": 30,
+      "deltaContraband": 0,
+      "jumpTo": "WRIGHT",
+      "contractAccepted": "LAYLA_ROSE_BAKER"
+    },
+    {
+      "planet": "WRIGHT",
+      "deltaOre": 0,
+      "deltaWater": 30,
+      "deltaEngineParts": -30,
+      "deltaContraband": 0,
+      "jumpTo": "CADIZ",
+      "contractAccepted": "GENEVIEVE_ROTH"
+    },
+    {
+      "planet": "CADIZ",
+      "deltaOre": 0,
+      "deltaWater": -30,
+      "deltaEngineParts": 30,
+      "deltaContraband": 0,
+      "jumpTo": "CHISOS",
+      "contractAccepted": "MIKEY_ONEAL"
+    },
+    {
+      "planet": "CHISOS",
+      "deltaOre": 0,
+      "deltaWater": 0,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "KALHMERA",
+      "contractAccepted": "MAIZIE_MCCLAIN"
+    },
+    {
+      "planet": "KALHMERA",
+      "deltaOre": 30,
+      "deltaWater": 0,
+      "deltaEngineParts": -30,
+      "deltaContraband": 0,
+      "jumpTo": "LOS_ANGELES",
+      "contractAccepted": "CRISTIAN_HARDING"
+    },
+    {
+      "planet": "LOS_ANGELES",
+      "deltaOre": -30,
+      "deltaWater": 0,
+      "deltaEngineParts": 30,
+      "deltaContraband": 0,
+      "jumpTo": "JERSEY",
+      "contractAccepted": "ARUN_OLSEN"
+    },
+    {
+      "planet": "JERSEY",
+      "deltaOre": 30,
+      "deltaWater": 0,
+      "deltaEngineParts": -30,
+      "deltaContraband": 0,
+      "jumpTo": "WILLARD",
+      "contractAccepted": "JUAN_HUNTER"
+    },
+    {
+      "planet": "WILLARD",
+      "deltaOre": -30,
+      "deltaWater": 0,
+      "deltaEngineParts": 30,
+      "deltaContraband": 0,
+      "jumpTo": "CAMBRIDGE",
+      "contractAccepted": "ROSA_FITZGERALD"
+    },
+    {
+      "planet": "CAMBRIDGE",
+      "deltaOre": 0,
+      "deltaWater": 30,
+      "deltaEngineParts": -30,
+      "deltaContraband": 0,
+      "jumpTo": "POTSDAM",
+      "contractAccepted": "JASPER_TYLER"
+    },
+    {
+      "planet": "POTSDAM",
+      "deltaOre": 30,
+      "deltaWater": -30,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "RONNEBURG",
+      "contractAccepted": "ROSANNA_BENJAMIN"
+    },
+    {
+      "planet": "RONNEBURG",
+      "deltaOre": -30,
+      "deltaWater": 30,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "PACIFICA",
+      "contractAccepted": "BELLA_WILLIAMS"
+    },
+    {
+      "planet": "PACIFICA",
+      "deltaOre": 0,
+      "deltaWater": -30,
+      "deltaEngineParts": 30,
+      "deltaContraband": 0,
+      "jumpTo": "ALEXANDRIA",
+      "contractAccepted": "ARCHIBALD_MCCOY"
+    },
+    {
+      "planet": "ALEXANDRIA",
+      "deltaOre": 30,
+      "deltaWater": 0,
+      "deltaEngineParts": -30,
+      "deltaContraband": 0,
+      "jumpTo": "DOVER",
+      "contractAccepted": "MELISSA_HENRY"
+    },
+    {
+      "planet": "DOVER",
+      "deltaOre": -30,
+      "deltaWater": 30,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "ABILENE",
+      "contractAccepted": "ISLA_ROSE_REED"
+    },
+    {
+      "planet": "ABILENE",
+      "deltaOre": 30,
+      "deltaWater": -30,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "HANNOVER",
+      "contractAccepted": "KAYLEN_BECKER"
+    },
+    {
+      "planet": "HANNOVER",
+      "deltaOre": -30,
+      "deltaWater": 30,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "HIKARI",
+      "contractAccepted": "MAXIMUS_JACOBS"
+    },
+    {
+      "planet": "HIKARI",
+      "deltaOre": 30,
+      "deltaWater": -30,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "LEON",
+      "contractAccepted": "AAYAN_SOTO"
+    },
+    {
+      "planet": "LEON",
+      "deltaOre": -30,
+      "deltaWater": 0,
+      "deltaEngineParts": 30,
+      "deltaContraband": 0,
+      "jumpTo": "MACTAN",
+      "contractAccepted": "LOWRI_HENSLEY"
+    },
+    {
+      "planet": "MACTAN",
+      "deltaOre": 30,
+      "deltaWater": 0,
+      "deltaEngineParts": -30,
+      "deltaContraband": 0,
+      "jumpTo": "AURIGA",
+      "contractAccepted": "VALENTINA_DELEON"
+    },
+    {
+      "planet": "AURIGA",
+      "deltaOre": -30,
+      "deltaWater": 0,
+      "deltaEngineParts": 30,
+      "deltaContraband": 0,
+      "jumpTo": "CELLA_DOR",
+      "contractAccepted": "DHRUV_ROMAN"
+    },
+    {
+      "planet": "CELLA_DOR",
+      "deltaOre": 0,
+      "deltaWater": 0,
+      "deltaEngineParts": -30,
+      "deltaContraband": 30,
+      "jumpTo": "ISLAY",
+      "contractAccepted": "LOWEN_BASS"
+    },
+    {
+      "planet": "ISLAY",
+      "deltaOre": 0,
+      "deltaWater": 0,
+      "deltaEngineParts": 30,
+      "deltaContraband": -30,
+      "jumpTo": "BARROW",
+      "contractAccepted": "ERIKA_PACE"
+    },
+    {
+      "planet": "BARROW",
+      "deltaOre": 0,
+      "deltaWater": 0,
+      "deltaEngineParts": -30,
+      "deltaContraband": 30,
+      "jumpTo": "SCHUTZ",
+      "contractAccepted": "DULCIE_WATTS"
+    },
+    {
+      "planet": "SCHUTZ",
+      "deltaOre": 30,
+      "deltaWater": 0,
+      "deltaEngineParts": 0,
+      "deltaContraband": -30,
+      "jumpTo": "SETO",
+      "contractAccepted": "PADDY_MASSEY"
+    },
+    {
+      "planet": "SETO",
+      "deltaOre": -30,
+      "deltaWater": 0,
+      "deltaEngineParts": 30,
+      "deltaContraband": 0,
+      "jumpTo": "MOJAVE",
+      "contractAccepted": "HERBIE_MARTIN"
+    },
+    {
+      "planet": "MOJAVE",
+      "deltaOre": 30,
+      "deltaWater": 0,
+      "deltaEngineParts": -30,
+      "deltaContraband": 0,
+      "jumpTo": "BRUCHSAL",
+      "contractAccepted": "MINAHIL_CANNON"
+    },
+    {
+      "planet": "BRUCHSAL",
+      "deltaOre": -30,
+      "deltaWater": 0,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "AYR",
+      "contractAccepted": "TILLY_MONTGOMERY"
+    },
+    {
+      "planet": "AYR",
+      "deltaOre": 0,
+      "deltaWater": 0,
+      "deltaEngineParts": 30,
+      "deltaContraband": 0,
+      "jumpTo": "ARRANMORE",
+      "contractAccepted": "MARNIE_FERGUSON"
+    },
+    {
+      "planet": "ARRANMORE",
+      "deltaOre": 0,
+      "deltaWater": 30,
+      "deltaEngineParts": -30,
+      "deltaContraband": 0,
+      "jumpTo": "BRAZOS",
+      "contractAccepted": "JUNIOR_BURKE"
+    },
+    {
+      "planet": "BRAZOS",
+      "deltaOre": 0,
+      "deltaWater": -30,
+      "deltaEngineParts": 30,
+      "deltaContraband": 0,
+      "jumpTo": "RUIZ"
+    },
+    {
+      "planet": "RUIZ",
+      "deltaOre": 30,
+      "deltaWater": 0,
+      "deltaEngineParts": -30,
+      "deltaContraband": 0,
+      "jumpTo": "NEW_TOKYO",
+      "contractAccepted": "DEXTER_HERMAN"
+    },
+    {
+      "planet": "NEW_TOKYO",
+      "deltaOre": -30,
+      "deltaWater": 0,
+      "deltaEngineParts": 0,
+      "deltaContraband": 30,
+      "jumpTo": "DEIDUS",
+      "contractAccepted": "RHYS_FOSTER"
+    },
+    {
+      "planet": "DEIDUS",
+      "deltaOre": 30,
+      "deltaWater": 0,
+      "deltaEngineParts": 0,
+      "deltaContraband": -30,
+      "jumpTo": "DAWSON",
+      "contractAccepted": "ROMILLY_GALLOWAY"
+    },
+    {
+      "planet": "DAWSON",
+      "deltaOre": -30,
+      "deltaWater": 0,
+      "deltaEngineParts": 30,
+      "deltaContraband": 0,
+      "jumpTo": "MENES",
+      "contractAccepted": "LEE_ROSALES"
+    },
+    {
+      "planet": "MENES",
+      "deltaOre": 30,
+      "deltaWater": 0,
+      "deltaEngineParts": -30,
+      "deltaContraband": 0,
+      "jumpTo": "DENVER",
+      "contractAccepted": "ALEXIS_DOTSON"
+    },
+    {
+      "planet": "DENVER",
+      "deltaOre": -30,
+      "deltaWater": 0,
+      "deltaEngineParts": 30,
+      "deltaContraband": 0,
+      "jumpTo": "NEW_BERLIN",
+      "contractAccepted": "ANWEN_CASH"
+    },
+    {
+      "planet": "NEW_BERLIN",
+      "deltaOre": 0,
+      "deltaWater": 30,
+      "deltaEngineParts": -30,
+      "deltaContraband": 0,
+      "jumpTo": "BUFFALO",
+      "contractAccepted": "LUCIAN_ROBERTSON"
+    },
+    {
+      "planet": "BUFFALO",
+      "deltaOre": 0,
+      "deltaWater": -30,
+      "deltaEngineParts": 30,
+      "deltaContraband": 0,
+      "jumpTo": "SPRAGUE",
+      "contractAccepted": "EFA_ROLLINS"
+    },
+    {
+      "planet": "SPRAGUE",
+      "deltaOre": 0,
+      "deltaWater": 30,
+      "deltaEngineParts": -30,
+      "deltaContraband": 0,
+      "jumpTo": "MAINE",
+      "contractAccepted": "DOMINYKAS_SYKES"
+    },
+    {
+      "planet": "MAINE",
+      "deltaOre": 30,
+      "deltaWater": -30,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "MANHATTAN",
+      "contractAccepted": "ELIZABETH_CONLEY"
+    },
+    {
+      "planet": "MANHATTAN",
+      "deltaOre": -30,
+      "deltaWater": 0,
+      "deltaEngineParts": 30,
+      "deltaContraband": 0,
+      "jumpTo": "WATERFORD",
+      "contractAccepted": "ZAHRAA_CRANE"
+    },
+    {
+      "planet": "WATERFORD",
+      "deltaOre": 0,
+      "deltaWater": 0,
+      "deltaEngineParts": -30,
+      "deltaContraband": 0,
+      "jumpTo": "HAMBURG",
+      "contractAccepted": "ALEC_FITZPATRICK"
+    },
+    {
+      "planet": "HAMBURG",
+      "deltaOre": 0,
+      "deltaWater": 30,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "MUNICH",
+      "contractAccepted": "LEANDRO_WALKER"
+    },
+    {
+      "planet": "MUNICH",
+      "deltaOre": 30,
+      "deltaWater": -30,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "VESUVIUS"
+    },
+    {
+      "planet": "VESUVIUS",
+      "deltaOre": -30,
+      "deltaWater": 30,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "HADES",
+      "contractAccepted": "MUSTAFA_MOORE"
+    },
+    {
+      "planet": "HADES",
+      "deltaOre": 30,
+      "deltaWater": -30,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0,
+      "jumpTo": "GAIA",
+      "contractAccepted": "FERGUS_GLASS"
+    },
+    {
+      "planet": "GAIA",
+      "deltaOre": -30,
+      "deltaWater": 0,
+      "deltaEngineParts": 30,
+      "deltaContraband": 0,
+      "jumpTo": "DURANGO",
+      "contractAccepted": "REECE_SHARPE"
+    },
+    {
+      "planet": "DURANGO",
+      "deltaOre": 30,
+      "deltaWater": 0,
+      "deltaEngineParts": -30,
+      "deltaContraband": 0,
+      "jumpTo": "CALIFORNIA_MINOR",
+      "contractAccepted": "ADELAIDE_LANG"
+    },
+    {
+      "planet": "CALIFORNIA_MINOR",
+      "deltaOre": -30,
+      "deltaWater": 0,
+      "deltaEngineParts": 30,
+      "deltaContraband": 0,
+      "jumpTo": "MONTEZUMA",
+      "contractAccepted": "VIKTORIA_BAXTER"
+    },
+    {
+      "planet": "MONTEZUMA",
+      "deltaOre": 0,
+      "deltaWater": 30,
+      "deltaEngineParts": -30,
+      "deltaContraband": 0,
+      "jumpTo": "GUNNISON",
+      "contractAccepted": "WERONIKA_RHODES"
+    },
+    {
+      "planet": "GUNNISON",
+      "deltaOre": 0,
+      "deltaWater": -30,
+      "deltaEngineParts": 0,
+      "deltaContraband": 0
+    }
+  ]
+}
