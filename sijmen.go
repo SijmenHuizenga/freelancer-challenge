@@ -6,7 +6,6 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
-	"strconv"
 )
 
 type Resource string
@@ -86,8 +85,8 @@ var wishes = []Wish{
 	{shipOrWeapon: option_weapon, weapon: PHOTON},
 	{shipOrWeapon: option_weapon, weapon: PROTON},
 	{shipOrWeapon: option_ship, ship: &DRONE},
-	{shipOrWeapon: option_ship, ship: &HUMPBACK},
 	{shipOrWeapon: option_ship, ship: &RHINO},
+	{shipOrWeapon: option_ship, ship: &HUMPBACK},
 }
 
 func main() {
@@ -112,51 +111,17 @@ func main() {
 		starsP = append(starsP, &stars[i])
 	}
 
-	wishfull(starsP, []*Wish{})
-}
+	balance, transactions := freelancer(starsP, []*Wish{
+		&wishes[5], &wishes[7], &wishes[2], &wishes[8],
+	})
+	jsonString, _ := json.Marshal(Output{
+		Name:         "Sijmen Huizenga",
+		Email:        "sijmenhuizenga@gmail.com",
+		Transactions: transactions,
+	})
+	ioutil.WriteFile("output.json", jsonString, os.ModePerm)
+	fmt.Printf("Balance: %v\n", balance)
 
-func wishfull(stars []*Star, wishlist []*Wish) {
-	for wishI := range wishes {
-		if inW(wishlist, &wishes[wishI]) {
-			continue
-		}
-		nextList := append(wishlist, &wishes[wishI])
-		//printWishes(nextList)
-		balance, transactions := freelancer(stars, nextList)
-		if balance > 21449 {
-			jsonString, _ := json.Marshal(Output{
-				Name:         "Sijmen Huizenga",
-				Email:        "sijmenhuizenga@gmail.com",
-				Transactions: transactions,
-			})
-			ioutil.WriteFile("output/"+strconv.Itoa(int(balance))+".json", jsonString, os.ModePerm)
-			fmt.Printf("Found great option: %v\n", balance)
-			printWishes(nextList)
-		}
-		if len(nextList) != len(wishes) {
-			wishfull(stars, nextList)
-		}
-	}
-}
-
-func printWishes(wishlist []*Wish) {
-	for _, w := range wishlist {
-		if w.shipOrWeapon == option_weapon {
-			fmt.Printf(", %v", w.weapon)
-		} else {
-			fmt.Printf(", %v", w.ship.Name)
-		}
-	}
-	println()
-}
-
-func inW(hay []*Wish, search *Wish) bool {
-	for _, w := range hay {
-		if w == search {
-			return true
-		}
-	}
-	return false
 }
 
 
@@ -264,7 +229,6 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 
 		transactions = append(transactions, transaction)
 	}
-	//println("Total balance: ", balance)
 	return balance, transactions
 }
 
