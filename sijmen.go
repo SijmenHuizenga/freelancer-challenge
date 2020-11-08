@@ -132,20 +132,25 @@ type Wish struct {
 }
 
 func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
-	var balance uint16
 	var transactions []Transaction
 
-	var currentShip = &SCRAPPY
-	var myWeapons []Weapon
-	var inventory = map[Resource]uint8{
-		Ore:         1,
-		Water:       1,
-		EngineParts: 1,
-		Contraband:  0,
+	var s = State{
+		transaction: Transaction{},
+		balance:     0,
+		inventory:   map[Resource]uint8{
+			Ore:         1,
+			Water:       1,
+			EngineParts: 1,
+			Contraband:  0,
+		},
+		wishlist:    wishlist,
+		myWeapons:   []Weapon{},
+		myShip:      &SCRAPPY,
 	}
+	//var link = STARMAP
 
 	for i, star := range stars {
-		transaction := Transaction{
+		s.transaction = Transaction{
 			Planet:           star.Name,
 			DeltaOre:         0,
 			DeltaWater:       0,
@@ -157,62 +162,29 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 		}
 
 		// sell everything
-		for resource, amount := range inventory {
-			transaction.sell(resource, amount)
-			balance += uint16(amount) * uint16(star.getPrice(resource))
-			inventory[resource] = 0
+		for resource, amount := range s.inventory {
+			s.transaction.sell(resource, amount)
+			s.balance += uint16(amount) * uint16(star.getPrice(resource))
+			s.inventory[resource] = 0
 		}
 
 		// on last star don't buy anything
 		if i == len(stars)-1 {
-			transactions = append(transactions, transaction)
+			transactions = append(transactions, s.transaction)
 			break
 		}
 
 		nextStar := stars[i+1]
 
-		shoppingCost, _, shoppingList := star.bestDeal(nextStar, balance, *currentShip)
-
-		if len(wishlist) > 0 {
-			nextWishItem := wishlist[0]
-			if nextWishItem.shipOrWeapon == option_ship {
-				newShipShoppingcost, _, newShipShoppingList := star.bestDeal(nextStar, balance, *nextWishItem.ship)
-
-				if balance >= nextWishItem.ship.Price + newShipShoppingcost {
-					shoppingList = newShipShoppingList
-					transaction.ShipPurchase = nextWishItem.ship.Name
-					balance -= nextWishItem.ship.Price
-					currentShip = nextWishItem.ship
-					wishlist = wishlist[1:]
-				}
-			} else {
-				// buying weapons and fighting!
-				if balance >= shoppingCost+200 && star.hasContract(nextWeapon(nextWishItem.weapon)) {
-					// buy weapon on shoppinglist if we can use it immediately
-					myWeapons = append(myWeapons, nextWishItem.weapon)
-					transaction.WeaponPurchase = []string{weaponNames[nextWishItem.weapon]}
-					wishlist = wishlist[1:]
-					balance -= 200
-				}
-			}
-		}
-
-		if len(myWeapons) > 0 {
-			// if we have weapons, let's try to fight!
-			bestcontract := star.bestContractW(nextWeapons(myWeapons))
-			if bestcontract != nil {
-				transaction.ContractAccepted = bestcontract.CriminalName
-				balance += uint16(bestcontract.Bounty)
-			}
-		}
-
-
-		// buy the shoppinglist
-		for resource, amount := range shoppingList {
-			transaction.buy(resource, amount)
-			inventory[resource] += amount
-			balance -= uint16(amount) * uint16(star.getPrice(resource))
-		}
+		newState := visit(star, nextStar, State{
+			transaction: s.transaction,
+			balance:     s.balance,
+			inventory:   CopyMap(s.inventory),
+			wishlist:    s.wishlist,
+			myWeapons:   s.myWeapons,
+			myShip:      s.myShip,
+		})
+		s = newState
 
 		// debugging
 		//fmt.Printf("Balance at %v %v was: %v", i, star.Name, balance)
@@ -227,9 +199,65 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 		//}
 		//println()
 
-		transactions = append(transactions, transaction)
+		transactions = append(transactions, s.transaction)
 	}
-	return balance, transactions
+	return s.balance, transactions
+}
+
+type State struct {
+	transaction Transaction
+	balance uint16
+	inventory map[Resource]uint8
+	wishlist []*Wish
+	myWeapons []Weapon
+	myShip *Ship
+}
+
+func visit(currentStar *Star, nextStar *Star, s State) State {
+	// return transaction, balance, wishlist, myWeapons, myShip
+	shoppingCost, _, shoppingList := currentStar.bestDeal(nextStar, s.balance, *s.myShip)
+
+	if len(s.wishlist) > 0 {
+		nextWishItem := s.wishlist[0]
+		if nextWishItem.shipOrWeapon == option_ship {
+			newShipShoppingcost, _, newShipShoppingList := currentStar.bestDeal(nextStar, s.balance, *nextWishItem.ship)
+
+			if s.balance >= nextWishItem.ship.Price + newShipShoppingcost {
+				shoppingList = newShipShoppingList
+				s.transaction.ShipPurchase = nextWishItem.ship.Name
+				s.balance -= nextWishItem.ship.Price
+				s.myShip = nextWishItem.ship
+				s.wishlist = s.wishlist[1:]
+			}
+		} else {
+			// buying weapons and fighting!
+			if s.balance >= shoppingCost+200 && currentStar.hasContract(nextWeapon(nextWishItem.weapon)) {
+				// buy weapon on shoppinglist if we can use it immediately
+				s.myWeapons = append(s.myWeapons, nextWishItem.weapon)
+				s.transaction.WeaponPurchase = []string{weaponNames[nextWishItem.weapon]}
+				s.wishlist = s.wishlist[1:]
+				s.balance -= 200
+			}
+		}
+	}
+
+	if len(s.myWeapons) > 0 {
+		// if we have weapons, let's try to fight!
+		bestcontract := currentStar.bestContractW(nextWeapons(s.myWeapons))
+		if bestcontract != nil {
+			s.transaction.ContractAccepted = bestcontract.CriminalName
+			s.balance += uint16(bestcontract.Bounty)
+		}
+	}
+
+	// buy the shoppinglist
+	for resource, amount := range shoppingList {
+		s.transaction.buy(resource, amount)
+		s.inventory[resource] += amount
+		s.balance -= uint16(amount) * uint16(currentStar.getPrice(resource))
+	}
+
+	return s
 }
 
 func nextWeapon(w Weapon) Weapon {
