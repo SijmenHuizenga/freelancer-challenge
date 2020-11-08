@@ -82,7 +82,7 @@ func buildStarmap() *[]*Link {
 	B.next = C
 
 	////////////
-	var d = D(1)
+	var d = D(50)
 	var rootPlus3 = Link{
 		step:        +3,
 		linksToRoot: 3,

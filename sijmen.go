@@ -84,8 +84,8 @@ var (
     weapon_PARTICLE = Wish{shipOrWeapon: option_weapon, weapon: PARTICLE}
     weapon_PHOTON = Wish{shipOrWeapon: option_weapon, weapon: PHOTON}
     weapon_PROTON = Wish{shipOrWeapon: option_weapon, weapon: PROTON}
-    ship_DRONE = Wish{shipOrWeapon: option_ship, ship: &DRONE}
-    ship_RHINO = Wish{shipOrWeapon: option_ship, ship: &RHINO}
+	ship_RHINO = Wish{shipOrWeapon: option_ship, ship: &RHINO}
+	ship_DRONE = Wish{shipOrWeapon: option_ship, ship: &DRONE}
     ship_HUMPBACK = Wish{shipOrWeapon: option_ship, ship: &HUMPBACK}
 )
 
@@ -125,8 +125,6 @@ func main() {
 	})
 	ioutil.WriteFile("output.json", jsonString, os.ModePerm)
 	fmt.Printf("Balance: %v\n", balance)
-
-	//wishfull(starsP, []*Wish{})
 }
 
 // used for brute-forcing all wish combinations
@@ -230,7 +228,7 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 			log.Fatal("No next links. That can't be. You were supposed to be infinite")
 		}
 
-		bestState, bestLink := findBestNextLink(s, stars, starI, nextLinks, nrOfVisitedStars, 12)
+		bestState, bestLink, _ := findBestNextLink(s, stars, starI, nextLinks, nrOfVisitedStars, 10)
 
 		s = *bestState
 		nextLinks = bestLink.next
@@ -238,6 +236,7 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 		s.transaction.JumpTo = stars[starI].Name
 		println("  next step: ", bestLink.step)
 		println("  nr of visited stars: ", nrOfVisitedStars)
+		println("  balance: ", s.balance)
 
 		nrOfVisitedStars++
 		transactions = append(transactions, s.transaction)
@@ -245,11 +244,11 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 	return s.balance, transactions
 }
 
-func findBestNextLink(s State, stars []*Star, starI int8, nextLinks *[]*Link, nrOfVisitedStars int, lookahead uint8) (*State, *Link) {
+func findBestNextLink(s State, stars []*Star, starI int8, nextLinks *[]*Link, nrOfVisitedStars int, lookahead uint8) (*State, *Link, uint16) {
 	//nrOfVisitedStars is including the current star
 	var bestState *State = nil
 	var bestLink *Link = nil
-	var bestLookaheadBalance = uint16(0)
+	var bestLookaheadInkomsten = uint16(0)
 	for _, nextLink := range *nextLinks {
 		nextStarI := starI + nextLink.step
 		if nextStarI < 0 || nextStarI >= int8(len(stars)) {
@@ -267,7 +266,7 @@ func findBestNextLink(s State, stars []*Star, starI int8, nextLinks *[]*Link, nr
 		}
 
 		nextStar := stars[nextStarI]
-		newState := visit(stars[starI], nextStar, State{
+		newState, nextInkomsten := visit(stars[starI], nextStar, State{
 			transaction: s.transaction,
 			balance:     s.balance,
 			inventory:   CopyMap(s.inventory),
@@ -277,15 +276,17 @@ func findBestNextLink(s State, stars []*Star, starI int8, nextLinks *[]*Link, nr
 		})
 
 		if nrOfUnvisitedStars > 2 && lookahead > 0 {
-			lookaheadBestState, _ := findBestNextLink(newState, stars, nextStarI, nextLink.next, nrOfVisitedStars+1, lookahead-1)
-			if bestState == nil || lookaheadBestState.balance > bestLookaheadBalance {
+			_, _, lookaheadInkomsten := findBestNextLink(newState, stars, nextStarI, nextLink.next, nrOfVisitedStars+1, lookahead-1)
+			if bestState == nil || lookaheadInkomsten > bestLookaheadInkomsten {
 				bestLink = nextLink
 				bestState = &newState
+				bestLookaheadInkomsten = nextInkomsten
 			}
 		} else {
 			if bestState == nil || newState.balance > s.balance {
 				bestLink = nextLink
 				bestState = &newState
+				bestLookaheadInkomsten = nextInkomsten
 			}
 		}
 	}
@@ -293,7 +294,7 @@ func findBestNextLink(s State, stars []*Star, starI int8, nextLinks *[]*Link, nr
 		log.Fatal("No route found. Impossible!")
 	}
 
-	return bestState, bestLink
+	return bestState, bestLink, bestLookaheadInkomsten
 }
 
 type State struct {
@@ -305,9 +306,9 @@ type State struct {
 	myShip      *Ship
 }
 
-func visit(currentStar *Star, nextStar *Star, s State) State {
+func visit(currentStar *Star, nextStar *Star, s State) (State, uint16) {
 	// return transaction, balance, wishlist, myWeapons, myShip
-	shoppingCost, _, shoppingList := currentStar.bestDeal(nextStar, s.balance, *s.myShip)
+	shoppingCost, inkomsten, shoppingList := currentStar.bestDeal(nextStar, s.balance, *s.myShip)
 
 	if len(s.wishlist) > 0 {
 		nextWishItem := s.wishlist[0]
@@ -339,6 +340,7 @@ func visit(currentStar *Star, nextStar *Star, s State) State {
 		if bestcontract != nil {
 			s.transaction.ContractAccepted = bestcontract.CriminalName
 			s.balance += uint16(bestcontract.Bounty)
+			inkomsten += uint16(bestcontract.Bounty)
 		}
 	}
 
@@ -349,7 +351,7 @@ func visit(currentStar *Star, nextStar *Star, s State) State {
 		s.balance -= uint16(amount) * uint16(currentStar.getPrice(resource))
 	}
 
-	return s
+	return s, inkomsten
 }
 
 func nextWeapon(w Weapon) Weapon {
