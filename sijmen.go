@@ -6,7 +6,6 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
-	"strconv"
 )
 
 type Resource string
@@ -53,7 +52,7 @@ const (
 )
 
 const (
-	option_ship = true
+	option_ship   = true
 	option_weapon = false
 )
 
@@ -78,16 +77,20 @@ func weaponType(name string) Weapon {
 	return 0
 }
 
+var (
+    weapon_TACHYON = Wish{shipOrWeapon: option_weapon, weapon: TACHYON}
+    weapon_PLASMA = Wish{shipOrWeapon: option_weapon, weapon: PLASMA}
+    weapon_LASER = Wish{shipOrWeapon: option_weapon, weapon: LASER}
+    weapon_PARTICLE = Wish{shipOrWeapon: option_weapon, weapon: PARTICLE}
+    weapon_PHOTON = Wish{shipOrWeapon: option_weapon, weapon: PHOTON}
+    weapon_PROTON = Wish{shipOrWeapon: option_weapon, weapon: PROTON}
+    ship_DRONE = Wish{shipOrWeapon: option_ship, ship: &DRONE}
+    ship_RHINO = Wish{shipOrWeapon: option_ship, ship: &RHINO}
+    ship_HUMPBACK = Wish{shipOrWeapon: option_ship, ship: &HUMPBACK}
+)
+
 var wishes = []Wish{
-	{shipOrWeapon: option_weapon, weapon: TACHYON},
-	{shipOrWeapon: option_weapon, weapon: PLASMA},
-	{shipOrWeapon: option_weapon, weapon: LASER},
-	{shipOrWeapon: option_weapon, weapon: PARTICLE},
-	{shipOrWeapon: option_weapon, weapon: PHOTON},
-	{shipOrWeapon: option_weapon, weapon: PROTON},
-	{shipOrWeapon: option_ship, ship: &DRONE},
-	{shipOrWeapon: option_ship, ship: &RHINO},
-	{shipOrWeapon: option_ship, ship: &HUMPBACK},
+	weapon_TACHYON, weapon_PLASMA, weapon_LASER, weapon_PARTICLE, weapon_PHOTON, weapon_PROTON, ship_DRONE, ship_RHINO, ship_HUMPBACK,
 }
 
 func main() {
@@ -112,53 +115,64 @@ func main() {
 		starsP = append(starsP, &stars[i])
 	}
 
-	wishfull(starsP, []*Wish{})
+	balance, transactions := freelancer(starsP, []*Wish{
+		&ship_RHINO, &weapon_LASER, &ship_HUMPBACK,
+	})
+	jsonString, _ := json.Marshal(Output{
+		Name:         "Sijmen Huizenga",
+		Email:        "sijmenhuizenga@gmail.com",
+		Transactions: transactions,
+	})
+	ioutil.WriteFile("output.json", jsonString, os.ModePerm)
+	fmt.Printf("Balance: %v\n", balance)
+
+	//wishfull(starsP, []*Wish{})
 }
 
-func wishfull(stars []*Star, wishlist []*Wish) {
-	for wishI := range wishes {
-		if inW(wishlist, &wishes[wishI]) {
-			continue
-		}
-		nextList := append(wishlist, &wishes[wishI])
-		//printWishes(nextList)
-		balance, transactions := freelancer(stars, nextList)
-		if balance > 20000 {
-			jsonString, _ := json.Marshal(Output{
-				Name:         "Sijmen Huizenga",
-				Email:        "sijmenhuizenga@gmail.com",
-				Transactions: transactions,
-			})
-			ioutil.WriteFile("output/"+strconv.Itoa(int(balance))+".json", jsonString, os.ModePerm)
-			fmt.Printf("Found great option: %v\n", balance)
-			printWishes(nextList)
-		}
-		if len(nextList) != len(wishes) {
-			wishfull(stars, nextList)
-		}
-	}
-}
-
-func printWishes(wishlist []*Wish) {
-	for _, w := range wishlist {
-		if w.shipOrWeapon == option_weapon {
-			fmt.Printf(", %v", w.weapon)
-		} else {
-			fmt.Printf(", %v", w.ship.Name)
-		}
-	}
-	println()
-}
-
-func inW(hay []*Wish, search *Wish) bool {
-	for _, w := range hay {
-		if w == search {
-			return true
-		}
-	}
-	return false
-}
-
+// used for brute-forcing all wish combinations
+//func wishfull(stars []*Star, wishlist []*Wish) {
+//	for wishI := range wishes {
+//		if inW(wishlist, &wishes[wishI]) {
+//			continue
+//		}
+//		nextList := append(wishlist, &wishes[wishI])
+//		//printWishes(nextList)
+//		balance, transactions := freelancer(stars, nextList)
+//		if balance > 20000 {
+//			jsonString, _ := json.Marshal(Output{
+//				Name:         "Sijmen Huizenga",
+//				Email:        "sijmenhuizenga@gmail.com",
+//				Transactions: transactions,
+//			})
+//			ioutil.WriteFile("output/"+strconv.Itoa(int(balance))+".json", jsonString, os.ModePerm)
+//			fmt.Printf("Found great option: %v\n", balance)
+//			printWishes(nextList)
+//		}
+//		if len(nextList) != len(wishes) {
+//			wishfull(stars, nextList)
+//		}
+//	}
+//}
+//
+//func printWishes(wishlist []*Wish) {
+//	for _, w := range wishlist {
+//		if w.shipOrWeapon == option_weapon {
+//			fmt.Printf(", %v", w.weapon)
+//		} else {
+//			fmt.Printf(", %v", w.ship.Name)
+//		}
+//	}
+//	println()
+//}
+//
+//func inW(hay []*Wish, search *Wish) bool {
+//	for _, w := range hay {
+//		if w == search {
+//			return true
+//		}
+//	}
+//	return false
+//}
 
 type Wish struct {
 	shipOrWeapon bool
@@ -172,15 +186,15 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 	var s = State{
 		transaction: Transaction{},
 		balance:     0,
-		inventory:   map[Resource]uint8{
+		inventory: map[Resource]uint8{
 			Ore:         1,
 			Water:       1,
 			EngineParts: 1,
 			Contraband:  0,
 		},
-		wishlist:    wishlist,
-		myWeapons:   []Weapon{},
-		myShip:      &SCRAPPY,
+		wishlist:  wishlist,
+		myWeapons: []Weapon{},
+		myShip:    &SCRAPPY,
 	}
 	var nextLinks = STARMAP
 	var nrOfVisitedStars = 0
@@ -197,6 +211,7 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 			ContractAccepted: "",
 			ShipPurchase:     "",
 		}
+		println("Visiting", starI)
 
 		// sell everything
 		for resource, amount := range s.inventory {
@@ -219,7 +234,7 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 		}
 
 		for _, nextLink := range *nextLinks {
-			nextStarI := int8(starI)+nextLink.step
+			nextStarI := int8(starI) + nextLink.step
 			if nextStarI < 0 || nextStarI >= int8(len(stars)) {
 				continue
 			}
@@ -230,7 +245,7 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 				continue
 			}
 
-			if nextLink.linksToRoot > nrOfUnvisitedStars -1 {
+			if nextLink.linksToRoot > nrOfUnvisitedStars-1 {
 				continue
 			}
 
@@ -249,7 +264,7 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 				bestState = &newState
 			}
 		}
-		if bestState == nil || bestLink == nil{
+		if bestState == nil || bestLink == nil {
 			log.Fatal("No route found. Impossible!")
 		}
 
@@ -257,6 +272,7 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 		nextLinks = bestLink.next
 		starI = starI + int(bestLink.step)
 		s.transaction.JumpTo = stars[starI].Name
+		println("  next step: ", bestLink.step)
 
 		nrOfVisitedStars++
 		transactions = append(transactions, s.transaction)
@@ -266,11 +282,11 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 
 type State struct {
 	transaction Transaction
-	balance uint16
-	inventory map[Resource]uint8
-	wishlist []*Wish
-	myWeapons []Weapon
-	myShip *Ship
+	balance     uint16
+	inventory   map[Resource]uint8
+	wishlist    []*Wish
+	myWeapons   []Weapon
+	myShip      *Ship
 }
 
 func visit(currentStar *Star, nextStar *Star, s State) State {
@@ -282,7 +298,7 @@ func visit(currentStar *Star, nextStar *Star, s State) State {
 		if nextWishItem.shipOrWeapon == option_ship {
 			newShipShoppingcost, _, newShipShoppingList := currentStar.bestDeal(nextStar, s.balance, *nextWishItem.ship)
 
-			if s.balance >= nextWishItem.ship.Price + newShipShoppingcost {
+			if s.balance >= nextWishItem.ship.Price+newShipShoppingcost {
 				shoppingList = newShipShoppingList
 				s.transaction.ShipPurchase = nextWishItem.ship.Name
 				s.balance -= nextWishItem.ship.Price
