@@ -32,13 +32,7 @@ var (
 	HUMPBACK = Ship{Price: 2000, Capacity: 30, Name: "HUMPBACK"}
 )
 
-var SHIPS = []*Ship{&SCRAPPY, &RHINO, &HUMPBACK}
-
-var (
-	SCRAPPY_I = uint8(0)
-	RHINO_I = uint8(1)
-	HUMPBACK_I = uint8(2)
-)
+var SHIPS = []*Ship{&SCRAPPY, &HUMPBACK}
 
 var weaponNames = map[Weapon]string{
 	0: "TACHYON",
@@ -81,7 +75,7 @@ func weaponType(name string) Weapon {
 }
 
 func main() {
-	jsonFile, err := os.Open("starmap-small.json")
+	jsonFile, err := os.Open("starmap.json")
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -163,7 +157,7 @@ func freelancer(stars []*Star) (uint16, []Transaction) {
 			log.Fatal("No next links. That can't be. You were supposed to be infinite")
 		}
 
-		bestState, bestLink, _ := findBestNextLink(s, stars, starI, nextLinks, nrOfVisitedStars, 12)
+		bestState, bestLink, _ := findBestNextLink(s, stars, starI, nextLinks, nrOfVisitedStars, 4)
 
 		s = *bestState
 		nextLinks = bestLink.next
@@ -251,7 +245,7 @@ func findBestNextLink(s State, stars []*Star, starI int8, nextLinks *[]*Link, nr
 	if shouldLookahead {
 		return bestState, bestLink, bestLookaheadBalance
 	} else {
-		return bestState, bestLink, bestState.worth
+		return bestState, bestLink, bestState.balance
 	}
 }
 
@@ -273,6 +267,17 @@ func visit(currentStar *Star, nextStar *Star, s State) State {
 		s.inventory[resource] = 0
 	}
 	shoppingCost, _, shoppingList := currentStar.bestDeal(nextStar, s.balance, *SHIPS[s.myShip])
+
+	// still ships to buy
+	if s.myShip < uint8(len(SHIPS)) -1 {
+		newShipShoppingcost, _, newShipShoppingList := currentStar.bestDeal(nextStar, s.balance, *SHIPS[s.myShip+1])
+		if s.balance >= SHIPS[s.myShip+1].Price+newShipShoppingcost {
+			shoppingList = newShipShoppingList
+			s.transaction.ShipPurchase = SHIPS[s.myShip+1].Name
+			s.balance -= SHIPS[s.myShip+1].Price
+			s.myShip++
+		}
+	}
 
 	// contracts are orderd from best to worst reward
 	weaponsIcanBeat := nextWeapons(s.myWeapons)
@@ -303,16 +308,7 @@ func visit(currentStar *Star, nextStar *Star, s State) State {
 		}
 	}
 
-	// still ships to buy
-	if s.myShip < uint8(len(SHIPS)) -1 {
-		newShipShoppingcost, _, newShipShoppingList := currentStar.bestDeal(nextStar, s.balance, *SHIPS[s.myShip+1])
-		if s.balance >= SHIPS[s.myShip+1].Price+newShipShoppingcost {
-			shoppingList = newShipShoppingList
-			s.transaction.ShipPurchase = SHIPS[s.myShip+1].Name
-			s.balance -= SHIPS[s.myShip+1].Price
-			s.myShip++
-		}
-	}
+
 
 	// buy the shoppinglist
 	for resource, amount := range shoppingList {
