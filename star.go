@@ -2,6 +2,7 @@ package main
 
 import (
 	"log"
+	"sort"
 )
 
 type Star struct {
@@ -61,6 +62,12 @@ func (star *Star) bestDeal(goingToStar *Star, budget uint16, ship Ship) (bestCos
 	return cost, profit, shoppingList
 }
 
+func (star *Star) sortContracts() {
+	sort.SliceStable(star.Contracts, func(i, j int) bool {
+		return star.Contracts[i].Bounty > star.Contracts[j].Bounty
+	})
+}
+
 func (star *Star) contractsAggregated() map[Weapon]Bounty {
 	if star._aggregatedContracts != nil {
 		return star._aggregatedContracts
@@ -84,7 +91,7 @@ func (star *Star) hasContract(by Weapon) bool {
 
 func (star *Star) bestContractAll() *Contract {
 	var bestContract *Contract = nil
-	for contractI := range star.Contracts{
+	for contractI := range star.Contracts {
 		if bestContract == nil || star.Contracts[contractI].Bounty > bestContract.Bounty {
 			bestContract = &star.Contracts[contractI]
 		}
