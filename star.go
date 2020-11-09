@@ -48,6 +48,9 @@ type BuyableResource struct {
 }
 
 func (star *Star) bestDeal(goingToStar *Star, budget uint16, ship Ship) (bestCost uint16, bestProfit uint16, bestInventory map[Resource]uint8) {
+	if star == goingToStar {
+		log.Fatal("BUG: Can't go to the same star.")
+	}
 	capacity := ship.Capacity
 	buyableResources := star.bestDealFindBuyableResources(goingToStar)
 	cost, profit, inventory := knaphoor(0, 0, make([]uint8, len(buyableResources)), capacity, budget, buyableResources, 0)

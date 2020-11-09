@@ -171,3 +171,18 @@ func CopyMap(m map[Resource]uint8) map[Resource]uint8 {
 	}
 	return cp
 }
+
+
+func CopyTransaction(t *Transaction) Transaction {
+	return Transaction{
+		Planet:           t.Planet,
+		DeltaOre:         t.DeltaOre,
+		DeltaWater:       t.DeltaWater,
+		DeltaEngineParts: t.DeltaEngineParts,
+		DeltaContraband:  t.DeltaContraband,
+		JumpTo:           t.JumpTo,
+		WeaponPurchase:   t.WeaponPurchase,
+		ContractAccepted: t.ContractAccepted,
+		ShipPurchase:     t.ShipPurchase,
+	}
+}

@@ -242,7 +242,7 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 			log.Fatal("No next links. That can't be. You were supposed to be infinite")
 		}
 
-		bestState, bestLink := findBestNextLink(s, stars, starI, nextLinks, nrOfVisitedStars, 3)
+		bestState, bestLink, _ := findBestNextLink(s, stars, starI, nextLinks, nrOfVisitedStars, 2)
 
 		s = *bestState
 		nextLinks = bestLink.next
@@ -254,22 +254,29 @@ func freelancer(stars []*Star, wishlist []*Wish) (uint16, []Transaction) {
 
 		nrOfVisitedStars++
 		transactions = append(transactions, s.transaction)
+		//if nrOfVisitedStars > 4 {
+		//	break
+		//}
 	}
 	return s.balance, transactions
 }
 
-func findBestNextLink(s State, stars []*Star, starI int8, nextLinks *[]*Link, nrOfVisitedStars int, lookahead uint8) (*State, *Link) {
+func findBestNextLink(s State, stars []*Star, starI int8, nextLinks *[]*Link, nrOfVisitedStars int, lookahead uint8) (*State, *Link, uint16) {
 	//nrOfVisitedStars is including the current star
 	var bestState *State = nil
 	var bestLink *Link = nil
 	var bestLookaheadBalance = uint16(0)
-	for _, nextLink := range *nextLinks {
+
+	// nrOfUnvisitedStars: current jump is not included
+	nrOfUnvisitedStars := uint8(len(stars) - nrOfVisitedStars)
+
+	shouldLookahead := nrOfUnvisitedStars > 2 && lookahead > 0
+
+	for nextLinkI, nextLink := range *nextLinks {
 		nextStarI := starI + nextLink.step
 		if nextStarI < 0 || nextStarI >= int8(len(stars)) {
 			continue
 		}
-		// nrOfUnvisitedStars: current jump is not included
-		nrOfUnvisitedStars := uint8(len(stars) - nrOfVisitedStars)
 		if nextStarI == int8(len(stars)-1) && nrOfUnvisitedStars == 1 {
 			// never visit the last star EXCEPT when we are at the second-to-last star
 			continue
@@ -281,7 +288,7 @@ func findBestNextLink(s State, stars []*Star, starI int8, nextLinks *[]*Link, nr
 
 		nextStar := stars[nextStarI]
 		newState := visit(stars[starI], nextStar, State{
-			transaction: s.transaction,
+			transaction: CopyTransaction(&s.transaction),
 			balance:     s.balance,
 			inventory:   CopyMap(s.inventory),
 			wishlist:    s.wishlist,
@@ -289,23 +296,23 @@ func findBestNextLink(s State, stars []*Star, starI int8, nextLinks *[]*Link, nr
 			myShip:      s.myShip,
 		})
 
-		if nrOfUnvisitedStars > 2 && lookahead > 0 {
-			lookaheadBestState, _ := findBestNextLink(State{
-				transaction: newState.transaction,
+		if shouldLookahead {
+			_, _, lookaheadBestLookaheadBalance := findBestNextLink(State{
+				transaction: CopyTransaction(&newState.transaction),
 				balance:     newState.balance,
 				inventory:   CopyMap(newState.inventory),
 				wishlist:    newState.wishlist,
 				myWeapons:   newState.myWeapons,
 				myShip:      newState.myShip,
 			}, stars, nextStarI, nextLink.next, nrOfVisitedStars+1, lookahead-1)
-			if bestState == nil || lookaheadBestState.balance > bestLookaheadBalance {
-				bestLink = nextLink
+			if bestState == nil || lookaheadBestLookaheadBalance > bestLookaheadBalance {
+				bestLink = (*nextLinks)[nextLinkI]
 				bestState = &newState
-				bestLookaheadBalance = lookaheadBestState.balance
+				bestLookaheadBalance = lookaheadBestLookaheadBalance
 			}
 		} else {
 			if bestState == nil || newState.balance > bestState.balance {
-				bestLink = nextLink
+				bestLink = (*nextLinks)[nextLinkI]
 				bestState = &newState
 			}
 		}
@@ -314,7 +321,13 @@ func findBestNextLink(s State, stars []*Star, starI int8, nextLinks *[]*Link, nr
 		log.Fatal("No route found. Impossible!")
 	}
 
-	return bestState, bestLink
+	if shouldLookahead {
+		return bestState, bestLink, bestLookaheadBalance
+	} else {
+		return bestState, bestLink, bestState.balance
+	}
+
+
 }
 
 type State struct {
@@ -327,7 +340,12 @@ type State struct {
 }
 
 func visit(currentStar *Star, nextStar *Star, s State) State {
-	// return transaction, balance, wishlist, myWeapons, myShip
+	// just sell everything we have
+	for resource, amount := range s.inventory {
+		s.transaction.sell(resource, amount)
+		s.balance += uint16(amount) * uint16(currentStar.getPrice(resource))
+		s.inventory[resource] = 0
+	}
 	shoppingCost, _, shoppingList := currentStar.bestDeal(nextStar, s.balance, *s.myShip)
 
 	if len(s.wishlist) > 0 {
