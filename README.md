@@ -2,7 +2,7 @@
 
 ![FREELANCER: A freelancer challenge based on the trading and simulation game Freelancer from 2003](images/header.webp)
 
-The [challenge](challenge.pdf) [[source](http://freelancerleaderboard.s3-website-eu-west-1.amazonaws.com/)] is as follows:
+The [challenge](challenge.pdf) [[source web](http://freelancerleaderboard.s3-website-eu-west-1.amazonaws.com/) / [source code](https://github.com/code-star/freelancer-leaderboard)] is as follows:
 
 > The destruction of Freeport 7 left you with almost nothing. The only thing you managed to save was your
   ship (with a bit of ore, water and engine parts stored in the cargo hold) and a star map.
@@ -39,10 +39,9 @@ There were many iterations:
 This was great fun. A huge congratulations to Roy and Marijn for reaching even higher numbers, you really deserve that prize.
 
 
-#### License
-The pdf in this repo is owned by [Ordina](https://www.ordina.nl/), it copied from [here](http://freelancerleaderboard.s3-website-eu-west-1.amazonaws.com/) as a backup. 
-They are fine with people using it (that's what the challenge is about) as long as they get all the credits. 
-Be nice to them, the are great.
+#### The (boring) licensee stuff
+The pdf in this repo is copied from [here](http://freelancerleaderboard.s3-website-eu-west-1.amazonaws.com/) (also made available [here](https://github.com/code-star/freelancer-leaderboard) under the MIT License). 
+Be sure to give them love, they are great.
 
-I own all the code in this repo, you can use or change it, just make sure you credit me.
-And if you win using this code, which I doubt is possible, you can keep the prize. 
+I own all the code in this repo, you can use or change it. If you think it is genious, which I doubt, feel free to credit me. 
+Aaaand if you win using this code, you for sure kan keep the prize. ;)
